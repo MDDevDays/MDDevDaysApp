@@ -1,0 +1,1 @@
+Hier entsteht die App für die Magdeburger Developer Days
