@@ -1,12 +1,15 @@
-﻿using Prism.Unity;
-using MDDevDaysApp.Views;
+﻿using MDDevDaysApp.Views;
+using Prism.Unity;
 using Xamarin.Forms;
 
 namespace MDDevDaysApp
 {
     public partial class App : PrismApplication
     {
-        public App(IPlatformInitializer initializer = null) : base(initializer) { }
+        public App(IPlatformInitializer initializer = null)
+            : base(initializer)
+        {
+        }
 
         protected override void OnInitialized()
         {
@@ -19,6 +22,7 @@ namespace MDDevDaysApp
         {
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<InfoPage>();
         }
     }
 }
