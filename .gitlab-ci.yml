@@ -2,6 +2,7 @@ variables:
     GIT_SUBMODULE_STRATEGY: normal
 
 UWP-CI-Package:
+  stage: build
   except:
     - master
     - develop
