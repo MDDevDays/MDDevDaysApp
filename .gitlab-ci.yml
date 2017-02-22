@@ -1,0 +1,9 @@
+UWP-CI-Package:
+  except:
+    - master
+    - develop
+  tags:
+    - vs14.0
+    - uwp10586
+  script:
+    - .\build.ps1 -Mono -Target UWP-CI-Package

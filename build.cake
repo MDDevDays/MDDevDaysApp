@@ -5,8 +5,11 @@
 #addin "Cake.Plist"
 #addin "MagicChunks"
 
-// Arguments
+// Variables
 var target = Argument("target", "Default");
+var configuration = Argument("configuration", "Release");
+
+var buildDir = MakeAbsolute(Directory("./build"));
 
 // Tasks
 Task("Default")
@@ -48,6 +51,54 @@ Task("Version")
                 { "Package/Identity/@Version", versionName + ".0.0" }
         });
         Information($"UWP Version set to {versionName}.0.0");
+    });
+
+Task("Clean")
+    .Does(() => {
+        CleanDirectory(buildDir);
+    });
+
+Task("Restore-NuGet-Packages")
+    .IsDependentOn("Clean")
+    .Does(() => {
+        NuGetRestore("./src/MDDevDaysApp.sln");
+    });
+
+Task("BuildVersion")
+    .IsDependentOn("Restore-NuGet-Packages")
+    .Does(() => {
+        var currentVersionName = XmlPeek(@"./src/MDDevDaysApp/MDDevDaysApp.UWP/Package.appxmanifest", 
+                                   "Package:Package/Package:Identity/@Version",
+                                    new XmlPeekSettings{
+                                        Namespaces = new Dictionary<string, string>{{"Package", "http://schemas.microsoft.com/appx/manifest/foundation/windows10" }}
+                                });
+        var versionParts = currentVersionName.Split('.');
+        versionParts[2] = GitVersion().CommitsSinceVersionSource;
+        var versionName = String.Join(".", versionParts);
+
+        TransformConfig(@"./src/MDDevDaysApp/MDDevDaysApp.UWP/Package.appxmanifest",
+            new TransformationCollection {
+                { "Package/Identity/@Version", versionName }
+        });
+
+        Information($"UWP Version set to {versionName}");
+    });
+
+Task("UWP-CI-Package")
+    .IsDependentOn("BuildVersion")
+    .Does(() => {
+        DotNetBuild("./src/MDDevDaysApp/MDDevDaysApp.UWP/MDDevDaysApp.UWP.csproj", configurator => {
+            configurator.SetConfiguration(configuration)
+                .SetVerbosity(Verbosity.Minimal)
+                .WithTarget("Rebuild")
+                .WithProperty("OutputPath", buildDir.Combine("UWP").Combine("bin").FullPath)
+                .WithProperty("AppxPackageDir", buildDir.Combine("UWP").Combine("Package").FullPath)
+                .WithProperty("AppxBundle", "Always")
+                .WithProperty("AppxBundlePlatforms", "x86|x64|ARM")
+                .WithProperty("BuildAppxUploadPackageForUap", "true")
+                .WithProperty("UapAppxPackageBuildMode", "CI")
+                .WithProperty("AppxSymbolPackageEnabled", "true");
+        });
 
     });
 
