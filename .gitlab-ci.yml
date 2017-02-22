@@ -1,0 +1,13 @@
+variables:
+    GIT_SUBMODULE_STRATEGY: normal
+
+UWP-CI-Package:
+  stage: build
+  except:
+    - master
+    - develop
+  tags:
+    - vs14.0
+    - uwp10586
+  script:
+    - .\build.ps1 -Mono -Target UWP-CI-Package
