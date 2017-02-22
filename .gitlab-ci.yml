@@ -11,3 +11,14 @@ UWP-CI-Package:
     - uwp10586
   script:
     - .\build.ps1 -Mono -Target UWP-CI-Package
+
+UWP-UploadToHockeyApp:
+  stage: deploy
+  only:
+    - master@MDDevDays/MDDevDaysApp
+    - develop@MDDevDays/MDDevDaysApp
+  tags:
+    - vs14.0
+    - uwp10586
+  script:
+    - .\build.ps1 -Mono -Target UWP-UploadToHockeyApp
