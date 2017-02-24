@@ -4,6 +4,7 @@
 // Addins
 #addin "Cake.HockeyApp"
 #addin "Cake.Plist"
+#addin "Cake.Xamarin"
 #addin "MagicChunks"
 
 // Variables
@@ -11,6 +12,7 @@ var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
 var buildDir = MakeAbsolute(Directory("./build"));
+var secretsDir = MakeAbsolute(Directory("./secrets"));
 
 // Tasks
 Task("Default")
@@ -75,7 +77,21 @@ Task("BuildVersion")
                                 });
         var versionParts = currentVersionName.Split('.');
         versionParts[2] = GitVersion().CommitsSinceVersionSource;
+
         var versionName = String.Join(".", versionParts);
+
+        var major = Convert.ToInt32(versionParts[0]);
+        var minor = Convert.ToInt32(versionParts[1]);
+        var build = Convert.ToInt32(versionParts[2]);
+        var versionCode = major * 1000000 +
+                          minor *   10000 +
+                          build;
+
+        TransformConfig(@"./src/MDDevDaysApp/MDDevDaysApp.Droid/Properties/AndroidManifest.xml",
+            new TransformationCollection {
+                { "manifest/@android:versionCode", versionCode.ToString() }
+        });
+        Information($"Droid VersionCode set to {versionCode}");
 
         TransformConfig(@"./src/MDDevDaysApp/MDDevDaysApp.UWP/Package.appxmanifest",
             new TransformationCollection {
@@ -83,6 +99,59 @@ Task("BuildVersion")
         });
 
         Information($"UWP Version set to {versionName}");
+    });
+
+Task("Droid-Clean")
+    .IsDependentOn("BuildVersion")
+    .Does(() => {
+        DotNetBuild(@"./src/MDDevDaysApp/MDDevDaysApp.Droid/MDDevDaysApp.Droid.csproj", configurator => {
+            configurator.SetConfiguration(configuration)
+                .SetVerbosity(Verbosity.Minimal)
+                .WithTarget("Clean");
+        });
+    });
+
+Task("Droid-CI-Package")
+    .IsDependentOn("Droid-Clean")
+    .Does(() => {
+        AndroidPackage(@"./src/MDDevDaysApp/MDDevDaysApp.Droid/MDDevDaysApp.Droid.csproj", true, configurator => {
+            configurator.SetConfiguration(configuration)
+                .SetVerbosity(Verbosity.Minimal)
+                .WithProperty("OutputPath", buildDir.Combine("Droid").Combine("bin").FullPath);
+        });
+    });
+
+Task("Droid-Store-Package")
+    .IsDependentOn("Droid-Clean")
+    .Does(() => {
+        var keystorePassword = EnvironmentVariable("KEYSTORE_PASSWORD");
+        if (keystorePassword == null)
+        {
+            throw new Exception("You have to set the KEYSTORE_PASSWORD environment variable");
+        }
+
+        var keyAlias = EnvironmentVariable("KEY_ALIAS");
+        if (keyAlias == null)
+        {
+            throw new Exception("You have to set the KEY_ALIAS environment variable");
+        }
+
+        var keyPassword = EnvironmentVariable("KEY_PASSWORD");
+        if (keyPassword == null)
+        {
+            throw new Exception("You have to set the KEY_PASSWORD environment variable");
+        }
+
+        AndroidPackage(@"./src/MDDevDaysApp/MDDevDaysApp.Droid/MDDevDaysApp.Droid.csproj", true, configurator => {
+            configurator.SetConfiguration(configuration)
+                .SetVerbosity(Verbosity.Minimal)
+                .WithProperty("AndroidKeyStore", "true")
+                .WithProperty("AndroidSigningKeyStore", secretsDir.Combine("MDDevDays.keystore").FullPath)
+                .WithProperty("AndroidSigningStorePass", keystorePassword)
+                .WithProperty("AndroidSigningKeyAlias", EnvironmentVariable("KEY_ALIAS"))
+                .WithProperty("AndroidSigningKeyPass", EnvironmentVariable("KEY_PASSWORD"))
+                .WithProperty("OutputPath", buildDir.Combine("Droid").Combine("bin").FullPath);
+        });
     });
 
 Task("UWP-CI-Package")
