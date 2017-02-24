@@ -1,6 +1,14 @@
 variables:
     GIT_SUBMODULE_STRATEGY: normal
 
+Droid-CI-Package:
+  stage: build
+  tags:
+    - osx
+    - xamarin.android
+  script:
+    - sh ./build.sh --target Droid-CI-Package
+
 UWP-CI-Package:
   stage: build
   except:
