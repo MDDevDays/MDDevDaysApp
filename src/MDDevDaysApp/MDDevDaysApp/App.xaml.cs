@@ -1,6 +1,5 @@
 ﻿using MDDevDaysApp.Views;
 using Prism.Unity;
-using Xamarin.Forms;
 
 namespace MDDevDaysApp
 {
@@ -15,13 +14,13 @@ namespace MDDevDaysApp
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("NavigationPage/MainPage");
+            NavigationService.NavigateAsync("MainNavigationPage/MainTabbedPage");
         }
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<NavigationPage>();
-            Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<MainNavigationPage>();
+            Container.RegisterTypeForNavigation<MainTabbedPage>();
             Container.RegisterTypeForNavigation<InfoPage>();
         }
     }

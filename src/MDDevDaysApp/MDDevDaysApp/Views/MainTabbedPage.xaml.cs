@@ -2,9 +2,9 @@
 
 namespace MDDevDaysApp.Views
 {
-    public partial class MainPage : TabbedPage
+    public partial class MainTabbedPage : TabbedPage
     {
-        public MainPage()
+        public MainTabbedPage()
         {
             InitializeComponent();
         }
