@@ -11,4 +11,5 @@
 
     <views:InfoPage />
     <views:SpeakerPage />
+    <views:ProgramPage />
 </TabbedPage>

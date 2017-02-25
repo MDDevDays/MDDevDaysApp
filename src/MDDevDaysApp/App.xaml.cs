@@ -23,6 +23,7 @@ namespace MDDevDaysApp
             Container.RegisterTypeForNavigation<MainTabbedPage>();
             Container.RegisterTypeForNavigation<InfoPage>();
             Container.RegisterTypeForNavigation<SpeakerPage>();
+            Container.RegisterTypeForNavigation<ProgramPage>();
         }
     }
 }
