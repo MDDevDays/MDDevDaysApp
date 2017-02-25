@@ -7,4 +7,7 @@
              x:Class="MDDevDaysApp.Views.ProgramPage"
              Title="{Binding Title}">
 
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Title}" />
+    </StackLayout>
 </ContentPage>
