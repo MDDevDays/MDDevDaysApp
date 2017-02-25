@@ -14,13 +14,13 @@ namespace MDDevDaysApp
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("MainNavigationPage/MainPage");
+            NavigationService.NavigateAsync("MainNavigationPage/MainTabbedPage");
         }
 
         protected override void RegisterTypes()
         {
             Container.RegisterTypeForNavigation<MainNavigationPage>();
-            Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<MainTabbedPage>();
             Container.RegisterTypeForNavigation<InfoPage>();
         }
     }

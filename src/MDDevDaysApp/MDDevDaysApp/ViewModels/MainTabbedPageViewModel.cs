@@ -3,9 +3,9 @@ using Prism.Navigation;
 
 namespace MDDevDaysApp.ViewModels
 {
-    public class MainPageViewModel : BindableBase, INavigationAware
+    public class MainTabbedPageViewModel : BindableBase, INavigationAware
     {
-        public MainPageViewModel()
+        public MainTabbedPageViewModel()
         {
             Title = "Magdeburger Developer Days";
         }
