@@ -31,7 +31,7 @@ Task("Version")
         // Android
         var versionCode = version.Major * 1000000 +
                           version.Minor *   10000;
-        TransformConfig(@"./src/MDDevDaysApp/MDDevDaysApp.Droid/Properties/AndroidManifest.xml",
+        TransformConfig(@"./src/MDDevDaysApp.Droid/Properties/AndroidManifest.xml",
             new TransformationCollection {
                 { "manifest/@android:versionName", versionName },
                 { "manifest/@android:versionCode", versionCode.ToString() }
@@ -40,16 +40,16 @@ Task("Version")
         Information($"Android VersionCode set to {versionCode}");
 
         // iOS
-        dynamic data = DeserializePlist("./src/MDDevDaysApp/MDDevDaysApp.iOS/Info.plist");
+        dynamic data = DeserializePlist("./src/MDDevDaysApp.iOS/Info.plist");
         data["CFBundleShortVersionString"] = versionName;
         data["CFBundleVersion"] = "0";
-        SerializePlist("./src/MDDevDaysApp/MDDevDaysApp.iOS/Info.plist", data);
+        SerializePlist("./src/MDDevDaysApp.iOS/Info.plist", data);
 
         Information($"iOS Version set to {versionName}");
         Information($"iOS Build set to 0");
 
         // UWP
-        TransformConfig(@"./src/MDDevDaysApp/MDDevDaysApp.UWP/Package.appxmanifest",
+        TransformConfig(@"./src/MDDevDaysApp.UWP/Package.appxmanifest",
             new TransformationCollection {
                 { "Package/Identity/@Version", versionName + ".0.0" }
         });
@@ -64,13 +64,13 @@ Task("Clean")
 Task("Restore-NuGet-Packages")
     .IsDependentOn("Clean")
     .Does(() => {
-        NuGetRestore("./src/MDDevDaysApp.sln");
+        NuGetRestore("./MDDevDaysApp.sln");
     });
 
 Task("BuildVersion")
     .IsDependentOn("Restore-NuGet-Packages")
     .Does(() => {
-        var currentVersionName = XmlPeek(@"./src/MDDevDaysApp/MDDevDaysApp.UWP/Package.appxmanifest", 
+        var currentVersionName = XmlPeek(@"./src/MDDevDaysApp.UWP/Package.appxmanifest", 
                                    "Package:Package/Package:Identity/@Version",
                                     new XmlPeekSettings{
                                         Namespaces = new Dictionary<string, string>{{"Package", "http://schemas.microsoft.com/appx/manifest/foundation/windows10" }}
@@ -87,13 +87,13 @@ Task("BuildVersion")
                           minor *   10000 +
                           build;
 
-        TransformConfig(@"./src/MDDevDaysApp/MDDevDaysApp.Droid/Properties/AndroidManifest.xml",
+        TransformConfig(@"./src/MDDevDaysApp.Droid/Properties/AndroidManifest.xml",
             new TransformationCollection {
                 { "manifest/@android:versionCode", versionCode.ToString() }
         });
         Information($"Droid VersionCode set to {versionCode}");
 
-        TransformConfig(@"./src/MDDevDaysApp/MDDevDaysApp.UWP/Package.appxmanifest",
+        TransformConfig(@"./src/MDDevDaysApp.UWP/Package.appxmanifest",
             new TransformationCollection {
                 { "Package/Identity/@Version", versionName }
         });
@@ -104,7 +104,7 @@ Task("BuildVersion")
 Task("Droid-Clean")
     .IsDependentOn("BuildVersion")
     .Does(() => {
-        DotNetBuild(@"./src/MDDevDaysApp/MDDevDaysApp.Droid/MDDevDaysApp.Droid.csproj", configurator => {
+        DotNetBuild(@"./src/MDDevDaysApp.Droid/MDDevDaysApp.Droid.csproj", configurator => {
             configurator.SetConfiguration(configuration)
                 .SetVerbosity(Verbosity.Minimal)
                 .WithTarget("Clean");
@@ -114,7 +114,7 @@ Task("Droid-Clean")
 Task("Droid-CI-Package")
     .IsDependentOn("Droid-Clean")
     .Does(() => {
-        AndroidPackage(@"./src/MDDevDaysApp/MDDevDaysApp.Droid/MDDevDaysApp.Droid.csproj", true, configurator => {
+        AndroidPackage(@"./src/MDDevDaysApp.Droid/MDDevDaysApp.Droid.csproj", true, configurator => {
             configurator.SetConfiguration(configuration)
                 .SetVerbosity(Verbosity.Minimal)
                 .WithProperty("OutputPath", buildDir.Combine("Droid").Combine("bin").FullPath);
@@ -142,7 +142,7 @@ Task("Droid-Store-Package")
             throw new Exception("You have to set the KEY_PASSWORD environment variable");
         }
 
-        AndroidPackage(@"./src/MDDevDaysApp/MDDevDaysApp.Droid/MDDevDaysApp.Droid.csproj", true, configurator => {
+        AndroidPackage(@"./src/MDDevDaysApp.Droid/MDDevDaysApp.Droid.csproj", true, configurator => {
             configurator.SetConfiguration(configuration)
                 .SetVerbosity(Verbosity.Minimal)
                 .WithProperty("AndroidKeyStore", "true")
@@ -157,7 +157,7 @@ Task("Droid-Store-Package")
 Task("UWP-CI-Package")
     .IsDependentOn("BuildVersion")
     .Does(() => {
-        DotNetBuild("./src/MDDevDaysApp/MDDevDaysApp.UWP/MDDevDaysApp.UWP.csproj", configurator => {
+        DotNetBuild("./src/MDDevDaysApp.UWP/MDDevDaysApp.UWP.csproj", configurator => {
             configurator.SetConfiguration(configuration)
                 .SetVerbosity(Verbosity.Minimal)
                 .WithTarget("Rebuild")
@@ -174,7 +174,7 @@ Task("UWP-CI-Package")
 Task("UWP-Store-Package")
     .IsDependentOn("BuildVersion")
     .Does(() => {
-        DotNetBuild("./src/MDDevDaysApp/MDDevDaysApp.UWP/MDDevDaysApp.UWP.csproj", configurator => {
+        DotNetBuild("./src/MDDevDaysApp.UWP/MDDevDaysApp.UWP.csproj", configurator => {
             configurator.SetConfiguration(configuration)
                 .SetVerbosity(Verbosity.Minimal)
                 .WithTarget("Rebuild")
@@ -193,7 +193,7 @@ Task("UWP-UploadToHockeyApp")
     .Does(() => {
         var appxBundle = GetFiles("./build/UWP/Package/*/*.appxbundle").First();
         var appxSym = GetFiles("./build/UWP/Package/*/*.appxsym").First();
-        var versionName = XmlPeek(@"./src/MDDevDaysApp/MDDevDaysApp.UWP/Package.appxmanifest", 
+        var versionName = XmlPeek(@"./src/MDDevDaysApp.UWP/Package.appxmanifest", 
                                    "Package:Package/Package:Identity/@Version",
                                    new XmlPeekSettings{
                                        Namespaces = new Dictionary<string, string>{{"Package", "http://schemas.microsoft.com/appx/manifest/foundation/windows10" }}
@@ -204,7 +204,7 @@ Task("UWP-UploadToHockeyApp")
             AppId = "7538aec68c2c478aaf6aba693a96ab68",
             Version = versionName,
             ShortVersion = $"{versionParts[0]}.{versionParts[1]}",
-            Notes = "Uploaded via Continuous Integration",
+            Notes = "New Continuous Integration Build",
             Notify = NotifyOption.AllTesters,
             Status = DownloadStatus.Allowed
         }, appxSym);
