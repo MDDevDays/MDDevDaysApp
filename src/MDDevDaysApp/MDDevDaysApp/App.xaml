@@ -4,4 +4,10 @@
                         xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
                         x:Class="MDDevDaysApp.App">
 
+  <Application.Resources>
+    <ResourceDictionary>
+      <Color x:Key="MainColor">#81d742</Color>
+    </ResourceDictionary>
+  </Application.Resources>
+  
 </prism:PrismApplication>
