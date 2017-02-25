@@ -10,4 +10,6 @@
             BarBackgroundColor="{StaticResource MainColor}">
 
     <views:InfoPage />
+    <views:SpeakerPage />
+    <views:ProgramPage />
 </TabbedPage>
