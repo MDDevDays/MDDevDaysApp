@@ -6,7 +6,8 @@
             xmlns:views="clr-namespace:MDDevDaysApp.Views;assembly=MDDevDaysApp"
             prism:ViewModelLocator.AutowireViewModel="True"
             x:Class="MDDevDaysApp.Views.MainTabbedPage"
-            Title="{Binding Title}">
+            Title="{Binding Title}"
+            BarBackgroundColor="#81d742">
 
     <views:InfoPage />
 </TabbedPage>
