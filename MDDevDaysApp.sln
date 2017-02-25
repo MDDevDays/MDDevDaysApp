@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDDevDaysApp", "MDDevDaysApp\MDDevDaysApp\MDDevDaysApp.csproj", "{8E1FCF8D-7C7A-4903-B0E2-274FCE9E290C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDDevDaysApp", "src\MDDevDaysApp\MDDevDaysApp.csproj", "{8E1FCF8D-7C7A-4903-B0E2-274FCE9E290C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDDevDaysApp.Droid", "MDDevDaysApp\MDDevDaysApp.Droid\MDDevDaysApp.Droid.csproj", "{FF26D8BE-84C1-4C01-BB8F-456B22591E08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDDevDaysApp.Droid", "src\MDDevDaysApp.Droid\MDDevDaysApp.Droid.csproj", "{FF26D8BE-84C1-4C01-BB8F-456B22591E08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDDevDaysApp.iOS", "MDDevDaysApp\MDDevDaysApp.iOS\MDDevDaysApp.iOS.csproj", "{56C9D515-56A9-4683-AB58-C577FC6AA633}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDDevDaysApp.iOS", "src\MDDevDaysApp.iOS\MDDevDaysApp.iOS.csproj", "{56C9D515-56A9-4683-AB58-C577FC6AA633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDDevDaysApp.UWP", "MDDevDaysApp\MDDevDaysApp.UWP\MDDevDaysApp.UWP.csproj", "{686B75C5-0F28-4B1C-814D-EE716DBE24CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDDevDaysApp.UWP", "src\MDDevDaysApp.UWP\MDDevDaysApp.UWP.csproj", "{686B75C5-0F28-4B1C-814D-EE716DBE24CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
