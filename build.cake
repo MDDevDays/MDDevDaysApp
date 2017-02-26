@@ -87,12 +87,22 @@ Task("BuildVersion")
                           minor *   10000 +
                           build;
 
+        // Droid
         TransformConfig(@"./src/MDDevDaysApp.Droid/Properties/AndroidManifest.xml",
             new TransformationCollection {
                 { "manifest/@android:versionCode", versionCode.ToString() }
         });
         Information($"Droid VersionCode set to {versionCode}");
 
+        // iOS
+        var plist = File("./src/MDDevDaysApp.iOS/Info.plist");
+        dynamic data = DeserializePlist(plist);
+        data["CFBundleVersion"] = versionParts[2];
+        SerializePlist(plist, data);
+
+        Information($"iOS Build Version set to {versionParts[2]}");
+        
+        // UWP
         TransformConfig(@"./src/MDDevDaysApp.UWP/Package.appxmanifest",
             new TransformationCollection {
                 { "Package/Identity/@Version", versionName }
