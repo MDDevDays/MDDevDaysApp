@@ -1,4 +1,7 @@
-﻿using MDDevDaysApp.Views;
+﻿using MDDevDaysApp.DomainModel;
+using MDDevDaysApp.Infrastructure;
+using MDDevDaysApp.Views;
+using Microsoft.Practices.Unity;
 using Prism.Unity;
 
 namespace MDDevDaysApp
@@ -24,6 +27,8 @@ namespace MDDevDaysApp
             Container.RegisterTypeForNavigation<InfoPage>();
             Container.RegisterTypeForNavigation<SpeakerPage>();
             Container.RegisterTypeForNavigation<ProgramPage>();
+
+            Container.RegisterType(typeof(ISpeakers), typeof(Speakers), string.Empty, new ContainerControlledLifetimeManager());
         }
     }
 }
