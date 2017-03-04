@@ -7,7 +7,11 @@
              x:Class="MDDevDaysApp.Views.SpeakerPage"
              Title="{Binding Title}">
 
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="{Binding Title}" />
-    </StackLayout>
+    <ListView ItemsSource="{Binding Speakers}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell TextColor="{StaticResource MainTextColor}"  Text="{Binding FullName}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>
