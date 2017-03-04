@@ -16,14 +16,14 @@ namespace MDDevDaysApp.ViewModels
         public SpeakerPageViewModel(ISpeakers speakers)
         {
             _speakers = speakers;
-            Speakers = new ObservableCollection<Speaker>();
+            SpeakersGroups = new ObservableCollection<SpeakersGroup>();
             Title = "Sprecher";
 
             PropertyChanged += OnPropertyChanged;
         }
 
         public string Title { get; }
-        public ObservableCollection<Speaker> Speakers { get; }
+        public ObservableCollection<SpeakersGroup> SpeakersGroups { get; set; }
 
         public bool IsActive
         {
@@ -41,11 +41,21 @@ namespace MDDevDaysApp.ViewModels
 
         private async void ActivateAsync()
         {
-            if (Speakers.Any())
+            if (SpeakersGroups.Any())
                 return;
 
-            foreach (var speaker in await _speakers.AllAsync())
-                Speakers.Add(speaker);
+            var allSpeakers = await _speakers.AllAsync();
+            var speakersGrouping = allSpeakers.GroupBy(s => s.FirstName.Substring(0, 1));
+            foreach (var speakers in speakersGrouping)
+            {
+                var speakersGroup = new SpeakersGroup {Title = speakers.Key};
+                foreach (var speaker in speakers)
+                {
+                    speakersGroup.Add(speaker);
+                }
+
+                SpeakersGroups.Add(speakersGroup);
+            }
         }
     }
 }
