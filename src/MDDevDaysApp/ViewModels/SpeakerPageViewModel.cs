@@ -36,15 +36,15 @@ namespace MDDevDaysApp.ViewModels
         private void OnPropertyChanged(object sender, PropertyChangedEventArgs propertyChangedEventArgs)
         {
             if (propertyChangedEventArgs.PropertyName == nameof(IsActive) && IsActive)
-                Activate();
+                ActivateAsync();
         }
 
-        private void Activate()
+        private async void ActivateAsync()
         {
             if (Speakers.Any())
                 return;
 
-            foreach (var speaker in _speakers.All())
+            foreach (var speaker in await _speakers.AllAsync())
                 Speakers.Add(speaker);
         }
     }

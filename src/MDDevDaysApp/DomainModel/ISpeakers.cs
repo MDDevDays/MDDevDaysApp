@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace MDDevDaysApp.DomainModel
 {
     public interface ISpeakers
     {
-        IEnumerable<Speaker> All();
+        Task<IEnumerable<Speaker>> AllAsync();
     }
 }
