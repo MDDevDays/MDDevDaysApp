@@ -44,6 +44,7 @@
     <Compile Include="ViewModels\MainTabbedPageViewModel.cs" />
     <Compile Include="ViewModels\ProgramPageViewModel.cs" />
     <Compile Include="ViewModels\SpeakerPageViewModel.cs" />
+    <Compile Include="ViewModels\SpeakersGroup.cs" />
     <Compile Include="Views\ProgramPage.xaml.cs">
       <DependentUpon>ProgramPage.xaml</DependentUpon>
     </Compile>

@@ -7,10 +7,13 @@
              x:Class="MDDevDaysApp.Views.SpeakerPage"
              Title="{Binding Title}">
 
-    <ListView ItemsSource="{Binding Speakers}">
+    <ListView ItemsSource="{Binding SpeakersGroups}"
+              IsGroupingEnabled="True"
+              GroupShortNameBinding="{Binding Title}"
+              GroupDisplayBinding="{Binding Title}">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell TextColor="{StaticResource MainTextColor}"  Text="{Binding FullName}" />
+                <TextCell TextColor="{StaticResource MainTextColor}" Text="{Binding FullName}" />
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
