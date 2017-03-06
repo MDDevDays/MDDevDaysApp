@@ -100,6 +100,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MDDevDaysApp\MDDevDaysApp.csproj">
       <Name>MDDevDaysApp</Name>
+      <Project>{8E1FCF8D-7C7A-4903-B0E2-274FCE9E290C}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +120,15 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\Info.png" />
+    <BundleResource Include="Resources\Speaker.png" />
+    <BundleResource Include="Resources\Program.png" />
+    <BundleResource Include="Resources\Program%402x.png" />
+    <BundleResource Include="Resources\Program%403x.png" />
+    <BundleResource Include="Resources\Info%402x.png" />
+    <BundleResource Include="Resources\Info%403x.png" />
+    <BundleResource Include="Resources\Speaker%402x.png" />
+    <BundleResource Include="Resources\Speaker%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Azure.Mobile, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
