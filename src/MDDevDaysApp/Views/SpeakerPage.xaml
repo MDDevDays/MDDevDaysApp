@@ -5,8 +5,11 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="MDDevDaysApp.Views.SpeakerPage"
-             Title="{Binding Title}"
-			 Icon="Speaker.png">
+             Title="{Binding Title}">
+	<ContentPage.Icon>
+		<OnPlatform x:TypeArguments="FileImageSource"
+					iOS="Speaker.png" />
+	</ContentPage.Icon>
 
     <ListView ItemsSource="{Binding SpeakersGroups}"
               IsGroupingEnabled="True"
