@@ -6,10 +6,10 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="MDDevDaysApp.Views.ProgramPage"
              Title="{Binding Title}">
-	<ContentPage.Icon>
-		<OnPlatform x:TypeArguments="FileImageSource"
-					iOS="Program.png" />
-	</ContentPage.Icon>
+    <ContentPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource"
+                    iOS="Program.png" />
+    </ContentPage.Icon>
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Label Text="{Binding Title}" />
