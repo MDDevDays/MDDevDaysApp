@@ -2,192 +2,248 @@
   {
     "Id": "8927f85b-ce41-4c34-a022-030b77da57b5",
     "FirstName": "Alexander",
-    "LastName": "Schmidt"
+    "LastName": "Schmidt",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/AlexanderSchmidt.png"
   },
   {
     "Id": "f2087fb9-3448-4c41-ab00-6732e6c66606",
     "FirstName": "Alrik",
-    "LastName": "Schnapke"
+    "LastName": "Schnapke",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/AlrikSchnapke.png"
   },
   {
     "Id": "5779068e-eef5-4d8b-9020-2fee08b37650",
     "FirstName": "André",
-    "LastName": "Krämer"
+    "LastName": "Krämer",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/AndreKraemer.png"
   },
   {
     "Id": "c56c0e8d-9d98-48ef-856a-d616c12251b4",
     "FirstName": "Bernd",
-    "LastName": "Gronostay"
+    "LastName": "Gronostay",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/BerndGronostay.png"
   },
   {
     "Id": "4e651a4a-5031-44aa-978a-93a090a5ffdb",
     "FirstName": "Constantin “Kostja”",
-    "LastName": "Klein"
+    "LastName": "Klein",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/ConstantinKlein.png"
   },
   {
     "Id": "b6c02676-c4c3-4882-99ff-59671d4692ef",
     "FirstName": "Daniel",
-    "LastName": "Fisher"
+    "LastName": "Fisher",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/DanielFisher.png"
   },
   {
     "Id": "1fefb688-5d2f-4978-9ed5-9bf7ed24fed1",
     "FirstName": "David",
-    "LastName": "Delabassee"
+    "LastName": "Delabassee",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/DavidDelabassee.png"
   },
   {
     "Id": "3b87d148-be9a-4b15-9a14-fb5025895b29",
     "FirstName": "Don",
-    "LastName": "Wibier"
+    "LastName": "Wibier",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/DonWibier.png"
   },
   {
     "Id": "86a583ee-96dd-4b8d-bcfa-717a5089d158",
     "FirstName": "Falko",
-    "LastName": "Löbner"
+    "LastName": "Löbner",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/FalkoLoebner.png"
   },
   {
     "Id": "ed185663-078f-4111-8a36-a4947af9c35d",
     "FirstName": "Florian",
-    "LastName": "Marquardt"
+    "LastName": "Marquardt",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/FlorianMarquardt.png"
   },
   {
     "Id": "f79e5c89-818c-4bfe-a672-3152780a3569",
     "FirstName": "Frank",
-    "LastName": "Geisler"
+    "LastName": "Geisler",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/FrankGeisler.png"
   },
   {
     "Id": "8ac02167-fe49-4dcd-a5a1-37766e7d345d",
     "FirstName": "Frank",
-    "LastName": "Ortmeier"
+    "LastName": "Ortmeier",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/FrankOrtmeier.png"
   },
   {
     "Id": "d85b4992-f915-47b1-987a-a016989ff316",
     "FirstName": "Gregor",
-    "LastName": "Biswanger"
+    "LastName": "Biswanger",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/GregorBiswanger.png"
   },
   {
     "Id": "4f0cec28-0cfa-4f4f-a7eb-1595d2703517",
     "FirstName": "Hendrik",
-    "LastName": "Pilz"
+    "LastName": "Pilz",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/HendrikPilz.png"
   },
   {
     "Id": "e08877ce-26bb-4894-b067-0592d2f8c0ac",
     "FirstName": "Holger",
-    "LastName": "Schwichtenberg"
+    "LastName": "Schwichtenberg",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/HolgerSchwichtenberg.png"
   },
   {
     "Id": "12d8748c-b912-4221-8d3c-56d363ae6c41",
     "FirstName": "Jan",
-    "LastName": "Fellien"
+    "LastName": "Fellien",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/JanFellien.png"
   },
   {
     "Id": "012b9edd-d139-47b9-a5ac-428692a364c7",
     "FirstName": "Julia",
-    "LastName": "Jauß"
+    "LastName": "Jauß",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/JuliaJauss.png"
   },
   {
     "Id": "87ee9161-d3e1-421c-9880-a57034cb5c93",
     "FirstName": "Julian",
-    "LastName": "Steiner"
+    "LastName": "Steiner",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/JulianSteiner.png"
   },
   {
     "Id": "cb993566-f629-4cde-b352-1cceaf9dc7cb",
     "FirstName": "Kareem",
-    "LastName": "Amin"
+    "LastName": "Amin",
+    "ImageUri": ""
   },
   {
     "Id": "67275031-015c-4fa5-8366-1d231b7718fc",
     "FirstName": "Klemens",
-    "LastName": "Gutmann"
+    "LastName": "Gutmann",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/KlemensGutmann.png"
   },
   {
     "Id": "c1bc414b-ce31-49ab-818a-525cf14e56a8",
     "FirstName": "Marco",
-    "LastName": "Heimeshoff"
+    "LastName": "Heimeshoff",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MarcoHeimeshoff.png"
+  },
+  {
+    "Id": "4a43b927-abb8-41a5-ab85-a102f62a7839",
+    "FirstName": "Marco",
+    "LastName": "Tullner",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MarcoTullner.png"
   },
   {
     "Id": "cf1cccfe-c801-4f10-88c3-5b140055141d",
     "FirstName": "Marius",
-    "LastName": "Schulz"
+    "LastName": "Schulz",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MariusSchulz.png"
   },
   {
     "Id": "05f13cd9-2def-49f7-b40e-88f337002b97",
     "FirstName": "Markus",
-    "LastName": "Winkler"
+    "LastName": "Winkler",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MarkusWinkler.png"
   },
   {
     "Id": "9b83895d-e34f-4926-9777-b68185f7e190",
     "FirstName": "Michael",
-    "LastName": "Blume"
+    "LastName": "Blume",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MichaelBlume.png"
   },
   {
     "Id": "43a93765-e18f-49d0-a011-6fbdddce04bd",
     "FirstName": "Michael",
-    "LastName": "Willers"
+    "LastName": "Willers",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MichaelWillers.png"
   },
   {
     "Id": "4cc19590-d88d-43f3-bb05-f6ceb70e7da7",
     "FirstName": "Neno",
-    "LastName": "Loje"
+    "LastName": "Loje",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/NenoLoje.png"
   },
   {
     "Id": "6223c0f7-f83e-4699-bc1b-e305d84f4c8b",
     "FirstName": "Nicoleta",
-    "LastName": "Mihali"
+    "LastName": "Mihali",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/NicoletaMihali.png"
   },
   {
     "Id": "7b3b4483-bd29-4a32-9ebb-a53ace25b735",
     "FirstName": "Olga",
-    "LastName": "Sheshukova"
+    "LastName": "Sheshukova",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/OlgaSheshukova.png"
   },
   {
     "Id": "71193286-9e41-46da-80c5-cf3c0ecd5a7d",
     "FirstName": "Rainer",
-    "LastName": "Stropek"
+    "LastName": "Stropek",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/RainerStropek.png"
   },
   {
     "Id": "884c09d8-794f-4204-8af8-84c73c4f30cf",
     "FirstName": "Ralf",
-    "LastName": "Helbing"
+    "LastName": "Helbing",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/RalfHelbing.png"
   },
   {
     "Id": "018d9b96-adb1-49c8-af58-26e93d20db58",
     "FirstName": "Reginald",
-    "LastName": "Rink"
+    "LastName": "Rink",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/ReginaldRink.png"
+  },
+  {
+    "Id": "74c01351-e3ed-41dc-8880-5ef41a3c20fb",
+    "FirstName": "Reiner",
+    "LastName": "Schlosser",
+    "ImageUri": ""
   },
   {
     "Id": "cf0824ec-5673-4121-abb5-0c6fcc68308d",
     "FirstName": "Robin",
-    "LastName": "Sedlaczek"
+    "LastName": "Sedlaczek",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/RobinSedlaczek.png"
   },
   {
     "Id": "5cd170d4-0608-4e9b-8bb3-72194fdf1cec",
     "FirstName": "Sabine",
-    "LastName": "Wojcieszak"
+    "LastName": "Wojcieszak",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/SabineWojcieszak.png"
   },
   {
     "Id": "ee60a04a-2d5c-4261-b5ea-b4e766ce212d",
     "FirstName": "Sebastian",
-    "LastName": "Seidel"
+    "LastName": "Seidel",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/SebastianSeidel.png"
   },
   {
     "Id": "a566eaf5-6eaf-43e9-910e-7f6baafc8942",
     "FirstName": "Thomas",
-    "LastName": "Schissler"
+    "LastName": "Schissler",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/ThomasSchissler.png"
+  },
+  {
+    "Id": "27f81dc3-4eed-4d71-9492-1504b308651a",
+    "FirstName": "Thomas",
+    "LastName": "Wünsch",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/ThomasWuensch.png"
   },
   {
     "Id": "533d0054-2e97-49a3-9c68-afafba6e88ef",
     "FirstName": "Tobias",
-    "LastName": "Meier"
+    "LastName": "Meier",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/TobiasMeier.png"
   },
 
   {
     "Id": "9cc515e5-1aa9-43dd-9c24-3ec942346523",
     "FirstName": "Torsten",
-    "LastName": "Weber"
+    "LastName": "Weber",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/TorstenWeber.png"
   },
   {
     "Id": "31a772b6-5537-49a7-bb2f-0dcad494840d",
     "FirstName": "Ulf",
-    "LastName": "Mewe"
+    "LastName": "Mewe",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/UlfMewe.png"
   }
 ]

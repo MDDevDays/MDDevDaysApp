@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Converters\LocalImagePathConverter.cs" />
     <Compile Include="DomainModel\Speaker.cs" />
     <Compile Include="DomainModel\ISpeakers.cs" />
     <Compile Include="Infrastructure\Speakers.cs" />
@@ -145,7 +146,49 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\AlexanderSchmidt.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\AlrikSchnapke.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\AndreKraemer.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\BerndGronostay.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ConstantinKlein.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\DanielFisher.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\DavidDelabassee.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\DonWibier.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\FalkoLoebner.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\FlorianMarquardt.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\FrankGeisler.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\FrankOrtmeier.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\GregorBiswanger.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\HendrikPilz.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\HolgerSchwichtenberg.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JanFellien.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JuliaJauss.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JulianSteiner.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\KlemensGutmann.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MarcoHeimeshoff.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MarcoTullner.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MariusSchulz.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MarkusWinkler.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MichaelBlume.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MichaelWillers.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\NenoLoje.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\NicoletaMihali.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\OlgaSheshukova.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RainerStropek.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RalfHelbing.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ReginaldRink.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RobinSedlaczek.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\SabineWojcieszak.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\SebastianSeidel.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ThomasSchissler.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\TobiasMeier.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\TorstenWeber.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\UlfMewe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ThomasWuensch.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
