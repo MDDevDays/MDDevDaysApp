@@ -2,12 +2,14 @@
 <prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                         xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+                        xmlns:converters="clr-namespace:MDDevDaysApp.Converters;assembly=MDDevDaysApp"
                         x:Class="MDDevDaysApp.App">
 
   <Application.Resources>
     <ResourceDictionary>
       <Color x:Key="MainColor">#81d742</Color>
       <Color x:Key="MainTextColor">Black</Color>
+      <converters:LocalImagePathConverter x:Key="LocalImagePathConverter" />
     </ResourceDictionary>
   </Application.Resources>
   
