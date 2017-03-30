@@ -111,7 +111,7 @@
     "Id": "cb993566-f629-4cde-b352-1cceaf9dc7cb",
     "FirstName": "Kareem",
     "LastName": "Amin",
-    "ImageUri": ""
+    "ImageUri": "Infrastructure/Data/Images/Speakers/KareemAmin.png"
   },
   {
     "Id": "67275031-015c-4fa5-8366-1d231b7718fc",
@@ -195,7 +195,7 @@
     "Id": "74c01351-e3ed-41dc-8880-5ef41a3c20fb",
     "FirstName": "Reiner",
     "LastName": "Schlosser",
-    "ImageUri": ""
+    "ImageUri": "Infrastructure/Data/Images/Speakers/ReinerSchlosser.png"
   },
   {
     "Id": "cf0824ec-5673-4121-abb5-0c6fcc68308d",
