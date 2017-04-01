@@ -8,12 +8,12 @@ using Prism.Mvvm;
 
 namespace MDDevDaysApp.ViewModels
 {
-    public class SpeakerPageViewModel : BindableBase, IActiveAware
+    public class SpeakersPageViewModel : BindableBase, IActiveAware
     {
         private readonly ISpeakers _speakers;
         private bool _isActive;
 
-        public SpeakerPageViewModel(ISpeakers speakers)
+        public SpeakersPageViewModel(ISpeakers speakers)
         {
             _speakers = speakers;
             SpeakersGroups = new ObservableCollection<SpeakersGroup>();

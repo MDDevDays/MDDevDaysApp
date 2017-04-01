@@ -44,13 +44,13 @@
     <Compile Include="ViewModels\MainNavigationPageViewModel.cs" />
     <Compile Include="ViewModels\MainTabbedPageViewModel.cs" />
     <Compile Include="ViewModels\ProgramPageViewModel.cs" />
-    <Compile Include="ViewModels\SpeakerPageViewModel.cs" />
+    <Compile Include="ViewModels\SpeakersPageViewModel.cs" />
     <Compile Include="ViewModels\SpeakersGroup.cs" />
     <Compile Include="Views\ProgramPage.xaml.cs">
       <DependentUpon>ProgramPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\SpeakerPage.xaml.cs">
-      <DependentUpon>SpeakerPage.xaml</DependentUpon>
+    <Compile Include="Views\SpeakersPage.xaml.cs">
+      <DependentUpon>SpeakersPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -131,7 +131,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\SpeakerPage.xaml">
+    <EmbeddedResource Include="Views\SpeakersPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
