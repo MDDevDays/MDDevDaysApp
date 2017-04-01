@@ -55,6 +55,7 @@
   },
   {
     "Id": "ed185663-078f-4111-8a36-a4947af9c35d",
+    "AcademicTitle": "Dr.",
     "FirstName": "Florian",
     "LastName": "Marquardt",
     "ImageUri": "Infrastructure/Data/Images/Speakers/FlorianMarquardt.png"
@@ -85,6 +86,7 @@
   },
   {
     "Id": "e08877ce-26bb-4894-b067-0592d2f8c0ac",
+    "AcademicTitle": "Dr.",
     "FirstName": "Holger",
     "LastName": "Schwichtenberg",
     "ImageUri": "Infrastructure/Data/Images/Speakers/HolgerSchwichtenberg.png"
@@ -181,6 +183,7 @@
   },
   {
     "Id": "884c09d8-794f-4204-8af8-84c73c4f30cf",
+    "AcademicTitle": "Dr.",
     "FirstName": "Ralf",
     "LastName": "Helbing",
     "ImageUri": "Infrastructure/Data/Images/Speakers/RalfHelbing.png"
