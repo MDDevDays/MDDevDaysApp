@@ -6,4 +6,27 @@
                 x:Class="MDDevDaysApp.Views.SpeakerPage"
                 Title="Sprecher">
   
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition>
+                <RowDefinition.Height>
+                    <OnPlatform x:TypeArguments="GridLength" iOS="100" Android="100" WinPhone="130" />
+                </RowDefinition.Height>
+            </RowDefinition>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+                <ColumnDefinition.Width>
+                    <OnPlatform x:TypeArguments="GridLength" iOS="100" Android="100" WinPhone="130" />
+                </ColumnDefinition.Width>
+            </ColumnDefinition>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Grid.Column="0" Margin="8" Source="{Binding Speaker.ImageUri, Converter={StaticResource LocalImagePathConverter}}" />
+        <Label Grid.Row="0" Grid.Column="1" Margin="8" FontSize="Large" TextColor="{StaticResource MainTextColor}" Text="{Binding Speaker.FullName}" />
+
+    </Grid>
 </ContentPage>
