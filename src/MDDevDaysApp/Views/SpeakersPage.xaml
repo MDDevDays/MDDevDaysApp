@@ -3,6 +3,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="MDDevDaysApp.Views.SpeakersPage"
              Title="{Binding Title}">
@@ -18,6 +19,11 @@
         <ListView.RowHeight>
             <OnPlatform x:TypeArguments="x:Int32" iOS="80" Android="80" WinPhone="88" />
         </ListView.RowHeight>
+        <ListView.Behaviors>
+            <behaviors:EventToCommandBehavior EventName="ItemTapped"
+                                              Command="{Binding ShowSpeaker}"
+                                              EventArgsParameterPath="Item"/>
+        </ListView.Behaviors>
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>

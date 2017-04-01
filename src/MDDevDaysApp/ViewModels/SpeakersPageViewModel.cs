@@ -2,28 +2,35 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Windows.Input;
 using MDDevDaysApp.DomainModel;
 using Prism;
+using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Navigation;
 
 namespace MDDevDaysApp.ViewModels
 {
     public class SpeakersPageViewModel : BindableBase, IActiveAware
     {
         private readonly ISpeakers _speakers;
+        private readonly INavigationService _navigationService;
         private bool _isActive;
 
-        public SpeakersPageViewModel(ISpeakers speakers)
+        public SpeakersPageViewModel(ISpeakers speakers, INavigationService navigationService)
         {
             _speakers = speakers;
+            _navigationService = navigationService;
             SpeakersGroups = new ObservableCollection<SpeakersGroup>();
             Title = "Sprecher";
+            ShowSpeaker = new DelegateCommand<Speaker>(ShowSpeakerExecute);
 
             PropertyChanged += OnPropertyChanged;
         }
 
         public string Title { get; }
         public ObservableCollection<SpeakersGroup> SpeakersGroups { get; set; }
+        public ICommand ShowSpeaker { get; private set; }
 
         public bool IsActive
         {
@@ -56,6 +63,11 @@ namespace MDDevDaysApp.ViewModels
 
                 SpeakersGroups.Add(speakersGroup);
             }
+        }
+
+        private void ShowSpeakerExecute(Speaker speaker)
+        {
+            _navigationService.NavigateAsync("SpeakerPage", new NavigationParameters { { "speaker", speaker } }, false);
         }
     }
 }
