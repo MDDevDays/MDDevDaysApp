@@ -28,6 +28,8 @@
         <Image Grid.Row="0" Grid.Column="0" Margin="8" Source="{Binding Speaker.ImageUri, Converter={StaticResource LocalImagePathConverter}}" />
         <Label Grid.Row="0" Grid.Column="1" Margin="8" FontSize="Large" TextColor="{StaticResource MainTextColor}" Text="{Binding Speaker.FullName}" />
 
-        <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Speaker.Bio}" />
+        <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Label Text="{Binding Speaker.Bio}" />
+        </ScrollView>
     </Grid>
 </ContentPage>
