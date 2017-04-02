@@ -8,11 +8,18 @@ namespace MDDevDaysApp.ViewModels
     {
         private Speaker _speaker;
 
+        public SpeakerPageViewModel()
+        {
+            Title = "Sprecher";
+        }
+
         public Speaker Speaker
         {
             get { return _speaker; }
             set { SetProperty(ref _speaker, value); }
         }
+
+        public string Title { get; }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {

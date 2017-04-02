@@ -4,8 +4,8 @@
                 xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
                 prism:ViewModelLocator.AutowireViewModel="True"
                 x:Class="MDDevDaysApp.Views.SpeakerPage"
-                Title="Sprecher">
-  
+                Title="{Binding Title}">
+
     <Grid Margin="15">
         <Grid.RowDefinitions>
             <RowDefinition>
