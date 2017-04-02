@@ -19,5 +19,9 @@ namespace MDDevDaysApp.ViewModels
         public void OnNavigatedTo(NavigationParameters parameters)
         {
         }
+
+        public void OnNavigatingTo(NavigationParameters parameters)
+        {
+        }
     }
 }

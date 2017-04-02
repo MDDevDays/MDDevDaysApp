@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -6,6 +6,11 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="MDDevDaysApp.Views.InfoPage"
              Title="{Binding Title}">
+    <ContentPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource"
+                    iOS="Info.png" />
+    </ContentPage.Icon>
+
 
     <StackLayout HorizontalOptions="Center" Margin="0,10,0,0">
         <Image Source="{Binding BannerSource}" />

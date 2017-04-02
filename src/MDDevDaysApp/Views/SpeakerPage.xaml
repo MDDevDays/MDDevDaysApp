@@ -1,13 +1,35 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="MDDevDaysApp.Views.SpeakerPage"
-             Title="{Binding Title}">
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                prism:ViewModelLocator.AutowireViewModel="True"
+                x:Class="MDDevDaysApp.Views.SpeakerPage"
+                Title="{Binding Title}">
 
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="{Binding Title}" />
-    </StackLayout>
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition>
+                <RowDefinition.Height>
+                    <OnPlatform x:TypeArguments="GridLength" iOS="100" Android="100" WinPhone="130" />
+                </RowDefinition.Height>
+            </RowDefinition>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+                <ColumnDefinition.Width>
+                    <OnPlatform x:TypeArguments="GridLength" iOS="100" Android="100" WinPhone="130" />
+                </ColumnDefinition.Width>
+            </ColumnDefinition>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Grid.Column="0" Margin="8" Source="{Binding Speaker.ImageUri, Converter={StaticResource LocalImagePathConverter}}" />
+        <Label Grid.Row="0" Grid.Column="1" Margin="8" FontSize="Large" TextColor="{StaticResource MainTextColor}" Text="{Binding Speaker.FullName}" />
+
+        <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Label Text="{Binding Speaker.Bio}" />
+        </ScrollView>
+    </Grid>
 </ContentPage>

@@ -35,17 +35,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Converters\LocalImagePathConverter.cs" />
+    <Compile Include="DomainModel\Speaker.cs" />
+    <Compile Include="DomainModel\ISpeakers.cs" />
+    <Compile Include="Infrastructure\Speakers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\InfoPageViewModel.cs" />
     <Compile Include="ViewModels\MainNavigationPageViewModel.cs" />
     <Compile Include="ViewModels\MainTabbedPageViewModel.cs" />
     <Compile Include="ViewModels\ProgramPageViewModel.cs" />
     <Compile Include="ViewModels\SpeakerPageViewModel.cs" />
+    <Compile Include="ViewModels\SpeakersPageViewModel.cs" />
+    <Compile Include="ViewModels\SpeakersGroup.cs" />
     <Compile Include="Views\ProgramPage.xaml.cs">
       <DependentUpon>ProgramPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SpeakerPage.xaml.cs">
       <DependentUpon>SpeakerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SpeakersPage.xaml.cs">
+      <DependentUpon>SpeakersPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -81,17 +90,17 @@
       <HintPath>..\..\packages\Unity.4.0.1\lib\portable-net45+wp80+win8+wpa81+MonoAndroid10+MonoTouch10\Microsoft.Practices.Unity.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Prism, Version=6.2.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Prism.Core.6.2.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.1\lib\portable-net45+win8+wpa81+wp8\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Prism.Forms, Version=6.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Prism.Forms.6.2.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.Forms.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Prism, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Prism.Core.6.3.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.dll</HintPath>
     </Reference>
-    <Reference Include="Prism.Unity.Forms, Version=6.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Prism.Unity.Forms.6.2.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.Unity.Forms.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Prism.Forms, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Prism.Forms.6.3.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Unity.Forms, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Prism.Unity.Forms.6.3.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.Unity.Forms.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.3.193\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
@@ -107,6 +116,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Infrastructure\Data\speakers.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -125,13 +135,66 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\SpeakerPage.xaml">
+    <EmbeddedResource Include="Views\SpeakersPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\ProgramPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\AlexanderSchmidt.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\AlrikSchnapke.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\AndreKraemer.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\BerndGronostay.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ConstantinKlein.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\DanielFisher.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\DavidDelabassee.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\DonWibier.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\FalkoLoebner.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\FlorianMarquardt.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\FrankGeisler.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\FrankOrtmeier.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\GregorBiswanger.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\HendrikPilz.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\HolgerSchwichtenberg.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JanFellien.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JuliaJauss.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JulianSteiner.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\KlemensGutmann.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MarcoHeimeshoff.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MarcoTullner.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MariusSchulz.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MarkusWinkler.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MichaelBlume.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MichaelWillers.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\NenoLoje.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\NicoletaMihali.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\OlgaSheshukova.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RainerStropek.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RalfHelbing.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ReginaldRink.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RobinSedlaczek.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\SabineWojcieszak.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\SebastianSeidel.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ThomasSchissler.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\TobiasMeier.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\TorstenWeber.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\UlfMewe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ThomasWuensch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\KareemAmin.png" />
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ReinerSchlosser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SpeakerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
