@@ -1,61 +1,38 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using MDDevDaysApp.DomainModel;
-using Prism;
+﻿using MDDevDaysApp.DomainModel;
 using Prism.Mvvm;
+using Prism.Navigation;
 
 namespace MDDevDaysApp.ViewModels
 {
-    public class SpeakerPageViewModel : BindableBase, IActiveAware
+    public class SpeakerPageViewModel : BindableBase, INavigationAware
     {
-        private readonly ISpeakers _speakers;
-        private bool _isActive;
+        private Speaker _speaker;
 
-        public SpeakerPageViewModel(ISpeakers speakers)
+        public SpeakerPageViewModel()
         {
-            _speakers = speakers;
-            SpeakersGroups = new ObservableCollection<SpeakersGroup>();
             Title = "Sprecher";
+        }
 
-            PropertyChanged += OnPropertyChanged;
+        public Speaker Speaker
+        {
+            get { return _speaker; }
+            set { SetProperty(ref _speaker, value); }
         }
 
         public string Title { get; }
-        public ObservableCollection<SpeakersGroup> SpeakersGroups { get; set; }
 
-        public bool IsActive
+        public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            get { return _isActive; }
-            set { SetProperty(ref _isActive, value); }
         }
 
-        public event EventHandler IsActiveChanged;
-
-        private void OnPropertyChanged(object sender, PropertyChangedEventArgs propertyChangedEventArgs)
+        public void OnNavigatedTo(NavigationParameters parameters)
         {
-            if (propertyChangedEventArgs.PropertyName == nameof(IsActive) && IsActive)
-                ActivateAsync();
+            if (parameters.ContainsKey("speaker"))
+                Speaker = (Speaker) parameters["speaker"];
         }
 
-        private async void ActivateAsync()
+        public void OnNavigatingTo(NavigationParameters parameters)
         {
-            if (SpeakersGroups.Any())
-                return;
-
-            var allSpeakers = await _speakers.AllAsync();
-            var speakersGrouping = allSpeakers.GroupBy(s => s.FirstName.Substring(0, 1));
-            foreach (var speakers in speakersGrouping)
-            {
-                var speakersGroup = new SpeakersGroup {Title = speakers.Key};
-                foreach (var speaker in speakers)
-                {
-                    speakersGroup.Add(speaker);
-                }
-
-                SpeakersGroups.Add(speakersGroup);
-            }
         }
     }
 }

@@ -3,250 +3,291 @@
     "Id": "8927f85b-ce41-4c34-a022-030b77da57b5",
     "FirstName": "Alexander",
     "LastName": "Schmidt",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/AlexanderSchmidt.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/AlexanderSchmidt.png",
+    "Bio": "Alexander Schmidt arbeitet seit 20 Jahren im Bereich der Entwicklung von Anwendungen im Microsoft-Umfeld. Als Berater und Trainer hat er in vielen Kundensituationen diverse Lösungen entwickelt. Derzeit kümmert er sich in seiner Rolle als Technical Lead für die Firma DEVDEER vor allem um Projekte im Umfeld von Microsoft Azure. Mit seinem Team deckt er aber auch Technologie-Bereiche, wie Xamarin, Visual Studio Team Services und ASP.NET ab."
   },
   {
     "Id": "f2087fb9-3448-4c41-ab00-6732e6c66606",
     "FirstName": "Alrik",
     "LastName": "Schnapke",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/AlrikSchnapke.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/AlrikSchnapke.png",
+    "Bio": "Alrik Schnapke hörte das Wort „Scrum“, als Teil der Softwareentwicklung zum ersten Mal während des Studiums und war begeistert. Im Laufe der Jahre lernte er als Entwickler, ProductOwner sowie auch als ScrumMaster die verschiedenen Pattern zur  „Scrumifizierung“ kennen, schätzen und lieben.\n\nAls Softwareentwickler und „Scrumianer“ arbeitet er an der Umsetzung theoretischer Standardkonzepte sowie Ideen bis zu einem hocheffizienten Rollout nutzbarer Unternehmenssoftware.\n\nAlrik interessiert sich sehr stark für die verschiedenen Prozesse der Softwareentwicklung – von der Idee bis hin zum „Endprodukt“. Aktuell forciert er die Softwareentwicklung als ProductOwner und Entwickler bei der Shopgate GmbH als „Professionell Scrum Master“ (PSM 1 @ Scrum.org).\n\nPrivat trinkt er gern agil „Scotch“ und spielt Planungspoker mit seinem Sohn."
   },
   {
     "Id": "5779068e-eef5-4d8b-9020-2fee08b37650",
     "FirstName": "André",
     "LastName": "Krämer",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/AndreKraemer.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/AndreKraemer.png",
+    "Bio": "André Krämer ist selbstständiger Softwarearchitekt, Entwickler, Trainer und Berater und Partner im www.IT-Visions.de-Expertennetzwerk. Seine Schwerpunkte liegen in den Bereichen Webentwicklung mit ASP.NET und JavaScript, App-Entwicklung mit Xamarin und Cordova, Dokumentengenerierung und Reporting mit TX Text Control sowie der Analyse von Memory Leaks und Performanceproblemen. Er ist regelmäßiger Autor für video2brain, wo er bereits mehr als zwanzig Videotrainings veröffentlicht hat. Außerdem ist er TX Text Control MVP, Infragistics MVP und Microsoft MVP."
   },
   {
     "Id": "c56c0e8d-9d98-48ef-856a-d616c12251b4",
     "FirstName": "Bernd",
     "LastName": "Gronostay",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/BerndGronostay.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/BerndGronostay.png",
+    "Bio": "Bernd Gronostay zog es nach dem Studium zur Telekommunikation, wo er auf die unterschiedlichsten Software-Systeme traf. Von Embedded-Devices bis zu umfassenden Server-Systemen war alles dabei, und so führte ihn der Weg zu den Architektur- und Implementierungs-Details völlig unterschiedlicher Ausprägung, und von C und C++ über HTML und JavaScript zu C# und Java (und immer wieder zurück). Er ist als IT Consultant bei der BROCKHAUS AG tätig."
   },
   {
     "Id": "4e651a4a-5031-44aa-978a-93a090a5ffdb",
     "FirstName": "Constantin “Kostja”",
     "LastName": "Klein",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/ConstantinKlein.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/ConstantinKlein.png",
+    "Bio": "Constantin Klein arbeitet bei der Freudenberg IT GmbH & Co. KG. Dort beschäftigt er sich mit der Entwicklung von Lösungen auf Basis der Microsoft Produkte und Technologie Plattformen. Sein besonderes Interesse gilt dabei der Gewinnung, Verarbeitung und Nutzung von Daten und Informationen. Er ist MCSD, MCITP Database Developer und MCPD Web + Enterprise Application Developer. Seit 2010 wurde er jährlich von Microsoft zum Most Valuable Professional (MVP) für die Microsoft Data Platform ernannt. Er engagiert sich zusätzlich im Vorstand des Just Community e.V. und des PASS Deutschland e.V.. Er leitet die .NET User Group Frankfurt."
   },
   {
     "Id": "b6c02676-c4c3-4882-99ff-59671d4692ef",
     "FirstName": "Daniel",
     "LastName": "Fisher",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/DanielFisher.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/DanielFisher.png",
+    "Bio": "Anfang der Neunziger Computer geschraubt und Netzwerke konfiguriert. Der Drang nach Automatisierung führte an Batching und Scripting vorbei. Auf der anderen Seite des Grabens angekommen ist seitdem das HTTP-Protokoll ständiger Begleiter. Die Reise begann mit JavaScript, führte über Perl, Php, ASP mit Visual Basic 5 und JScript bis hin zu C++ zu Java. Ende der Neunziger .NET, zwischendurch mal Python, und jetzt wieder JavaScript. Er entwickelt, schult, trainiert, coached und spricht. Seine Themen: HTML5 & Web, Data Access & Performance, Scalable & Testable Designs, Distributed Systems & Services, Security & Trust."
   },
   {
     "Id": "1fefb688-5d2f-4978-9ed5-9bf7ed24fed1",
     "FirstName": "David",
     "LastName": "Delabassee",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/DavidDelabassee.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/DavidDelabassee.png",
+    "Bio": ""
   },
   {
     "Id": "3b87d148-be9a-4b15-9a14-fb5025895b29",
     "FirstName": "Don",
     "LastName": "Wibier",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/DonWibier.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/DonWibier.png",
+    "Bio": "Don Wibier has been programming for more years than he can count. At the age of 15, he built a ticketing and reservation system in Clipper for his father’s cinema, for which he and his friend were compensated with a brand new 386 PC! After studying electronics and IT, Don embarked on a career in development, working with some of the biggest companies in The Netherlands and developing multi-tier enterprise solutions. Seeing an exciting future with the internet, he started building Delphi-based ISAPI DLLs in combination with application servers and databases. Working with an internet startup, he architected one of the fastest online services for finding and booking airfares. Don then built one of the most user-friendly Content Management Systems available, which is even now powering hundreds of web and mobile implementations across the world.\n\nAs Technical Evangelist at DevExpress and Microsoft MVP, Don is eager to share his knowledge and experience with you!"
   },
   {
     "Id": "86a583ee-96dd-4b8d-bcfa-717a5089d158",
     "FirstName": "Falko",
     "LastName": "Löbner",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/FalkoLoebner.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/FalkoLoebner.png",
+    "Bio": "Nach dem Studium der Elektrotechnik übernahm Falko Löbner recht früh die Pionierarbeiten an high-performance Handelslösung zum Pricing, Quoting und Trading von Anleihen. Seither werden diese Lösungen von internationalen Investmentbanken erfolgreich eingesetzt und Falko betreut als Abteilungsleiter gemeinsam mit seinem Team die Entwicklung und Testung für die icubic AG aus Magdeburg heraus. Dabei befasst er sich regelmäßig mit Themen wie Thread-Pool, NUMA-Node-Problematik, Deadlock-Detections und typischen Bottlenecks."
   },
   {
     "Id": "ed185663-078f-4111-8a36-a4947af9c35d",
     "AcademicTitle": "Dr.",
     "FirstName": "Florian",
     "LastName": "Marquardt",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/FlorianMarquardt.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/FlorianMarquardt.png",
+    "Bio": "Dr. Florian Marquardt ist zur Zeit Leiter der Entwicklungsabteilung für Portale und Webdienste bei der regiocom GmbH in Magdeburg.\n\nWährend seines Studium der Computervisualistik war er zwischen 1999 und 2003 Organisator verschiedener großer LAN-Parties in Magdeburg und Umgebung und lernte dabei u.a. die Probleme von großen drahtgebunden Netzwerken unter hoher Last kennen.\n\nEs folgten Tätigkeiten beim Fraunhofer IFF mit Schwerpunkten in webbasierten Geoinformationssystemen und verteilter Simulation sowie als freiberuflicher IT-Berater und Entwickler für EU-Projekte des 6. Rahmenprogramms im Bereich des Emergency-Managements.\n\nIm Rahmen seiner anschließenden Promotion in Rostock waren serviceorientierte Architekturen und KI-Planung in smarten Umgebungen sein vorrangiges Forschungsgebiet.\n\nAnschließend baute er bei der regiocom eine serviceorientierte Systemlandschaft basierend auf einem gemeinsamen kanonischen Datenmodell auf. Ziel war u.a. die Etablierung von hochverfügbaren Portalanwendungen für Energiekunden. In diesem Umfeld geht die Entwicklung zur Zeit in Richtung von feingranularen APIs z.B. für Anwendungen auf mobilen Endgeräten.\n\nIm Ehrenamt ist Dr. Marquardt IHK-Prüfer für Fachinformatiker."
   },
   {
     "Id": "f79e5c89-818c-4bfe-a672-3152780a3569",
     "FirstName": "Frank",
     "LastName": "Geisler",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/FrankGeisler.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/FrankGeisler.png",
+    "Bio": "Frank Geisler ist geschäftsführender Gesellschafter der GDS Business Intelligence GmbH und beschäftigt sich in seinem Unternehmen mit dem Microsoft BI Stack und SharePoint Lösungen. Dabei legt er als MCSE – Business Intelligence und MCSE – Data Plattform sowohl Wert auf die Administration als auch die Entwicklung von BI Systemen und kennt den SQL-Server seit der Version 6.5 und SharePoint seit dem Projekt „Tahoe“. Frank hält des Öfteren Vorträge auf Konferenzen, an Universitären oder Usergroup-Treffen und schreibt regelmäßig Artikel für verschiedene deutsche Fachzeitschriften. Außerdem hat er schon einige Bücher veröffentlicht, unter anderem hat er ein grundlegendes Buch zum Thema „Datenbanken“ geschrieben und ist Mitautor der „SharePoint für Dummies“-Bücher. Er gehört zu den Gründungsmitgliedern der PASS Deutschland e.V. und ist zusammen mit Klaus Höltgen Chapter Leader der Regionalgruppe Ruhrgebiet. Für seine Community Arbeit ist Frank im Juli 2016 zum driiten Mal mit zum MVP Data Platform ernannt worden."
   },
   {
     "Id": "8ac02167-fe49-4dcd-a5a1-37766e7d345d",
     "FirstName": "Frank",
     "LastName": "Ortmeier",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/FrankOrtmeier.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/FrankOrtmeier.png",
+    "Bio": "Frank Ortmeier ist Professor an der Otto-von-Guericke-Universität für Software Engineering. Seine Forschungsschwerpunkte sind die Entwicklung hochzuverlässiger Systeme sowie die Anwendung neuer Entwurfsmethodiken und Programmierparadigmen für eingebettete Systeme. Speziell werden dabei Technologien in den Bereichen modell-getriebene Entwicklung, Clean Code, Requirements Traceability und automatische (Software-)Analyseverfahren weiter entwickelt.\n\nSeit 2016 ist er auch Geschäftsführer der XITASO Engineering GmbH. Die XITASO Engineering GmbH ist ein IT-Dienstleister der nach mordernsten Qualitätsstandards – angefangen von einem durchgängig agilen Mindset über automatische Werkzeuge zur Codeanalyse und Qualitätssicherung bis hin zu tool-gestützten Code Reviews ist Qualität unser Ziel sondern unsere Grundeinstellung."
   },
   {
     "Id": "d85b4992-f915-47b1-987a-a016989ff316",
     "FirstName": "Gregor",
     "LastName": "Biswanger",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/GregorBiswanger.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/GregorBiswanger.png",
+    "Bio": "Gregor Biswanger (Microsoft MVP, Intel Black Belt & Intel Software Innovator) ist freier Dozent, Berater, Trainer, Autor und Sprecher. Er berät große und mittelständische Unternehmen, Organisationen und Agenturen rund um die Themen zur Softwarearchitektur, Web- und Cross-Platform-Entwicklung mit JavaScript. Außerdem schreibt er online als freier Autor für heise-developer und bringt für Fachmagazine auch gerne Artikel aufs Blatt. Er ist international als Sprecher auf zahlreichen Konferenzen und Communities unterwegs."
   },
   {
     "Id": "4f0cec28-0cfa-4f4f-a7eb-1595d2703517",
     "FirstName": "Hendrik",
     "LastName": "Pilz",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/HendrikPilz.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/HendrikPilz.png",
+    "Bio": "Hendrik Pilz ist freier IT Security Trainer und Berater sowie Software-Entwickler. Getreu dem Motto „Sicherheit muss einfach sein“ verliert er bei aller Sicherheit die Usability von Software-Lösungen nicht aus den Augen und sucht stets nach einem akzeptablen Kompromiss."
   },
   {
     "Id": "e08877ce-26bb-4894-b067-0592d2f8c0ac",
     "AcademicTitle": "Dr.",
     "FirstName": "Holger",
     "LastName": "Schwichtenberg",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/HolgerSchwichtenberg.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/HolgerSchwichtenberg.png",
+    "Bio": "Dr. Holger Schwichtenberg (alias „DOTNET-DOKTOR“) ist Leiter des renommierten .NET-Expertennetzwerks  http://www.it-visions.de, das zahlreiche Unternehmen in Europa durch Beratung, Schulung, Coaching und Support unterstützt. Zudem ist er Entwicklungsleiter beim Softwareentwicklungsdienstleister 5Minds IT-Solutions GmbH & Co. KG.\n\nDr. Holger Schwichtenberg gehört durch seine Auftritte auf nationalen und internationalen Fachkonferenzen sowie zahlreiche Fachbücher für Addison-Wesley, Microsoft Press und den Hanser Verlag zu den bekanntesten .NET-Experten in Deutschland. Darüber hinaus ist er ständiger Mitarbeiter der Fachzeitschriften Windows Developer, dotnetpro und iX sowie bei heise.de. Von Microsoft ist er für sein .NET-Fachwissen ausgezeichnet als Microsoft Most Valuable Professional (MVP) für ASP.NET."
   },
   {
     "Id": "12d8748c-b912-4221-8d3c-56d363ae6c41",
     "FirstName": "Jan",
     "LastName": "Fellien",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/JanFellien.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/JanFellien.png",
+    "Bio": "BASIC, SYS, Modula 2, Pascal und dBase IV 1.5 waren die ersten Sprachen, mit denen ich in Berührung kam. Das ist nun schon mehr als 25 Jahre her. Seit dem hat sich vieles verändert. Nun wird mit C# und JavaScript entwickelt, hauptsächlich für Backendsysteme in der Cloud. Seit 2010 verfolge ich den Ansatz von CQRS in der Implementierung und DDD in der Modellierung von Software. Zusammen mit meinen Teams lerne ich auf die Domain Experten zu hören und deren Bedürfnisse zu erkennen. In Berlin bin ich in der Community tätig, organisiere Meetups und kleine Konferenzen. Ab und an schreibe ich Artikel oder Blog Posts. Doch meistens verbringe ich meine Zeit mit der Familie oder beim Lesen von Interessantem und Neuem."
   },
   {
     "Id": "012b9edd-d139-47b9-a5ac-428692a364c7",
     "FirstName": "Julia",
     "LastName": "Jauß",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/JuliaJauss.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/JuliaJauss.png",
+    "Bio": "Julia Jauß startete nach Ihrem Studium der Bioinformatik (2015) bei Microsoft zunächst als Consultant. Ihrem Interesse für Cloud geschuldet, zog es Sie jedoch schnell in die DX, wo Sie seitdem Technical Evangelist für Microsoft Azure ist. Seitdem war Sie Sprecherin auf diversen Konferenzen und Meetups, häufiger ist Sie jedoch auf Kundenprojekten unterwegs, insbesondere mit den Themen „Azure für Big Data“, IoT sowie Infrastruktur-Szenarien."
   },
   {
     "Id": "87ee9161-d3e1-421c-9880-a57034cb5c93",
     "FirstName": "Julian",
     "LastName": "Steiner",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/JulianSteiner.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/JulianSteiner.png",
+    "Bio": "Julian Steiner is a full-stack software developer by trade. Being a technological generalist, he has a solid academic background and has successfully delivered projects in a range of technologies. He is currently helping Progress/Telerik customers finding the best solutions, while spreading the good word on technologies that spark his interest. He has picked up mobile development recently and he has been using AngularJS in production ever since IE7 was still officially supported and 1.0 was still a Release Candidate. Julian is based out of Cologne, Germany."
   },
   {
     "Id": "cb993566-f629-4cde-b352-1cceaf9dc7cb",
     "FirstName": "Kareem",
     "LastName": "Amin",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/KareemAmin.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/KareemAmin.png",
+    "Bio": "Kareem Amin ist erfahrener Softwareentwickler und arbeitet bei der Sulzer GmbH als Experte für Business Intelligence und Big Data in der Automotive-Branche. In seiner Doktorarbeit beschäftigt sich Kareem mit Big Data Oriented Systems, insbesondere mit Automatic Building of Case Based Reasoning. Der gebürtige Ägypter hat bereits Projekte für namenhafte Unternehmen in Ägypten, Sudan, Vereinigte Arabische Emirate und Deutschland durchgeführt. Kareem Amin ist glücklich darüber, sein Hobby zum Beruf gemacht zu haben. In seiner Freizeit treibt er gerne Sport, besonders Boxen, reist gerne, aber genießt auch ruhige Stunden zu Hause, um einfach Mal zu relaxen."
   },
   {
     "Id": "67275031-015c-4fa5-8366-1d231b7718fc",
     "FirstName": "Klemens",
     "LastName": "Gutmann",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/KlemensGutmann.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/KlemensGutmann.png",
+    "Bio": "Klemens Gutmann kommt ursprünglich aus dem Schwarzwald, ist in Madrid zur Schule gegangen und studierte nach weiteren Stationen im Ausland an der Uni Karlsruhe Informatik. Nach seiner Tätigkeit am Fraunhofer Institut ISI (1988-1992), ebenfalls in Karlsruhe, kam er 1993 nach Magdeburg und gründete mit Joan Schlieker die Teleport Sachsen-Anhalt GmbH und ist bis heute Gesellschafter dieses Unternehmens. Seit 1996 leitet Gutmann, gemeinsam mit zwei Kompagnons, als geschäftsführender Gesellschafter die Geschicke der regiocom GmbH, einem führenden deutschen Akteur in der Energieabrechnung, IT-Dienstleistungen für EVU, Systemlösungen und Kundenbetreuung für EVU. In ehrenamtlicher Funktion wirkt Klemens Gutmann als Vorstandsvorsitzender des Bundesverbandes der Energiemarktdienstleister (BEMD). Er ist außerdem Arbeitgeberpräsident im Bundesland Sachsen-Anhalt, Landesvertreter des BDI und der BDA sowie Mitbegründer und Vorstand des „Cluster Informationstechnologie Mitteldeutschland“. Die Privatperson Gutmann lebt in Lebensgemeinschaft und hat drei Kinder. Er ist bekennender Weinliebhaber."
   },
   {
     "Id": "c1bc414b-ce31-49ab-818a-525cf14e56a8",
     "FirstName": "Marco",
     "LastName": "Heimeshoff",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/MarcoHeimeshoff.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MarcoHeimeshoff.png",
+    "Bio": "Marco Heimeshoff modelliert mit Ihnen jede Domäne, wenn Sie ihm genügend Post-Its und Tapete stellen, nur lässt er dabei kein Thema unberührt. Marco ist davon überzeugt, das Lernen, Sprache und Empathie das Fundament guter Entwicklung bilden. Der Frust über die ewig zähen alten Methoden hat ihn zu Domain Driven Design, Agiler Softwareentwicklung, funktionaler Programmierung und CQRS mit Event Sourcing geführt. Mit zehn Jahren Erfahrung in diesen Bereichen hilft er Teams ganzheitlich von Code bis Kultur. Marco Heimeshoff spricht auf OpenSpaces und Konferenzen zu allem was ihn begeistert und bringt seit 2011 die deutsche DDD Community mehrmals im Jahr zusammen."
   },
   {
     "Id": "4a43b927-abb8-41a5-ab85-a102f62a7839",
     "FirstName": "Marco",
     "LastName": "Tullner",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/MarcoTullner.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MarcoTullner.png",
+    "Bio": "Marco Tullner schloss 1996 sein Studium der Geschichte und Politikwissenschaft an der Martin-Luther-Universität Halle-Wittenberg mit dem Magister ab. In den Jahren 2001/2002 arbeitetet er als Referent des Landtagspräsidenten a. D., Dr. Klaus Keitel. 2002-2011 war er Mitglied des Landtages von Sachsen-Anhalt (CDU) In der Zeit von 2011 bis 2016 war er Staatssekretär im Ministerium für Wissenschaft und Wirtschaft des Landes Sachsen-Anhalt und ist seit dem 25.4.2016 Minister für Bildung des Landes Sachsen-Anhalt."
   },
   {
     "Id": "cf1cccfe-c801-4f10-88c3-5b140055141d",
     "FirstName": "Marius",
     "LastName": "Schulz",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/MariusSchulz.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MariusSchulz.png",
+    "Bio": "Marius Schulz ist leidenschaftlicher Softwareentwickler, Trainer und Sprecher. Sein Fokus liegt auf der Entwicklung moderner Webanwendungen mit React, TypeScript und ASP.NET Core."
   },
   {
     "Id": "05f13cd9-2def-49f7-b40e-88f337002b97",
     "FirstName": "Markus",
     "LastName": "Winkler",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/MarkusWinkler.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MarkusWinkler.png",
+    "Bio": "Markus Winkler ist Gründer und Geschäftsführer der oparco – open architectures & consulting, einem Unternehmen, welches seinen Kunden im Bereich der Softwareentwicklung in allen Fragen beratend zur Seite steht. Er arbeitete in diversen nationalen und internationalen Softwareunternehmen als Entwickler, Berater und Research & Development Manager. Von 2009 bis 2012 führte er das Development Consulting Team der IBM Deutschland und unterstützte Kunden in Projekten basierend auf dem IBM WebSphere Applikation-Server. Seit 2012 ist er für seine Kunden als Geschäftsführer der oparco ebenfalls in großen Java- und JavaEE Projekten als externer Berater und Softwarearchitekt im Einsatz. Markus Winkler ist seit 2014 aktives Mitglied der JavaEE 8 – Expert Group."
   },
   {
     "Id": "9b83895d-e34f-4926-9777-b68185f7e190",
     "FirstName": "Michael",
     "LastName": "Blume",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/MichaelBlume.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MichaelBlume.png",
+    "Bio": "Michael Blume ist Gründer und Geschäftsführer der CurrentSystem 23 GmbH.Seine Firma berät und unterstützt vorrangig mittelständische Unternehmen, bei der Umsetzung von individuellen Softwareprojekten. Dabei reicht das Spektrum der Leistungen von der Erfassung der Anforderungen über die Umsetzung bis hin zur Bereitstellung und den Betrieb der Infrastruktur.\nNeben seiner Tätigkeit als Entwickler, Berater und Geschäftsführer leitet er mit Melanie Noetzel den Entwicklerstammtisch in Magdeburg. Weiterhin leitet er die Azure Meetup Gruppe Magdeburg und ist Veranstalter der Magdeburger Developer Days."
   },
   {
     "Id": "43a93765-e18f-49d0-a011-6fbdddce04bd",
     "FirstName": "Michael",
     "LastName": "Willers",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/MichaelWillers.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/MichaelWillers.png",
+    "Bio": "Michael Willers ist Gründer und Inhaber der Firma devcoach®, die Unternehmen bei der Realisierung von Softwareprojekten von der Architektur bis zum Deployment und Betrieb ganzheitlich unterstützt und begleitet.\nIm Mittelpunkt seiner Arbeit stehen die Architektur und Realisierung von hochskalierbaren und hochverfügbaren Webanwendungen und Webservices im Sicherheitsumfeld sowie großer Datenmengen.\nDie Unterstützung agiler Geschäftsprozesse steht dabei immer im Vordergrund. Ein strukturiertes, pragmatisches Vorgehen ermöglicht es, minimal zu starten, ohne Wachstums-Potentiale Skalierung) und Wartbarkeit (Erweiterung und Betrieb) außer Acht zu lassen – „think big, start small“.\nAls Wegbereiter für Microsoft hat er mehrtägige Workshops und Beratungsprojekte zum Thema „Services and Web Architecture with .NET“ in ganz Europa durchgeführt und mit Architekten aus aller Welt deren Anforderungen analysiert und Lösungen für konkrete Implementierungen erarbeitet.\nSeine Projekterfahrung hat er in den Branchen Industrieautomation und Fertigung (Robotik und Internet of Things, IoT), Automotive, Großhandel, Pharma, Mobilfunk, Versicherung, Bankenwesen, Software, Sicherheit (PKI) und der öffentlichen Hand unter Beweis gestellt.\nMichael Willers plant und entwickelt seit 1989 Software (seit 1999 auch auf der .NET Plattform). Er war einige Jahre Berater bei Microsoft und dort verantwortlich für die technische Einführung der .NET Plattform in Deutschland.\nFür das Bundesamt für Sicherheit in der Informationstechnik (BSI) hat er u. a. Leitfäden und Expertisen zur Sicherheit der .NET Plattform konzipiert und umgesetzt."
   },
   {
     "Id": "4cc19590-d88d-43f3-bb05-f6ceb70e7da7",
     "FirstName": "Neno",
     "LastName": "Loje",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/NenoLoje.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/NenoLoje.png",
+    "Bio": "Neno Loje unterstützt als freier ALM-Berater Unternehmen und Teams, die agiler werden wollen mit pragmatischen Lösungen für Ihren Entwicklungsprozess und mehr Automatisierung. Seine Schwerpunkte sind: Team Foundation Server, VS Team Services, Scrum und DevOps."
   },
   {
     "Id": "6223c0f7-f83e-4699-bc1b-e305d84f4c8b",
     "FirstName": "Nicoleta",
     "LastName": "Mihali",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/NicoletaMihali.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/NicoletaMihali.png",
+    "Bio": "Nicoleta Mihali arbeitet seit über zwei Jahren als Technical Evangelist bei Microsoft Deutschland, mit dem Schwerpunkt Natural User Interaction. Dahinter verbergen sich Technologien, wie zum Beispiel Cognitive Services, Bot Framework und Cortana, die eine natürliche Interaktion mit dem System ermöglichen.\nSie hat ihren Master in Medieninformatik abgeschlossen und in unterschiedlichen Bereichen Erfahrung gesammelt, wie z.B. im Automotive- oder Medien- Bereich."
   },
   {
     "Id": "7b3b4483-bd29-4a32-9ebb-a53ace25b735",
     "FirstName": "Olga",
     "LastName": "Sheshukova",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/OlgaSheshukova.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/OlgaSheshukova.png",
+    "Bio": "Ich heiße Olga und meine Leidenschaft ist der Datenanalyse gewidmet. Seit meiner Kindheit bin ich ein stark logischer Mensch und hatte immer den Drang zu Mathematik und Naturwissenschaften. Mein Studium des Ingenieurwesens in Biotechnologie hat mich zur Programmierung mit Python geführt und meine Begeisterung für die Datenanalyse und das Maschinelle Lernen entdecken lassen. Meine letzten 5 Jahre waren neben der Datenanalyse ebenso dem Unternehmertum gewidmet, in dieser Zeit habe ich gelernt wie man ein innovatives Startup aufbaut und technologische Produkte entwickelt. Egal ob Atomphysik, lineare Algebra, App-Entwicklung oder Thermodynamik-diese und ähnliche Themen begeistern mich!\nEin Mensch lernt nie aus. Und je mehr man lernt, desto weniger denkt man von der Welt zu wissen.\n\nBei den Magdeburger Developer Days möchte ich meine Erfahrung in Datenanalyse, Statistik und maschinellem Lernen mit euch teilen. Ich freue mich auf spannende Fragen und Diskussionen!"
   },
   {
     "Id": "71193286-9e41-46da-80c5-cf3c0ecd5a7d",
     "FirstName": "Rainer",
     "LastName": "Stropek",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/RainerStropek.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/RainerStropek.png",
+    "Bio": "Rainer Stropek ist seit über 20 Jahren als Unternehmer in der IT-Industrie tätig. Er gründete und führte in dieser Zeit mehrere IT-Dienstleistungsunternehmen und entwickelt im Augenblick in seiner Firma „software architects“ mit seinem Team die preisgekrönte Software „time cockpit“.\n\nRainer hat Abschlüsse an der Höheren Technischen Schule für MIS, Leonding (AT) sowie der University of Derby (UK). Er ist Autor mehrerer Fachbücher und Artikel in Magazinen im Umfeld von Microsoft .NET und C#. Seine technischen Schwerpunkte sind C# und das .NET Framework, XAML, die Microsoft Azure Plattform, SQL Server sowie Web Development. Rainer tritt regelmäßig als Speaker und Trainer auf namhaften Konferenzen in Europa und den USA auf. 2010 wurde Rainer von Microsoft zu einem der ersten MVPs für die Windows Azure Plattform ernannt. Seit 2015 ist Rainer auch Microsoft Regional Director."
   },
   {
     "Id": "884c09d8-794f-4204-8af8-84c73c4f30cf",
     "AcademicTitle": "Dr.",
     "FirstName": "Ralf",
     "LastName": "Helbing",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/RalfHelbing.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/RalfHelbing.png",
+    "Bio": "Das Aufgabengebiet von Dr. Ralf Helbing besteht in der Entwicklung von Serversoftware für eine nach dem Client/Server-Modell funktionierende digitale Handelssoftware, welche Management, Pricing und Quoting von Finanzderivaten miteinander ermöglicht. Aufbauend auf jahrelangen Erfahrungen als Teamleiter im Bereich Softwareentwickler und -architektur bei der icubic AG kann Ralf neben umfangreichen Kenntnisse im Bereich Java (Concurrent Java, High Performance Java, Java 8), C#, Multicore/Multi-Socket, C++, Smalltalk, Perl und UML auch fachliche Kenntnisse aus dem Wertpapierhandel, speziell Repo, Derivaten und Devisengeschäfte aufweisen."
   },
   {
     "Id": "018d9b96-adb1-49c8-af58-26e93d20db58",
     "FirstName": "Reginald",
     "LastName": "Rink",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/ReginaldRink.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/ReginaldRink.png",
+    "Bio": "Reginald arbeitet seit mehr als 7 Jahren mit agilen Methodiken. Angefangen als Webentwickler für CMS, ist er in die TelCo Branche gewechselt und war für einen internationalen Mobilfunkanbieter im Bereich mobiler Anwendungen und Plattformen als Scrum Master und technischer Projekt Manager tätig.\nMit seinem Umzug nach München hat er begonnen, als Projekt Manager und Product Owner für internationale Kunden mobile Apps im agilen Umfeld mit verteilten, multikulturellen Teams zu realisieren. Bei Re’flekt fokussiert er sich jetzt auf Augmented und Virtual Reality Anwendungen."
   },
   {
     "Id": "74c01351-e3ed-41dc-8880-5ef41a3c20fb",
     "FirstName": "Reiner",
     "LastName": "Schlosser",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/ReinerSchlosser.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/ReinerSchlosser.png",
+    "Bio": "Reiner Schlosser ist Geschäftsführer der 2014 in Magdeburg gegründeten CraftingIT GmbH (www.crafting-it.de). Die craftingIT fokussiert sich auf Service, Support und Software-Entwicklung und ist als 100%ige Tochter des unabhängiges IT-Beratungsunternehmen BridgingIT GmbH (www.bridging-it.de) Teil der Full-Service-Strategie der Unternehmensfamilie.\n\nVor Aufbau und Gründung der craftingIT war Reiner Schlosser 2008 Teil der Gründungsmannschaft der bridgingIT und hat dort unter anderem Teams für .net-, Java-Entwicklung, und SAP aufgebaut und verantwortet. Nach seinem Informatik-Studium hat er seit 1990 als „Macher und Manager“ in zahlreichen Entwicklungsprojekten in den verschiedensten Rollen mitgearbeitet.  Sein fachlicher Fokus liegt in der Nahtstelle zwischen Geschäftsprozess und IT und beim Übergang vom Entwicklungsprojekt zum Application Management und Managed Service."
   },
   {
     "Id": "cf0824ec-5673-4121-abb5-0c6fcc68308d",
     "FirstName": "Robin",
     "LastName": "Sedlaczek",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/RobinSedlaczek.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/RobinSedlaczek.png",
+    "Bio": "Robin Sedlaczek hat mehr als fünfzehn Jahre Erfahrung als professioneller Softwareentwickler. Seit 7 Jahren tätig bei der Fairmas GmbH in Berlin, hat er das auf Finanzplanungstools spezialisierte Unternehmen mit aufgebaut. Als CTO ist er dort zuständig für den gesamten Entwicklungsbereich, beschäftigt sich mit der Produktentwicklung, Softwarearchitektur und -spezifikation, Technologieevaluierung, Prozess- und Teammanagement mit Ausrichtung auf die Microsoft .NET Plattform. In seiner Freizeit organisiert er die .NET User Group Berlin-Brandenburg und vermittelt sein Wissen auf Konferenzen, in User Groups, Onlinekursen und Fachartikeln und seinem Blog."
   },
   {
     "Id": "5cd170d4-0608-4e9b-8bb3-72194fdf1cec",
     "FirstName": "Sabine",
     "LastName": "Wojcieszak",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/SabineWojcieszak.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/SabineWojcieszak.png",
+    "Bio": "Sabine Wojcieszak (ehemals Bernecker-Bendixen) arbeitet als Chief Consultant für getNext IT. Sie berät, coacht und unterstützt IT-Unternehmen/Abteilungen, Teams und Führungskräfte in den Bereichen Kommunikation, Team- und Unternehmenskultur, Leadership und Improvement. Für sie spielen neben technischen Skills, die von den Mitarbeitern in der modernen, agilen Softwarebranche verlangt werden, die Soft Skills eine ebenso große Rolle für den Erfolg! Als Sprecherin ist sie auf internationalen Konferenzen unterwegs und schreibt Artikel für das Entwickler Magazin, heise online, iX, OBJEKTspektrum, Informatik Aktuell, infoQ oder devops.com."
   },
   {
     "Id": "ee60a04a-2d5c-4261-b5ea-b4e766ce212d",
     "FirstName": "Sebastian",
     "LastName": "Seidel",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/SebastianSeidel.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/SebastianSeidel.png",
+    "Bio": "Sebastian Seidel ist Mobile-Enthusiast und C# Lover. Er liebt glückliche Apps und zufriedene Anwender. Als Geschäftsführer der Cayas Software GmbH genießt er die Freiheiten der neuen Plattform-Vielfalt und die sich daraus ergebenden Möglichkeiten. Sebastian ist Deutschlands erster Xamarin Authorized Consulting Partner. Microsoft MVP und Certified Mobile Developer. Wenn er nicht gerade wieder an neuen Apps entwickelt, versucht er sein Blog mit neuen Inhalten zu füllen."
   },
   {
     "Id": "a566eaf5-6eaf-43e9-910e-7f6baafc8942",
     "FirstName": "Thomas",
     "LastName": "Schissler",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/ThomasSchissler.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/ThomasSchissler.png",
+    "Bio": "Effiziente Software-Entwicklung, das ist seit 1996 das Streben von Thomas Schissler, seit 2005 ausschließlich mit agilen Methoden. DevOps ist für ihn die Ausdehnung von Agilität auf den gesamten Unternehmenskontext. Durch kurze Auslieferungszyklen und schnelle Feedback Schleifen sollte die gesamte Organisation lernen um so den Nutzen der Software-Produkte zu maximieren. Als Berater, Coach und Sprecher nutzt er seine Erfahrungen in diesem Bereich, um bei Unternehmen Transformationen in diesem Sinne zu initiieren und zu begleiten."
   },
   {
     "Id": "27f81dc3-4eed-4d71-9492-1504b308651a",
     "FirstName": "Thomas",
     "LastName": "Wünsch",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/ThomasWuensch.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/ThomasWuensch.png",
+    "Bio": "Thomas Wünsch studierte von 1990 bis 1995 an der Martin-Luther-Universität Halle-Wittenberg Rechtswissenschaften. Im Anschluss arbeitete er bis 1999 als wissenschaftlicher Mitarbeiter an der Martin-Luther-Universität Halle-Wittenberg. 1999 bis 2001 absolvierte er sein Rechtsreferendariat. Seit 2004 ist er Leiter des Prüfungsamtes der Juristischen Fakultät an der Martin-Luther-Universität Halle-Wittenberg. Im Zeitraum von 2008 bis 2010 war er persönlicher Referent der Ministerin für Justiz und Gleichstellung des Landes Sachsen-Anhalt. Im Anschluss leitete er das Ministerbüro im Ministerium der Justiz des Landes Sachsen-Anhalt bis 2012. In der Zeit von 2012 bis 2016 war er Staatssekretär im Ministerium für Justiz und Gleichstellung des Landes Sachsen-Anhalt. Seit dem 27.04 2016 ist er Staatssekretär im Ministerium für Wirtschaft, Wissenschaft und Digitalisierung des Landes Sachsen-Anhalt."
   },
   {
     "Id": "533d0054-2e97-49a3-9c68-afafba6e88ef",
     "FirstName": "Tobias",
     "LastName": "Meier",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/TobiasMeier.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/TobiasMeier.png",
+    "Bio": "Tobias Meier ist Lead Software Architekt beim Mannheimer IT-Beratungsunternehmen BridgingIT GmbH (www.bridging-it.de), dessen Tochter die CraftingIT GmbH mit Sitz in Magdeburg ist. Als .NET-Experte der ersten Stunde verfügt er über langjährige Erfahrung bei der Durchführung von Softwareentwicklungsprojekten. Große Unternehmen aus verschiedenen Branchen setzen auf sein Know-how. Er ist regelmäßig Sprecher auf Community Events und Konferenzen. Sein aktueller Fokus liegt im Bereich der Software-Architektur und der Entwicklung moderner Webanwendungen."
   },
 
   {
     "Id": "9cc515e5-1aa9-43dd-9c24-3ec942346523",
     "FirstName": "Torsten",
     "LastName": "Weber",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/TorstenWeber.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/TorstenWeber.png",
+    "Bio": "Torsten Weber ist selbständiger Diplom-Wirtschaftsinformatiker, CEO von GROSSWEBER. Sein Spezialthema ist die Psychologie oder namentlich Behavioral Computing. Schon vor vielen Jahren ist ihm aufgefallen, dass die Informatik ein Problem bei der Abbildung von Verhalten hat. Zwar gibt es Werkzeuge wie Sequenzdiagramme, aber praktisch keines dieser Werkzeuge kann Verhalten psychologisch erfassen oder gar Vorhersagen treffen."
   },
   {
     "Id": "31a772b6-5537-49a7-bb2f-0dcad494840d",
     "FirstName": "Ulf",
     "LastName": "Mewe",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/UlfMewe.png"
+    "ImageUri": "Infrastructure/Data/Images/Speakers/UlfMewe.png",
+    "Bio": "Ich bin Ulf Mewe und seit 2008 bei der HEC GmbH tätig. Kern meiner Arbeit ist die Qualifizierung und Beratung von Menschen im Bereich Anforderungsmanagement sowie die Führung von Projekten als Scrum-Master. Weiterhin bin ich Trainer der HEC Softwareakademie und führe verschiedene Trainings in den Bereichen Scrum und (agiles) Anforderungsmanagement durch."
   }
 ]

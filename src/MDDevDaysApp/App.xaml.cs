@@ -24,9 +24,10 @@ namespace MDDevDaysApp
         {
             Container.RegisterTypeForNavigation<MainNavigationPage>();
             Container.RegisterTypeForNavigation<MainTabbedPage>();
+            Container.RegisterTypeForNavigation<SpeakerPage>();
 
             Container.RegisterType<InfoPage>();
-            Container.RegisterType<SpeakerPage>();
+            Container.RegisterType<SpeakersPage>();
             Container.RegisterType<ProgramPage>();
 
             Container.RegisterType<ISpeakers, Speakers>(new ContainerControlledLifetimeManager());
