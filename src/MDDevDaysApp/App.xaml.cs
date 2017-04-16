@@ -4,6 +4,7 @@ using MDDevDaysApp.Views;
 using Microsoft.Azure.Mobile;
 using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
+using Microsoft.Azure.Mobile.Distribute;
 using Microsoft.Practices.Unity;
 using Prism.Unity;
 
@@ -25,7 +26,11 @@ namespace MDDevDaysApp
 
         protected override void OnStart()
         {
-            MobileCenter.Start("ios=db0d11d6-b519-413e-8d16-a35d483bbbcd;android=24b1330b-8cb9-412a-9f28-7b296891a680", typeof(Analytics), typeof(Crashes));
+            MobileCenter.Start(
+                "ios=db0d11d6-b519-413e-8d16-a35d483bbbcd;android=24b1330b-8cb9-412a-9f28-7b296891a680", 
+                typeof(Analytics), 
+                typeof(Crashes), 
+                typeof(Distribute));
         }
 
         protected override void RegisterTypes()
