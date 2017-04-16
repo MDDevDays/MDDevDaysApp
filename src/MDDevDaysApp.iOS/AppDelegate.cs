@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
-using Microsoft.Azure.Mobile;
-using Microsoft.Azure.Mobile.Analytics;
-using Microsoft.Azure.Mobile.Crashes;
+﻿using Foundation;
 using UIKit;
 using Prism.Unity;
 using Microsoft.Practices.Unity;
@@ -28,9 +21,6 @@ namespace MDDevDaysApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-
-            MobileCenter.Configure("db0d11d6-b519-413e-8d16-a35d483bbbcd");
-            MobileCenter.Start(typeof(Analytics), typeof(Crashes));
 
             LoadApplication(new App(new iOSInitializer()));
 
