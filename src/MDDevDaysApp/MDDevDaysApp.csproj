@@ -36,6 +36,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Converters\LocalImagePathConverter.cs" />
+    <Compile Include="DomainModel\ITimeslots.cs" />
+    <Compile Include="DomainModel\Timeslot.cs" />
+    <Compile Include="Infrastructure\Timeslots.cs" />
     <Compile Include="DomainModel\Speaker.cs" />
     <Compile Include="DomainModel\ISpeakers.cs" />
     <Compile Include="Infrastructure\Speakers.cs" />
@@ -126,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Infrastructure\Data\speakers.json" />
+    <EmbeddedResource Include="Infrastructure\Data\timeslots.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
