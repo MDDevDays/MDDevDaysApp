@@ -9,6 +9,7 @@
     <ResourceDictionary>
       <Color x:Key="MainColor">#94c11f</Color>
       <Color x:Key="MainTextColor">Black</Color>
+      <Color x:Key="MainTextColorLight">Gray</Color>
       <converters:LocalImagePathConverter x:Key="LocalImagePathConverter" />
     </ResourceDictionary>
   </Application.Resources>

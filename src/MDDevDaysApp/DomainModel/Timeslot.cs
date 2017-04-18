@@ -9,5 +9,7 @@ namespace MDDevDaysApp.DomainModel
         public DateTime? End { get; set; }
         public string Title { get; set; }
         public string Room { get; set; }
+
+        public bool IsRoomDefined => !string.IsNullOrEmpty(Room);
     }
 }

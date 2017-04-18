@@ -12,7 +12,27 @@
         </OnPlatform>
     </ContentPage.Icon>
 
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="{Binding Title}" />
-    </StackLayout>
+    <ListView ItemsSource="{Binding Timeslots}">
+        <!--<ListView.RowHeight>
+            <OnPlatform x:TypeArguments="x:Int32" iOS="80" Android="80" WinPhone="88" />
+        </ListView.RowHeight>-->
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="8">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" TextColor="{StaticResource MainTextColor}" Text="{Binding Title}" />
+                        <StackLayout Grid.Row="1" Orientation="Horizontal">
+                            <Label IsVisible="{Binding IsRoomDefined}" TextColor="{StaticResource MainTextColorLight}" Text="Raum: "></Label>
+                            <Label Grid.Row="1" TextColor="{StaticResource MainTextColorLight}" Text="{Binding Room}" />
+                        </StackLayout>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>
