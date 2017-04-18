@@ -204,6 +204,22 @@
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo57.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo114.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo50.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo100.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo72.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo144.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Logo167.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
