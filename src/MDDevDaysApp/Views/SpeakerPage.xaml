@@ -10,7 +10,10 @@
         <Grid.RowDefinitions>
             <RowDefinition>
                 <RowDefinition.Height>
-                    <OnPlatform x:TypeArguments="GridLength" iOS="100" Android="100" WinPhone="130" />
+                    <OnPlatform x:TypeArguments="GridLength">
+                        <On Platform="iOS, Android" Value="100" />
+                        <On Platform="Windows, WinPhone" Value="130" />
+                    </OnPlatform>
                 </RowDefinition.Height>
             </RowDefinition>
             <RowDefinition Height="*" />
@@ -19,7 +22,10 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition>
                 <ColumnDefinition.Width>
-                    <OnPlatform x:TypeArguments="GridLength" iOS="100" Android="100" WinPhone="130" />
+                    <OnPlatform x:TypeArguments="GridLength">
+                        <On Platform="iOS, Android" Value="100" />
+                        <On Platform="Windows, WinPhone" Value="130" />
+                    </OnPlatform>
                 </ColumnDefinition.Width>
             </ColumnDefinition>
             <ColumnDefinition Width="*" />

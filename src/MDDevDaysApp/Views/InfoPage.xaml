@@ -7,8 +7,9 @@
              x:Class="MDDevDaysApp.Views.InfoPage"
              Title="{Binding Title}">
     <ContentPage.Icon>
-        <OnPlatform x:TypeArguments="FileImageSource"
-                    iOS="Info.png" />
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="Info.png" />
+        </OnPlatform>
     </ContentPage.Icon>
 
 
