@@ -7,8 +7,9 @@
              x:Class="MDDevDaysApp.Views.ProgramPage"
              Title="{Binding Title}">
     <ContentPage.Icon>
-        <OnPlatform x:TypeArguments="FileImageSource"
-                    iOS="Program.png" />
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="Program.png" />
+        </OnPlatform>
     </ContentPage.Icon>
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">

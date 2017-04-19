@@ -8,8 +8,9 @@
              x:Class="MDDevDaysApp.Views.SpeakersPage"
              Title="{Binding Title}">
     <ContentPage.Icon>
-        <OnPlatform x:TypeArguments="FileImageSource"
-                    iOS="Speaker.png" />
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="Speaker.png" />
+        </OnPlatform>
     </ContentPage.Icon>
 
     <ListView ItemsSource="{Binding SpeakersGroups}"
@@ -29,7 +30,10 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition>
                                 <ColumnDefinition.Width>
-                                    <OnPlatform x:TypeArguments="GridLength" iOS="80" Android="80" WinPhone="74" />
+                                    <OnPlatform x:TypeArguments="GridLength">
+                                        <On Platform="iOS, Android" Value="80" />
+                                        <On Platform="Windows, WinPhone" Value="74" />
+                                    </OnPlatform>
                                 </ColumnDefinition.Width>
                             </ColumnDefinition>
                             <ColumnDefinition Width="*" />
@@ -37,7 +41,10 @@
                         <Grid.RowDefinitions>
                             <RowDefinition>
                                 <RowDefinition.Height>
-                                    <OnPlatform x:TypeArguments="GridLength" iOS="80" Android="80" WinPhone="88" />
+                                    <OnPlatform x:TypeArguments="GridLength">
+                                        <On Platform="iOS, Android" Value="80" />
+                                        <On Platform="Windows, WinPhone" Value="88" />
+                                    </OnPlatform>
                                 </RowDefinition.Height>
                             </RowDefinition>
                         </Grid.RowDefinitions>
