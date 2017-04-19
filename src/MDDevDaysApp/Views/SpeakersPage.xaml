@@ -15,10 +15,8 @@
     <ListView ItemsSource="{Binding SpeakersGroups}"
               IsGroupingEnabled="True"
               GroupShortNameBinding="{Binding Title}"
-              GroupDisplayBinding="{Binding Title}">
-        <ListView.RowHeight>
-            <OnPlatform x:TypeArguments="x:Int32" iOS="80" Android="80" WinPhone="88" />
-        </ListView.RowHeight>
+              GroupDisplayBinding="{Binding Title}"
+              HasUnevenRows="True" >
         <ListView.Behaviors>
             <behaviors:EventToCommandBehavior EventName="ItemTapped"
                                               Command="{Binding ShowSpeaker}"
@@ -36,6 +34,13 @@
                             </ColumnDefinition>
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition>
+                                <RowDefinition.Height>
+                                    <OnPlatform x:TypeArguments="GridLength" iOS="80" Android="80" WinPhone="88" />
+                                </RowDefinition.Height>
+                            </RowDefinition>
+                        </Grid.RowDefinitions>
 
                         <Image Grid.Column="0" Source="{Binding ImageUri, Converter={StaticResource LocalImagePathConverter}}" />
                         <Label Grid.Column="1" TextColor="{StaticResource MainTextColor}" Text="{Binding FullName}" />
