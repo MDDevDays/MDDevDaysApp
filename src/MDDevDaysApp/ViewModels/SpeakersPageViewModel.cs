@@ -13,15 +13,15 @@ namespace MDDevDaysApp.ViewModels
 {
     public class SpeakersPageViewModel : BindableBase, IActiveAware
     {
-        private readonly ISpeakers _speakers;
         private readonly INavigationService _navigationService;
+        private readonly ISpeakers _speakers;
         private bool _isActive;
 
         public SpeakersPageViewModel(ISpeakers speakers, INavigationService navigationService)
         {
             _speakers = speakers;
             _navigationService = navigationService;
-            SpeakersGroups = new ObservableCollection<SpeakersGroup>();
+            Speakers = new ObservableCollection<Grouping<string, Speaker>>();
             Title = "Sprecher";
             ShowSpeaker = new DelegateCommand<Speaker>(ShowSpeakerExecute);
 
@@ -29,8 +29,8 @@ namespace MDDevDaysApp.ViewModels
         }
 
         public string Title { get; }
-        public ObservableCollection<SpeakersGroup> SpeakersGroups { get; set; }
-        public ICommand ShowSpeaker { get; private set; }
+        public ObservableCollection<Grouping<string, Speaker>> Speakers { get; set; }
+        public ICommand ShowSpeaker { get; }
 
         public bool IsActive
         {
@@ -50,26 +50,23 @@ namespace MDDevDaysApp.ViewModels
 
         private async void ActivateAsync()
         {
-            if (SpeakersGroups.Any())
+            if (Speakers.Any())
                 return;
 
             var allSpeakers = await _speakers.AllAsync();
-            var speakersGrouping = allSpeakers.GroupBy(s => s.FirstName.Substring(0, 1));
-            foreach (var speakers in speakersGrouping)
-            {
-                var speakersGroup = new SpeakersGroup {Title = speakers.Key};
-                foreach (var speaker in speakers)
-                {
-                    speakersGroup.Add(speaker);
-                }
+            var groupedSpeakers = from speaker in allSpeakers
+                orderby speaker.FirstName
+                group speaker by speaker.FirstName.Substring(0, 1)
+                into speakerGroup
+                select new Grouping<string, Speaker>(speakerGroup.Key, speakerGroup);
 
-                SpeakersGroups.Add(speakersGroup);
-            }
+            foreach (var grouping in groupedSpeakers)
+                Speakers.Add(grouping);
         }
 
         private void ShowSpeakerExecute(Speaker speaker)
         {
-            _navigationService.NavigateAsync("SpeakerPage", new NavigationParameters { { "speaker", speaker } }, false);
+            _navigationService.NavigateAsync("SpeakerPage", new NavigationParameters {{"speaker", speaker}}, false);
         }
     }
 }
