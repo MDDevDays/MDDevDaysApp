@@ -50,7 +50,6 @@
     <Compile Include="ViewModels\ProgramPageViewModel.cs" />
     <Compile Include="ViewModels\SpeakerPageViewModel.cs" />
     <Compile Include="ViewModels\SpeakersPageViewModel.cs" />
-    <Compile Include="ViewModels\SpeakersGroup.cs" />
     <Compile Include="Views\ProgramPage.xaml.cs">
       <DependentUpon>ProgramPage.xaml</DependentUpon>
     </Compile>
@@ -188,7 +187,6 @@
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MichaelWillers.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\NenoLoje.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\NicoletaMihali.png" />
-    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\OlgaSheshukova.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RainerStropek.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RalfHelbing.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ReginaldRink.png" />
@@ -212,6 +210,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\CarstenKoenig.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

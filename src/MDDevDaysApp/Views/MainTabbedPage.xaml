@@ -7,7 +7,8 @@
             prism:ViewModelLocator.AutowireViewModel="True"
             x:Class="MDDevDaysApp.Views.MainTabbedPage"
             Title="{Binding Title}"
-            BarBackgroundColor="{StaticResource MainColor}">
+            BarBackgroundColor="{StaticResource MainColor}"
+            BackgroundColor="{DynamicResource WindowBackground}">
 
     <views:InfoPage />
     <views:SpeakersPage />

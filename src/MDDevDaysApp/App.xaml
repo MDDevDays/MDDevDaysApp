@@ -10,6 +10,7 @@
       <Color x:Key="MainColor">#94c11f</Color>
       <Color x:Key="MainTextColor">Black</Color>
       <Color x:Key="MainTextColorLight">Gray</Color>
+      <Color x:Key="WindowBackground">White</Color>
       <converters:LocalImagePathConverter x:Key="LocalImagePathConverter" />
     </ResourceDictionary>
   </Application.Resources>
