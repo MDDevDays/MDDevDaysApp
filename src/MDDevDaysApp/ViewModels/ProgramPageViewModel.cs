@@ -28,8 +28,10 @@ namespace MDDevDaysApp.ViewModels
 
         public bool IsActive
         {
-            get => _isActive;
-            set => SetProperty(ref _isActive, value);
+            // ReSharper disable ArrangeAccessorOwnerBody - MobileCenter does not support C#7 Features yet
+            get { return _isActive; }
+            set { SetProperty(ref _isActive, value); }
+            // ReSharper restore ArrangeAccessorOwnerBody
         }
 
         public event EventHandler IsActiveChanged;
