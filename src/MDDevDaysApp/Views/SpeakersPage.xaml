@@ -6,6 +6,7 @@
              xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="MDDevDaysApp.Views.SpeakersPage"
+             BackgroundColor="{DynamicResource WindowBackground}"
              Title="{Binding Title}">
     <ContentPage.Icon>
         <OnPlatform x:TypeArguments="FileImageSource">
