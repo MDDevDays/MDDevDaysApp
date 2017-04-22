@@ -22,13 +22,13 @@
                 <ViewCell>
                     <StackLayout VerticalOptions="Center">
                         <StackLayout.BackgroundColor>
-                            <OnPlatform x:TypeArguments="Color">
-                                <On Platform="Android, Windows, WinPhone" Value="#F5F5F5" />
+                            <OnPlatform x:TypeArguments="Color" WinPhone="#F5F5F5">
+                                <On Platform="Android" Value="#F5F5F5" />
                             </OnPlatform>
                         </StackLayout.BackgroundColor>
                         <StackLayout.Padding>
-                            <OnPlatform x:TypeArguments="Thickness" iOS="16,0" Android="16,8" WinPhone="16,8">
-                                <On Platform="Android, Windows, WinPhone" Value="16,8" />
+                            <OnPlatform x:TypeArguments="Thickness" WinPhone="16,8">
+                                <On Platform="Android" Value="16,8" />
                                 <On Platform="iOS" Value="16,0" />
                             </OnPlatform>
                         </StackLayout.Padding>
@@ -41,10 +41,9 @@
                                 </OnPlatform>
                             </Label.FontAttributes>
                             <Label.FontSize>
-                                <OnPlatform x:TypeArguments="x:Double">
+                                <OnPlatform x:TypeArguments="x:Double" WinPhone="16">
                                     <On Platform="Android" Value="18" />
                                     <On Platform="iOS" Value="16" />
-                                    <On Platform="Windows, WinPhone" Value="16" />
                                 </OnPlatform>
                             </Label.FontSize>
                             <Label.FontFamily>
@@ -53,9 +52,7 @@
                                 </OnPlatform>
                             </Label.FontFamily>
                             <Label.TextColor>
-                                <OnPlatform x:TypeArguments="Color">
-                                    <On Platform="Windows, WinPhone" Value="Black" />
-                                </OnPlatform>
+                                <OnPlatform x:TypeArguments="Color" WinPhone="Black" />
                             </Label.TextColor>
                         </Label>
                     </StackLayout>

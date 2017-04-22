@@ -11,9 +11,8 @@
         <Grid.RowDefinitions>
             <RowDefinition>
                 <RowDefinition.Height>
-                    <OnPlatform x:TypeArguments="GridLength">
+                    <OnPlatform x:TypeArguments="GridLength" WinPhone="130">
                         <On Platform="iOS, Android" Value="100" />
-                        <On Platform="Windows, WinPhone" Value="130" />
                     </OnPlatform>
                 </RowDefinition.Height>
             </RowDefinition>
@@ -23,9 +22,8 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition>
                 <ColumnDefinition.Width>
-                    <OnPlatform x:TypeArguments="GridLength">
+                    <OnPlatform x:TypeArguments="GridLength" WinPhone="130">
                         <On Platform="iOS, Android" Value="100" />
-                        <On Platform="Windows, WinPhone" Value="130" />
                     </OnPlatform>
                 </ColumnDefinition.Width>
             </ColumnDefinition>
