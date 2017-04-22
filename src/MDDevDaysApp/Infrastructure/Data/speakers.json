@@ -28,6 +28,13 @@
     "Bio": "Bernd Gronostay zog es nach dem Studium zur Telekommunikation, wo er auf die unterschiedlichsten Software-Systeme traf. Von Embedded-Devices bis zu umfassenden Server-Systemen war alles dabei, und so führte ihn der Weg zu den Architektur- und Implementierungs-Details völlig unterschiedlicher Ausprägung, und von C und C++ über HTML und JavaScript zu C# und Java (und immer wieder zurück).\n\nEr ist als IT Consultant bei der BROCKHAUS AG tätig."
   },
   {
+    "Id": "c82945e5-d257-4595-a653-24ead5404748",
+    "FirstName": "Carsten",
+    "LastName": "König",
+    "ImageUri": "Infrastructure/Data/Images/Speakers/CarstenKoenig.png",
+    "Bio": "Carsten König ist .net Entwickler, Sprecher und Trainer.\n\nEr programmiert seit vielen Jahren in C# und F# und begeistert sich ganz allgemein für das Thema funktionalen Programmierung."
+  },
+  {
     "Id": "4e651a4a-5031-44aa-978a-93a090a5ffdb",
     "FirstName": "Constantin “Kostja”",
     "LastName": "Klein",
