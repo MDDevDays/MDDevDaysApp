@@ -12,7 +12,76 @@
         </OnPlatform>
     </ContentPage.Icon>
 
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="{Binding Title}" />
-    </StackLayout>
+    <ListView ItemsSource="{Binding Timeslots}"
+              IsGroupingEnabled="True"
+              GroupDisplayBinding="{Binding Key}"
+              HasUnevenRows="True" >
+        <ListView.GroupHeaderTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout VerticalOptions="Center">
+                        <StackLayout.BackgroundColor>
+                            <OnPlatform x:TypeArguments="Color">
+                                <On Platform="Android, Windows, WinPhone" Value="#F5F5F5" />
+                            </OnPlatform>
+                        </StackLayout.BackgroundColor>
+                        <StackLayout.Padding>
+                            <OnPlatform x:TypeArguments="Thickness" iOS="16,0" Android="16,8" WinPhone="16,8">
+                                <On Platform="Android, Windows, WinPhone" Value="16,8" />
+                                <On Platform="iOS" Value="16,0" />
+                            </OnPlatform>
+                        </StackLayout.Padding>
+                        <Label Text="{Binding Key}" 
+                               VerticalOptions="Center" 
+                               VerticalTextAlignment="Center">
+                            <Label.FontAttributes>
+                                <OnPlatform x:TypeArguments="FontAttributes">
+                                    <On Platform="iOS" Value="Bold" />
+                                </OnPlatform>
+                            </Label.FontAttributes>
+                            <Label.FontSize>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="Android" Value="18" />
+                                    <On Platform="iOS" Value="16" />
+                                    <On Platform="Windows, WinPhone" Value="16" />
+                                </OnPlatform>
+                            </Label.FontSize>
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="Android" Value="sans-serif-light" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                            <Label.TextColor>
+                                <OnPlatform x:TypeArguments="Color">
+                                    <On Platform="Windows, WinPhone" Value="Black" />
+                                </OnPlatform>
+                            </Label.TextColor>
+                        </Label>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.GroupHeaderTemplate>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="8">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" TextColor="{StaticResource MainTextColor}" Text="{Binding Title}" />
+                        
+                        <StackLayout Grid.Row="1" Orientation="Horizontal" IsVisible="{Binding IsRoomDefined}">
+                            <Label TextColor="{StaticResource MainTextColorLight}" Text="Raum: "></Label>
+                            <Label TextColor="{StaticResource MainTextColorLight}" Text="{Binding Room}" />
+                        </StackLayout>
+
+                        <Label Grid.Row="2" TextColor="{StaticResource MainTextColorLight}" Text="{Binding TimeDisplayLong}" />
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

@@ -36,10 +36,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Converters\LocalImagePathConverter.cs" />
+    <Compile Include="DomainModel\ITimeslots.cs" />
+    <Compile Include="DomainModel\Timeslot.cs" />
+    <Compile Include="Infrastructure\Timeslots.cs" />
     <Compile Include="DomainModel\Speaker.cs" />
     <Compile Include="DomainModel\ISpeakers.cs" />
     <Compile Include="Infrastructure\Speakers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Grouping.cs" />
     <Compile Include="ViewModels\InfoPageViewModel.cs" />
     <Compile Include="ViewModels\MainNavigationPageViewModel.cs" />
     <Compile Include="ViewModels\MainTabbedPageViewModel.cs" />
@@ -126,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Infrastructure\Data\speakers.json" />
+    <EmbeddedResource Include="Infrastructure\Data\timeslots.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
