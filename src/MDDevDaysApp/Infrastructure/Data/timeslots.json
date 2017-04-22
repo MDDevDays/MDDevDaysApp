@@ -155,8 +155,8 @@
 
   {
     "Id": "5b242e00-852c-40ef-ac8c-832bfce241fd",
-    "Start": "2017-05-10T00:00:00",
-    "End": "2017-05-10T00:00:00",
+    "Start": "2017-05-10T16:15:00",
+    "End": "2017-05-10T17:00:00",
     "Title": "Kaffeepause"
   },
 
@@ -426,29 +426,29 @@
 
   {
     "Id": "05bf8b92-ff1f-488f-a62f-c7bbb96208dd",
-    "Start": "2017-05-11T00:00:00",
-    "End": "2017-05-11T00:00:00",
+    "Start": "2017-05-11T17:45:00",
+    "End": "2017-05-11T18:45:00",
     "Title": "ASP.NET Core und Docker",
     "Room": "Konrad Zuse"
   },
   {
     "Id": "6c26e57d-c34e-441c-acec-318c32b47fa0",
-    "Start": "2017-05-11T00:00:00",
-    "End": "2017-05-11T00:00:00",
+    "Start": "2017-05-11T17:45:00",
+    "End": "2017-05-11T18:45:00",
     "Title": "Big Data – Demystified – Showcase Stauerkennung",
     "Room": "Alan Turing"
   },
   {
     "Id": "c18239e9-6018-4ec2-86af-5458de52f27f",
-    "Start": "2017-05-11T00:00:00",
-    "End": "2017-05-11T00:00:00",
+    "Start": "2017-05-11T17:45:00",
+    "End": "2017-05-11T18:45:00",
     "Title": "„Wir sind agil“",
     "Room": "Bjarne Stroustroup"
   },
   {
     "Id": "8889548e-b8a8-45fc-93c4-36d9f7bee507",
-    "Start": "2017-05-11T00:00:00",
-    "End": "2017-05-11T00:00:00",
+    "Start": "2017-05-11T17:45:00",
+    "End": "2017-05-11T18:45:00",
     "Title": "Fuck Up! Was läuft hier denn falsch?",
     "Room": "Linus Torvalds"
   }
