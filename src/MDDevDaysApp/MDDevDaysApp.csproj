@@ -188,7 +188,6 @@
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MichaelWillers.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\NenoLoje.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\NicoletaMihali.png" />
-    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\OlgaSheshukova.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RainerStropek.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RalfHelbing.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ReginaldRink.png" />
