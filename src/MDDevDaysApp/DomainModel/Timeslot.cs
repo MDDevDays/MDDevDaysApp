@@ -11,5 +11,7 @@ namespace MDDevDaysApp.DomainModel
         public string Room { get; set; }
 
         public bool IsRoomDefined => !string.IsNullOrEmpty(Room);
+        public string TimeDisplayShort => $"{Start:M}, {Start:t}";
+        public string TimeDisplayLong => End.HasValue ? $"{TimeDisplayShort} - {End:t}" : $"{TimeDisplayShort} - Open End";
     }
 }

@@ -17,19 +17,19 @@ namespace MDDevDaysApp.ViewModels
         {
             _timeslots = timeslots;
             Title = "Programm";
-            Timeslots = new ObservableCollection<Timeslot>();
+            Timeslots = new ObservableCollection<Grouping<string, Timeslot>>();
 
             PropertyChanged += OnPropertyChanged;
         }
 
-        public ObservableCollection<Timeslot> Timeslots { get; private set; }
+        public ObservableCollection<Grouping<string, Timeslot>> Timeslots { get; }
 
         public string Title { get; }
 
         public bool IsActive
         {
-            get { return _isActive; }
-            set { SetProperty(ref _isActive, value); }
+            get => _isActive;
+            set => SetProperty(ref _isActive, value);
         }
 
         public event EventHandler IsActiveChanged;
@@ -46,8 +46,14 @@ namespace MDDevDaysApp.ViewModels
                 return;
 
             var allTimeslots = await _timeslots.AllAsync();
-            foreach (var timeslot in allTimeslots)
-                Timeslots.Add(timeslot);
+            var groupedTimeslots = from timeslot in allTimeslots
+                orderby timeslot.Start
+                group timeslot by timeslot.TimeDisplayShort
+                into timeslotGroup
+                select new Grouping<string, Timeslot>(timeslotGroup.Key, timeslotGroup);
+
+            foreach (var grouping in groupedTimeslots)
+                Timeslots.Add(grouping);
         }
     }
 }

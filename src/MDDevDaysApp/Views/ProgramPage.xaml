@@ -12,24 +12,28 @@
         </OnPlatform>
     </ContentPage.Icon>
 
-    <ListView ItemsSource="{Binding Timeslots}">
-        <!--<ListView.RowHeight>
-            <OnPlatform x:TypeArguments="x:Int32" iOS="80" Android="80" WinPhone="88" />
-        </ListView.RowHeight>-->
+    <ListView ItemsSource="{Binding Timeslots}"
+              IsGroupingEnabled="True"
+              GroupDisplayBinding="{Binding Key}"
+              HasUnevenRows="True" >
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <Grid Padding="8">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
 
                         <Label Grid.Row="0" TextColor="{StaticResource MainTextColor}" Text="{Binding Title}" />
+                        
                         <StackLayout Grid.Row="1" Orientation="Horizontal">
                             <Label IsVisible="{Binding IsRoomDefined}" TextColor="{StaticResource MainTextColorLight}" Text="Raum: "></Label>
-                            <Label Grid.Row="1" TextColor="{StaticResource MainTextColorLight}" Text="{Binding Room}" />
+                            <Label TextColor="{StaticResource MainTextColorLight}" Text="{Binding Room}" />
                         </StackLayout>
+
+                        <Label Grid.Row="2" TextColor="{StaticResource MainTextColorLight}" Text="{Binding TimeDisplayLong}" />
                     </Grid>
                 </ViewCell>
             </DataTemplate>
