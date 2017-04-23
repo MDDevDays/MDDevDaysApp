@@ -8,5 +8,14 @@ namespace MDDevDaysApp.Views
         {
             InitializeComponent();
         }
+
+        private void ListView_OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            
+            if (e.Item == null)
+                return;
+
+            ((ListView) sender).SelectedItem = null;
+        }
     }
 }
