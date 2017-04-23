@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using Microsoft.Azure.Mobile.Distribute;
 using UIKit;
 using Prism.Unity;
 using Microsoft.Practices.Unity;
@@ -22,9 +23,17 @@ namespace MDDevDaysApp.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
+            Distribute.DontCheckForUpdatesInDebug();
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);
+        }
+
+        public override bool OpenUrl(UIApplication application, NSUrl url, string sourceApplication, NSObject annotation)
+        {
+            Distribute.OpenUrl(url);
+
+            return true;
         }
     }
 

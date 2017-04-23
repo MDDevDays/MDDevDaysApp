@@ -31,6 +31,7 @@ namespace MDDevDaysApp
                 typeof(Analytics), 
                 typeof(Crashes), 
                 typeof(Distribute));
+            Distribute.Enabled = true;
         }
 
         protected override void RegisterTypes()
