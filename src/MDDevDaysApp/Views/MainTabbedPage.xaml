@@ -11,6 +11,6 @@
             BackgroundColor="{DynamicResource WindowBackground}">
 
     <views:InfoPage />
-    <views:SpeakersPage />
     <views:ProgramPage />
+    <views:SpeakersPage />
 </TabbedPage>
