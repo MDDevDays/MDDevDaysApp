@@ -16,7 +16,6 @@
 
     <ListView ItemsSource="{Binding Speakers}"
               IsGroupingEnabled="True"
-              GroupShortNameBinding="{Binding Key}"
               GroupDisplayBinding="{Binding Key}"
               HasUnevenRows="True" >
         <ListView.Behaviors>
