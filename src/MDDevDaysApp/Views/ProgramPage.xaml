@@ -66,17 +66,19 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
 
-                        <Label Grid.Row="0" TextColor="{StaticResource MainTextColor}" Text="{Binding Title}" />
+                        <Label Grid.Row="0" TextColor="{StaticResource MainTextColor}" FontAttributes="Bold" Text="{Binding Title}" />
+                        <Label Grid.Row="1" TextColor="{StaticResource MainTextColor}" Text="{Binding SpeakerNames}" IsVisible="{Binding HasSpeakers}" />
                         
-                        <StackLayout Grid.Row="1" Orientation="Horizontal" IsVisible="{Binding IsRoomDefined}">
+                        <StackLayout Grid.Row="2" Orientation="Horizontal" IsVisible="{Binding IsRoomDefined}">
                             <Label TextColor="{StaticResource MainTextColorLight}" Text="Raum: "></Label>
                             <Label TextColor="{StaticResource MainTextColorLight}" Text="{Binding Room}" />
                         </StackLayout>
 
-                        <Label Grid.Row="2" TextColor="{StaticResource MainTextColorLight}" Text="{Binding TimeDisplayLong}" />
+                        <Label Grid.Row="3" TextColor="{StaticResource MainTextColorLight}" Text="{Binding TimeDisplayLong}" />
                     </Grid>
                 </ViewCell>
             </DataTemplate>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MDDevDaysApp.DomainModel
 {
@@ -17,10 +18,12 @@ namespace MDDevDaysApp.DomainModel
         public string Title { get; set; }
         public string Room { get; set; }
         public List<Guid> SpeakerIds { get; set; }
+        public List<Speaker> Speakers { get; set; }
 
         public bool IsRoomDefined => !string.IsNullOrEmpty(Room);
         public string TimeDisplayShort => $"{Start:M}, {Start:t}";
         public string TimeDisplayLong => End.HasValue ? $"{TimeDisplayShort} - {End:t}" : $"{TimeDisplayShort} - Open End";
-        public List<Speaker> Speakers { get; set; }
+        public string SpeakerNames => string.Join(", ", Speakers.Select(s => s.FullName));
+        public bool HasSpeakers => Speakers.Any();
     }
 }
