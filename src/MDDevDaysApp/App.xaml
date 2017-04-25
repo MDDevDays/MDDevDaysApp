@@ -1,18 +1,39 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                         xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
                         xmlns:converters="clr-namespace:MDDevDaysApp.Converters;assembly=MDDevDaysApp"
                         x:Class="MDDevDaysApp.App">
 
-  <Application.Resources>
-    <ResourceDictionary>
-      <Color x:Key="MainColor">#94c11f</Color>
-      <Color x:Key="MainTextColor">Black</Color>
-      <Color x:Key="MainTextColorLight">Gray</Color>
-      <Color x:Key="WindowBackground">White</Color>
-      <converters:LocalImagePathConverter x:Key="LocalImagePathConverter" />
-    </ResourceDictionary>
-  </Application.Resources>
-  
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="MainColor">#94c11f</Color>
+            <Color x:Key="MainTextColor">Black</Color>
+            <Color x:Key="MainTextColorLight">Gray</Color>
+            <Color x:Key="WindowBackground">White</Color>
+
+            <OnPlatform x:TypeArguments="x:Double" WinPhone="13" x:Key="MdDevDaysListItemTextStyleSize">
+                <On Platform="Android, iOS" Value="16" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:Double" WinPhone="13" x:Key="MdDevDaysListItemDetailTextStyleSize">
+                <On Platform="Android, iOS" Value="13" />
+            </OnPlatform>
+
+            <Style x:Key="MdDevDaysListItemTextStyle" TargetType="Label" BaseResourceKey="ListItemTextStyle">
+                <Setter Property="FontSize" Value="{DynamicResource MdDevDaysListItemTextStyleSize}" />
+                <Setter Property="TextColor" Value="{DynamicResource MainTextColor}" />
+            </Style>
+            <Style x:Key="MdDevDaysListItemTextStyleBold" TargetType="Label" BaseResourceKey="MdDevDaysListItemTextStyle">
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <Style x:Key="MdDevDaysListItemDetailTextStyle" TargetType="Label" BaseResourceKey="ListItemDetailTextStyle">
+                <Setter Property="FontSize" Value="{DynamicResource MdDevDaysListItemDetailTextStyleSize}" />
+                <Setter Property="TextColor" Value="{DynamicResource MainTextColorLight}" />
+            </Style>
+
+            <converters:LocalImagePathConverter x:Key="LocalImagePathConverter" />
+        </ResourceDictionary>
+    </Application.Resources>
+
 </prism:PrismApplication>

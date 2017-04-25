@@ -70,15 +70,21 @@
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
 
-                        <Label Grid.Row="0" TextColor="{StaticResource MainTextColor}" FontAttributes="Bold" Text="{Binding Title}" />
-                        <Label Grid.Row="1" TextColor="{StaticResource MainTextColor}" Text="{Binding SpeakerNames}" IsVisible="{Binding HasSpeakers}" />
-                        
-                        <StackLayout Grid.Row="2" Orientation="Horizontal" IsVisible="{Binding IsRoomDefined}">
-                            <Label TextColor="{StaticResource MainTextColorLight}" Text="Raum: "></Label>
-                            <Label TextColor="{StaticResource MainTextColorLight}" Text="{Binding Room}" />
-                        </StackLayout>
+                        <Label Grid.Row="0" Style="{DynamicResource MdDevDaysListItemTextStyleBold}" Text="{Binding Title}" />
+                        <Label Grid.Row="1" Style="{DynamicResource MdDevDaysListItemTextStyle}" Text="{Binding SpeakerNames}" IsVisible="{Binding HasSpeakers}" />
 
-                        <Label Grid.Row="3" TextColor="{StaticResource MainTextColorLight}" Text="{Binding TimeDisplayLong}" />
+                        <Grid Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0" Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="{Binding TimeDisplayLong}" />
+                            <StackLayout Grid.Column="1" HorizontalOptions="End" Orientation="Horizontal" IsVisible="{Binding IsRoomDefined}">
+                                <Label Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="Raum: "></Label>
+                                <Label Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="{Binding Room}" />
+                            </StackLayout>
+                        </Grid>
                     </Grid>
                 </ViewCell>
             </DataTemplate>
