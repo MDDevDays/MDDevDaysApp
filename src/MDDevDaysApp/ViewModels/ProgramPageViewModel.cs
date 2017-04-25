@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading.Tasks;
 using MDDevDaysApp.DomainModel;
 using Prism;
 using Prism.Mvvm;
@@ -11,11 +13,13 @@ namespace MDDevDaysApp.ViewModels
     public class ProgramPageViewModel : BindableBase, IActiveAware
     {
         private readonly ITimeslots _timeslots;
+        private readonly ISpeakers _speakers;
         private bool _isActive;
 
-        public ProgramPageViewModel(ITimeslots timeslots)
+        public ProgramPageViewModel(ITimeslots timeslots, ISpeakers speakers)
         {
             _timeslots = timeslots;
+            _speakers = speakers;
             Title = "Programm";
             Timeslots = new ObservableCollection<Grouping<string, Timeslot>>();
 
@@ -47,7 +51,8 @@ namespace MDDevDaysApp.ViewModels
             if (Timeslots.Any())
                 return;
 
-            var allTimeslots = await _timeslots.AllAsync();
+            var allTimeslots = (await _timeslots.AllAsync()).ToList();
+            await SetSpeakersInTimeSlots(allTimeslots);
             var groupedTimeslots = from timeslot in allTimeslots
                 orderby timeslot.Start
                 group timeslot by timeslot.TimeDisplayShort
@@ -56,6 +61,17 @@ namespace MDDevDaysApp.ViewModels
 
             foreach (var grouping in groupedTimeslots)
                 Timeslots.Add(grouping);
+        }
+
+        private async Task SetSpeakersInTimeSlots(IEnumerable<Timeslot> allTimeslots)
+        {
+            foreach (var timeslot in allTimeslots)
+            {
+                foreach (var speakerId in timeslot.SpeakerIds)
+                {
+                    timeslot.Speakers.Add(await _speakers.GetByAsync(speakerId));
+                }
+            }
         }
     }
 }

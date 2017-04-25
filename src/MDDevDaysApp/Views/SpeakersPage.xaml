@@ -92,7 +92,7 @@
                         </Grid.RowDefinitions>
 
                         <Image Grid.Column="0" Source="{Binding ImageUri, Converter={StaticResource LocalImagePathConverter}}" />
-                        <Label Grid.Column="1" TextColor="{StaticResource MainTextColor}" Text="{Binding FullName}" />
+                        <Label Grid.Column="1" Style="{DynamicResource MdDevDaysListItemTextStyle}" Text="{Binding FullName}" />
                     </Grid>
                 </ViewCell>
             </DataTemplate>
