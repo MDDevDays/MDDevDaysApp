@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using MDDevDaysApp.DomainModel;
@@ -14,6 +16,11 @@ namespace MDDevDaysApp.Infrastructure
         public async Task<IEnumerable<Speaker>> AllAsync()
         {
             return _speakers ?? (_speakers = await ReadSpeakersFromJSONAsync());
+        }
+
+        public async Task<Speaker> GetByAsync(Guid speakerId)
+        {
+            return (await AllAsync()).SingleOrDefault(s => s.Id.Equals(speakerId));
         }
 
         private async Task<IEnumerable<Speaker>> ReadSpeakersFromJSONAsync()
