@@ -6,6 +6,10 @@ namespace MDDevDaysApp.DomainModel
 {
     public class Timeslot
     {
+        private string _timeDisplayShort;
+        private string _timeDisplayLong;
+        private string _speakersName;
+
         public Timeslot()
         {
             SpeakerIds = new List<Guid>();
@@ -21,9 +25,9 @@ namespace MDDevDaysApp.DomainModel
         public List<Speaker> Speakers { get; set; }
 
         public bool IsRoomDefined => !string.IsNullOrEmpty(Room);
-        public string TimeDisplayShort => $"{Start:M}, {Start:t}";
-        public string TimeDisplayLong => End.HasValue ? $"{TimeDisplayShort} - {End:t}" : $"{TimeDisplayShort} - Open End";
-        public string SpeakerNames => string.Join(", ", Speakers.Select(s => s.FullName));
+        public string TimeDisplayShort => _timeDisplayShort ?? (_timeDisplayShort = $"{Start:M}, {Start:t}");
+        public string TimeDisplayLong => _timeDisplayLong ?? (_timeDisplayLong = End.HasValue ? $"{TimeDisplayShort} - {End:t}" : $"{TimeDisplayShort} - Open End");
+        public string SpeakerNames => _speakersName ?? (_speakersName = string.Join(", ", Speakers.Select(s => s.FullName)));
         public bool HasSpeakers => Speakers.Any();
     }
 }
