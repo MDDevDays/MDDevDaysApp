@@ -11,7 +11,8 @@
     "Start": "2017-05-10T09:00:00",
     "End": "2017-05-10T09:20:00",
     "Title": "Begrüßung",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "9b83895d-e34f-4926-9777-b68185f7e190" ]
   },
 
   {
@@ -19,7 +20,8 @@
     "Start": "2017-05-10T09:20:00",
     "End": "2017-05-10T09:40:00",
     "Title": "Keynote",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "43a93765-e18f-49d0-a011-6fbdddce04bd" ]
   },
 
   {
@@ -27,28 +29,32 @@
     "Start": "2017-05-10T10:00:00",
     "End": "2017-05-10T11:00:00",
     "Title": "Spiel mir nicht das Lied von „House of Cards“!",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "5cd170d4-0608-4e9b-8bb3-72194fdf1cec" ]
   },
   {
     "Id": "9d8c4421-58ac-4f34-8e0a-0d2baebb9c2c",
     "Start": "2017-05-10T10:00:00",
     "End": "2017-05-10T10:00:00",
     "Title": "Leichtgewichtige Architektur für’s Web – ASP.NET schlank & schnell",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "43a93765-e18f-49d0-a011-6fbdddce04bd" ]
   },
   {
     "Id": "38ebab7c-6ce7-42cd-bad9-a29beef4dbe8",
     "Start": "2017-05-10T10:00:00",
     "End": "2017-05-10T11:00:00",
     "Title": "Was Java 9 bringt",
-    "Room": "Bjarne Stroustroup"
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "c56c0e8d-9d98-48ef-856a-d616c12251b4" ]
   },
   {
     "Id": "a15b2ca2-82f9-4a3e-86e7-fafb9a8df91d",
     "Start": "2017-05-10T10:00:00",
     "End": "2017-05-10T11:00:00",
     "Title": "Einführung in React",
-    "Room": "Linus Torvalds"
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "cf1cccfe-c801-4f10-88c3-5b140055141d" ]
   },
 
   {
@@ -56,28 +62,32 @@
     "Start": "2017-05-10T11:15:00",
     "End": "2017-05-10T12:15:00",
     "Title": "„Mehr Hirn im Team, bitte“",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "9cc515e5-1aa9-43dd-9c24-3ec942346523" ]
   },
   {
     "Id": "485b4bfa-8756-41a2-839b-2744e8a71d33",
     "Start": "2017-05-10T11:15:00",
     "End": "2017-05-10T12:15:00",
     "Title": "ASP.NET Identity in service-orientierten Anwendungen",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "8927f85b-ce41-4c34-a022-030b77da57b5" ]
   },
   {
     "Id": "4f7f57a8-b258-4d24-a5c0-480596788314",
     "Start": "2017-05-10T11:15:00",
     "End": "2017-05-10T12:15:00",
     "Title": "Die ganze Power von Machine Learning nutzen – mit Cognitive Services",
-    "Room": "Bjarne Stroustroup"
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "6223c0f7-f83e-4699-bc1b-e305d84f4c8b" ]
   },
   {
     "Id": "79d834e7-5cef-4c6a-9bfc-e4d392479f6e",
     "Start": "2017-05-10T11:15:00",
     "End": "2017-05-10T12:15:00",
     "Title": "Java 8 EE",
-    "Room": "Linus Torvalds"
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "1fefb688-5d2f-4978-9ed5-9bf7ed24fed1" ]
   },
 
   {
@@ -92,7 +102,8 @@
     "Start": "2017-05-10T13:15:00",
     "End": "2017-05-10T13:45:00",
     "Title": "IT-Wissensvermittlung in Schule – Ausbildung – Berufseinstieg",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "4a43b927-abb8-41a5-ab85-a102f62a7839", "27f81dc3-4eed-4d71-9492-1504b308651a", "67275031-015c-4fa5-8366-1d231b7718fc" ]
   },
 
   {
@@ -100,28 +111,32 @@
     "Start": "2017-05-10T14:00:00",
     "End": "2017-05-10T15:00:00",
     "Title": "Threat Modeling – Sichere Architektur von (Micro)Services",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "43a93765-e18f-49d0-a011-6fbdddce04bd" ]
   },
   {
     "Id": "e3d0337f-89de-4710-94b9-f7279a111b82",
     "Start": "2017-05-10T14:00:00",
     "End": "2017-05-10T15:00:00",
     "Title": "Funktionales C# praktisch demonstriert",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "c82945e5-d257-4595-a653-24ead5404748" ]
   },
   {
     "Id": "3ae9d631-e080-439a-a87e-57545616b5da",
     "Start": "2017-05-10T14:00:00",
     "End": "2017-05-10T15:00:00",
     "Title": "HTTP/2 – how HTTP/2 comes to Java",
-    "Room": "Bjarne Stroustroup"
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "1fefb688-5d2f-4978-9ed5-9bf7ed24fed1" ]
   },
   {
     "Id": "16c009da-07ae-4e27-b1df-e523144d6dd8",
     "Start": "2017-05-10T14:00:00",
     "End": "2017-05-10T15:00:00",
     "Title": "Speed up your SQL Coding Skills with SQL Prompt",
-    "Room": "Linus Torvalds"
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "f79e5c89-818c-4bfe-a672-3152780a3569" ]
   },
 
   {
@@ -129,28 +144,32 @@
     "Start": "2017-05-10T15:15:00",
     "End": "2017-05-10T16:15:00",
     "Title": "C# 7 – Was gibt es Neues?",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "71193286-9e41-46da-80c5-cf3c0ecd5a7d" ]
   },
   {
     "Id": "757d1347-bad3-4712-872c-7ab89b218fb8",
     "Start": "2017-05-10T15:15:00",
     "End": "2017-05-10T16:15:00",
     "Title": "IoT in der Praxis: Elektroautos, Ladesäulen und Azure",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "533d0054-2e97-49a3-9c68-afafba6e88ef" ]
   },
   {
     "Id": "e63ffb3f-3aad-49bf-8e5d-abe36ad18fcb",
     "Start": "2017-05-10T15:15:00",
     "End": "2017-05-10T16:15:00",
     "Title": "Vorstellung der Dev-Test Labs auf Azure",
-    "Room": "Bjarne Stroustroup"
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "012b9edd-d139-47b9-a5ac-428692a364c7" ]
   },
   {
     "Id": "db6bb772-7710-4f11-8567-c6a7dad31532",
     "Start": "2017-05-10T15:15:00",
     "End": "2017-05-10T16:15:00",
     "Title": "High-Frequency-Trading – Herausforderung bei der Umsetzung in C++",
-    "Room": "Linus Torvalds"
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "86a583ee-96dd-4b8d-bcfa-717a5089d158" ]
   },
 
   {
@@ -165,28 +184,32 @@
     "Start": "2017-05-10T17:00:00",
     "End": "2017-05-10T18:00:00",
     "Title": "Mit DevOps und Business Agility die Herausforderungen der digitalen Transformation meistern",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "4cc19590-d88d-43f3-bb05-f6ceb70e7da7", "a566eaf5-6eaf-43e9-910e-7f6baafc8942" ]
   },
   {
     "Id": "0acb56c5-7e33-41a1-8274-a234ddc0732c",
     "Start": "2017-05-10T17:00:00",
     "End": "2017-05-10T18:00:00",
     "Title": "Agile Feedback Kultur",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "018d9b96-adb1-49c8-af58-26e93d20db58" ]
   },
   {
     "Id": "e2524166-6e6f-4c21-a554-83ec9a8202b8",
     "Start": "2017-05-10T17:00:00",
     "End": "2017-05-10T18:00:00",
     "Title": "Identity- und AccessManagement",
-    "Room": "Bjarne Stroustroup"
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "05f13cd9-2def-49f7-b40e-88f337002b97" ]
   },
   {
     "Id": "c5474fd8-9def-48b9-912b-093ddd70f0bd",
     "Start": "2017-05-10T17:00:00",
     "End": "2017-05-10T18:00:00",
     "Title": "Database Life Cycle Management",
-    "Room": "Linus Torvalds"
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "f79e5c89-818c-4bfe-a672-3152780a3569" ]
   },
 
   {
@@ -228,13 +251,15 @@
     "Id": "7585abc3-5c34-4805-beaa-e15208cdad82",
     "Start": "2017-05-10T20:30:00",
     "Title": "Night School: Hacking",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "d85b4992-f915-47b1-987a-a016989ff316" ]
   },
   {
     "Id": "532b29ed-308c-428d-864a-e93c500555cb",
     "Start": "2017-05-10T20:30:00",
     "Title": "Night School: Cortana",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "4e651a4a-5031-44aa-978a-93a090a5ffdb" ]
   },
 
   {
@@ -249,7 +274,8 @@
     "Start": "2017-05-11T09:00:00",
     "End": "2017-05-11T09:15:00",
     "Title": "Begrüßung",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "9b83895d-e34f-4926-9777-b68185f7e190" ]
   },
 
   {
@@ -257,28 +283,32 @@
     "Start": "2017-05-11T09:30:00",
     "End": "2017-05-11T10:30:00",
     "Title": "Data Platform für die Cloud",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "4e651a4a-5031-44aa-978a-93a090a5ffdb" ]
   },
   {
     "Id": "79428ddc-cad1-489c-81db-78a247e7afd2",
     "Start": "2017-05-11T09:30:00",
     "End": "2017-05-11T10:30:00",
     "Title": "Neustart für das Web: ASP.NET Core 1.x",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "e08877ce-26bb-4894-b067-0592d2f8c0ac" ]
   },
   {
     "Id": "1fcee891-fadc-4b7d-b873-c60afdf37a13",
     "Start": "2017-05-11T09:30:00",
     "End": "2017-05-11T10:30:00",
     "Title": "Ein Einführung in Cross-Plattform-Entwicklung mit Xamarin",
-    "Room": "Bjarne Stroustroup"
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "ee60a04a-2d5c-4261-b5ea-b4e766ce212d" ]
   },
   {
     "Id": "56ddd6f4-bc63-45cf-ae61-b2d860b2e2f7",
     "Start": "2017-05-11T09:30:00",
     "End": "2017-05-11T10:30:00",
     "Title": "Kuck mal, Node.js! Einstieg für .NET Entwickler",
-    "Room": "Linus Torvalds"
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "d85b4992-f915-47b1-987a-a016989ff316" ]
   },
 
   {
@@ -286,28 +316,32 @@
     "Start": "2017-05-11T10:45:00",
     "End": "2017-05-11T11:45:00",
     "Title": "API First mit Swagger & Co",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "71193286-9e41-46da-80c5-cf3c0ecd5a7d" ]
   },
   {
     "Id": "92b0d564-16b4-48fe-93a5-bcdf112d4498",
     "Start": "2017-05-11T10:45:00",
     "End": "2017-05-11T11:45:00",
     "Title": "Intelligente Bots – das Microsoft Bot Framework & Cognitive Services",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "cf0824ec-5673-4121-abb5-0c6fcc68308d" ]
   },
   {
     "Id": "0edffd6a-9de8-4e30-90af-468b7df4768a",
     "Start": "2017-05-11T10:45:00",
     "End": "2017-05-11T11:45:00",
     "Title": "Angular ist kein Web-Framework",
-    "Room": "Bjarne Stroustroup"
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "87ee9161-d3e1-421c-9880-a57034cb5c93" ]
   },
   {
     "Id": "823bc414-0351-40f5-841a-9c75df68a50c",
     "Start": "2017-05-11T10:45:00",
     "End": "2017-05-11T11:45:00",
     "Title": "Paul ist PO! Und Nun?",
-    "Room": "Linus Torvalds"
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "31a772b6-5537-49a7-bb2f-0dcad494840d" ]
   },
 
   {
@@ -321,14 +355,16 @@
     "Start": "2017-05-11T12:20:00",
     "End": "2017-05-11T13:20:00",
     "Title": "Coding Dojo for Kids",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "71193286-9e41-46da-80c5-cf3c0ecd5a7d" ]
   },
   {
     "Id": "ad614e3b-62b4-4b94-9768-37a71ebae37c",
     "Start": "2017-05-11T12:45:00",
     "End": "2017-05-11T13:15:00",
     "Title": "Nachhaltigkeit in der IT",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "74c01351-e3ed-41dc-8880-5ef41a3c20fb" ]
   },
 
   {
@@ -336,28 +372,32 @@
     "Start": "2017-05-11T13:30:00",
     "End": "2017-05-11T14:30:00",
     "Title": "CQRS my 42",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "b6c02676-c4c3-4882-99ff-59671d4692ef" ]
   },
   {
     "Id": "910b09a7-ae00-4f0f-803e-f434fbc7cc49",
     "Start": "2017-05-11T13:30:00",
     "End": "2017-05-11T14:30:00",
     "Title": "Neustart für den Datenzugriff: Entity Framework Core 1.x",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "e08877ce-26bb-4894-b067-0592d2f8c0ac" ]
   },
   {
     "Id": "78a05675-319e-413f-a9e6-feeaea22f817",
     "Start": "2017-05-11T13:30:00",
     "End": "2017-05-11T14:30:00",
     "Title": "Skalierbarkeit und Parallelisierung in Java-Herausforderungen und Tücken einer Banken-Handelssoftware",
-    "Room": "Bjarne Stroustroup"
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "884c09d8-794f-4204-8af8-84c73c4f30cf" ]
   },
   {
     "Id": "0e70e1c3-b67e-4e95-9861-e39d4d318f5d",
     "Start": "2017-05-11T13:30:00",
     "End": "2017-05-11T14:30:00",
     "Title": "TypeScript für Fortgeschrittene",
-    "Room": "Linus Torvalds"
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "533d0054-2e97-49a3-9c68-afafba6e88ef" ]
   },
 
   {
@@ -365,28 +405,32 @@
     "Start": "2017-05-11T14:45:00",
     "End": "2017-05-11T15:45:00",
     "Title": "Up in the air – Serverless Computing mit Azure Functions",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "12d8748c-b912-4221-8d3c-56d363ae6c41" ]
   },
   {
     "Id": "070b2a37-c52f-41b9-9fae-960eecf6d1b3",
     "Start": "2017-05-11T14:45:00",
     "End": "2017-05-11T15:45:00",
     "Title": "Mein IT-Dienstleister spricht nur Latein",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "8ac02167-fe49-4dcd-a5a1-37766e7d345d" ]
   },
   {
     "Id": "ea0f648a-132a-4a22-b26c-71b57b2a8007",
     "Start": "2017-05-11T14:45:00",
     "End": "2017-05-11T15:45:00",
     "Title": "Entwickeln für die Cloud – Ein Beispielprojekt auf der Google Cloud Platform",
-    "Room": "Bjarne Stroustroup"
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "4f0cec28-0cfa-4f4f-a7eb-1595d2703517" ]
   },
   {
     "Id": "3ed89f60-aa57-4e9f-81c5-9de93e12e1c7",
     "Start": "2017-05-11T14:45:00",
     "End": "2017-05-11T15:45:00",
     "Title": "Viele Microservices – ein verbindendes Datenaustauschmodell",
-    "Room": "Linus Torvalds"
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "ed185663-078f-4111-8a36-a4947af9c35d" ]
   },
   {
     "Id": "a0fde3fb-6c39-4239-9a00-0fbb6e94332f",
@@ -400,28 +444,32 @@
     "Start": "2017-05-11T16:30:00",
     "End": "2017-05-11T17:30:00",
     "Title": "Domain Driven Design",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "c1bc414b-ce31-49ab-818a-525cf14e56a8" ]
   },
   {
     "Id": "93074d9e-61c2-4f57-9c34-6f48deb8d9fa",
     "Start": "2017-05-11T16:30:00",
     "End": "2017-05-11T17:30:00",
     "Title": "Cross-Plattform-App-Entwicklung mit Visual Studio 2017: Xamarin und Cordova",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "5779068e-eef5-4d8b-9020-2fee08b37650" ]
   },
   {
     "Id": "2679fc20-f112-4bc4-8974-4858553971b7",
     "Start": "2017-05-11T16:30:00",
     "End": "2017-05-11T17:30:00",
     "Title": "Automatisieren von Alltagsaufgaben: Tuning von Visual Studio",
-    "Room": "Bjarne Stroustroup"
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "533d0054-2e97-49a3-9c68-afafba6e88ef" ]
   },
   {
     "Id": "e1bfd564-eeef-44c3-9515-704b77019be5",
     "Start": "2017-05-11T16:30:00",
     "End": "2017-05-11T17:30:00",
     "Title": "Ping Me! A practical showdown of SignalR",
-    "Room": "Linus Torvalds"
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "3b87d148-be9a-4b15-9a14-fb5025895b29" ]
   },
 
   {
@@ -429,27 +477,31 @@
     "Start": "2017-05-11T17:45:00",
     "End": "2017-05-11T18:45:00",
     "Title": "ASP.NET Core und Docker",
-    "Room": "Konrad Zuse"
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "8927f85b-ce41-4c34-a022-030b77da57b5" ]
   },
   {
     "Id": "6c26e57d-c34e-441c-acec-318c32b47fa0",
     "Start": "2017-05-11T17:45:00",
     "End": "2017-05-11T18:45:00",
     "Title": "Big Data – Demystified – Showcase Stauerkennung",
-    "Room": "Alan Turing"
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "cb993566-f629-4cde-b352-1cceaf9dc7cb" ]
   },
   {
     "Id": "c18239e9-6018-4ec2-86af-5458de52f27f",
     "Start": "2017-05-11T17:45:00",
     "End": "2017-05-11T18:45:00",
     "Title": "„Wir sind agil“",
-    "Room": "Bjarne Stroustroup"
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "f2087fb9-3448-4c41-ab00-6732e6c66606" ]
   },
   {
     "Id": "8889548e-b8a8-45fc-93c4-36d9f7bee507",
     "Start": "2017-05-11T17:45:00",
     "End": "2017-05-11T18:45:00",
     "Title": "Fuck Up! Was läuft hier denn falsch?",
-    "Room": "Linus Torvalds"
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "9b83895d-e34f-4926-9777-b68185f7e190" ]
   }
 ]
