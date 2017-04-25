@@ -110,10 +110,10 @@
     "Room": "Alan Turing"
   },
   {
-    "Id": "e2524166-6e6f-4c21-a554-83ec9a8202b8",
+    "Id": "3ae9d631-e080-439a-a87e-57545616b5da",
     "Start": "2017-05-10T14:00:00",
     "End": "2017-05-10T15:00:00",
-    "Title": "Identity- und AccessManagement",
+    "Title": "HTTP/2 – how HTTP/2 comes to Java",
     "Room": "Bjarne Stroustroup"
   },
   {
@@ -175,10 +175,10 @@
     "Room": "Alan Turing"
   },
   {
-    "Id": "3ae9d631-e080-439a-a87e-57545616b5da",
+    "Id": "e2524166-6e6f-4c21-a554-83ec9a8202b8",
     "Start": "2017-05-10T17:00:00",
     "End": "2017-05-10T18:00:00",
-    "Title": "HTTP/2 – how HTTP/2 comes to Java",
+    "Title": "Identity- und AccessManagement",
     "Room": "Bjarne Stroustroup"
   },
   {
