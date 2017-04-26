@@ -17,7 +17,8 @@
                 <On Platform="Android, iOS" Value="16" />
             </OnPlatform>
             <OnPlatform x:TypeArguments="x:Double" WinPhone="13" x:Key="MdDevDaysListItemDetailTextStyleSize">
-                <On Platform="Android, iOS" Value="13" />
+              <On Platform="Android" Value="13" />
+              <On Platform="iOS" Value="10" />
             </OnPlatform>
 
             <Style x:Key="MdDevDaysListItemTextStyle" TargetType="Label" BaseResourceKey="ListItemTextStyle">

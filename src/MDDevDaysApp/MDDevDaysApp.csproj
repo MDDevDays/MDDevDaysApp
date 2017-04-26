@@ -43,15 +43,19 @@
     <Compile Include="DomainModel\ISpeakers.cs" />
     <Compile Include="Infrastructure\Speakers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\TimeslotPage.xaml.cs">
+      <DependentUpon>TimeslotPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\Grouping.cs" />
     <Compile Include="ViewModels\InfoPageViewModel.cs" />
     <Compile Include="ViewModels\MainNavigationPageViewModel.cs" />
     <Compile Include="ViewModels\MainTabbedPageViewModel.cs" />
-    <Compile Include="ViewModels\ProgramPageViewModel.cs" />
+    <Compile Include="ViewModels\TimeslotPageViewModel.cs" />
+    <Compile Include="ViewModels\TimeslotsPageViewModel.cs" />
     <Compile Include="ViewModels\SpeakerPageViewModel.cs" />
     <Compile Include="ViewModels\SpeakersPageViewModel.cs" />
-    <Compile Include="Views\ProgramPage.xaml.cs">
-      <DependentUpon>ProgramPage.xaml</DependentUpon>
+    <Compile Include="Views\TimeslotsPage.xaml.cs">
+      <DependentUpon>TimeslotsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SpeakerPage.xaml.cs">
       <DependentUpon>SpeakerPage.xaml</DependentUpon>
@@ -154,7 +158,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ProgramPage.xaml">
+    <EmbeddedResource Include="Views\TimeslotsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -213,6 +217,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\CarstenKoenig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TimeslotPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

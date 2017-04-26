@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="MDDevDaysApp.Views.TimeslotPage"
+             BackgroundColor="{DynamicResource WindowBackground}"
+             Title="{Binding Title}">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" FontSize="Large" TextColor="{StaticResource MainTextColor}" Text="{Binding Timeslot.Title}" />
+        <Label Grid.Row="1" TextColor="{StaticResource MainTextColor}" Text="{Binding Timeslot.SpeakerNames}" />
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="{Binding Timeslot.TimeDisplayLong}" />
+            <StackLayout Grid.Column="1" HorizontalOptions="End" Orientation="Horizontal" IsVisible="{Binding Timeslot.IsRoomDefined}">
+                <Label Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="Raum: "></Label>
+                <Label Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="{Binding Timeslot.Room}" />
+            </StackLayout>
+        </Grid>
+
+        <ScrollView Grid.Row="3" Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Label Text="{Binding Timeslot.Description}" />
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

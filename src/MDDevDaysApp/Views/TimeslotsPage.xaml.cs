@@ -2,9 +2,9 @@
 
 namespace MDDevDaysApp.Views
 {
-    public partial class SpeakersPage : ContentPage
+    public partial class TimeslotsPage : ContentPage
     {
-        public SpeakersPage()
+        public TimeslotsPage()
         {
             InitializeComponent();
         }
@@ -14,7 +14,7 @@ namespace MDDevDaysApp.Views
             if (e.Item == null)
                 return;
 
-            ((ListView) sender).SelectedItem = null;
+            ((ListView)sender).SelectedItem = null;
         }
     }
 }
