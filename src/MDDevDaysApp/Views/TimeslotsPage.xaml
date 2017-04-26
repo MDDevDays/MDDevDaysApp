@@ -17,7 +17,8 @@
     <ListView ItemsSource="{Binding Timeslots}"
               IsGroupingEnabled="True"
               GroupDisplayBinding="{Binding Key}"
-              HasUnevenRows="True" >
+              HasUnevenRows="True"
+              ItemTapped="ListView_OnItemTapped">
         <ListView.Behaviors>
             <behaviors:EventToCommandBehavior EventName="ItemTapped"
                                               Command="{Binding ShowTimeslot}"
