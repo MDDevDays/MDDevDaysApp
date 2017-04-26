@@ -47,11 +47,11 @@
     <Compile Include="ViewModels\InfoPageViewModel.cs" />
     <Compile Include="ViewModels\MainNavigationPageViewModel.cs" />
     <Compile Include="ViewModels\MainTabbedPageViewModel.cs" />
-    <Compile Include="ViewModels\ProgramPageViewModel.cs" />
+    <Compile Include="ViewModels\TimeslotsPageViewModel.cs" />
     <Compile Include="ViewModels\SpeakerPageViewModel.cs" />
     <Compile Include="ViewModels\SpeakersPageViewModel.cs" />
-    <Compile Include="Views\ProgramPage.xaml.cs">
-      <DependentUpon>ProgramPage.xaml</DependentUpon>
+    <Compile Include="Views\TimeslotsPage.xaml.cs">
+      <DependentUpon>TimeslotsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SpeakerPage.xaml.cs">
       <DependentUpon>SpeakerPage.xaml</DependentUpon>
@@ -154,7 +154,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ProgramPage.xaml">
+    <EmbeddedResource Include="Views\TimeslotsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

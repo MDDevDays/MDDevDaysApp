@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="MDDevDaysApp.Views.ProgramPage"
+             x:Class="MDDevDaysApp.Views.TimeslotsPage"
              BackgroundColor="{DynamicResource WindowBackground}"
              Title="{Binding Title}">
     <ContentPage.Icon>

@@ -10,13 +10,13 @@ using Prism.Mvvm;
 
 namespace MDDevDaysApp.ViewModels
 {
-    public class ProgramPageViewModel : BindableBase, IActiveAware
+    public class TimeslotsPageViewModel : BindableBase, IActiveAware
     {
         private readonly ITimeslots _timeslots;
         private readonly ISpeakers _speakers;
         private bool _isActive;
 
-        public ProgramPageViewModel(ITimeslots timeslots, ISpeakers speakers)
+        public TimeslotsPageViewModel(ITimeslots timeslots, ISpeakers speakers)
         {
             _timeslots = timeslots;
             _speakers = speakers;

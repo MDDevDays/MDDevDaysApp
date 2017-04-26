@@ -2,9 +2,9 @@
 
 namespace MDDevDaysApp.Views
 {
-    public partial class ProgramPage : ContentPage
+    public partial class TimeslotsPage : ContentPage
     {
-        public ProgramPage()
+        public TimeslotsPage()
         {
             InitializeComponent();
         }

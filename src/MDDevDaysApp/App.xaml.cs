@@ -42,7 +42,7 @@ namespace MDDevDaysApp
 
             Container.RegisterType<InfoPage>();
             Container.RegisterType<SpeakersPage>();
-            Container.RegisterType<ProgramPage>();
+            Container.RegisterType<TimeslotsPage>();
 
             Container.RegisterType<ISpeakers, Speakers>(new ContainerControlledLifetimeManager());
             Container.RegisterType<ITimeslots, Timeslots>(new ContainerControlledLifetimeManager());
