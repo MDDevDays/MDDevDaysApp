@@ -20,6 +20,7 @@ namespace MDDevDaysApp.DomainModel
         public DateTime Start { get; set; }
         public DateTime? End { get; set; }
         public string Title { get; set; }
+        public string Description { get; set; }
         public string Room { get; set; }
         public List<Guid> SpeakerIds { get; set; }
         public List<Speaker> Speakers { get; set; }
