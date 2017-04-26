@@ -3,6 +3,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="MDDevDaysApp.Views.TimeslotsPage"
              BackgroundColor="{DynamicResource WindowBackground}"
@@ -17,6 +18,11 @@
               IsGroupingEnabled="True"
               GroupDisplayBinding="{Binding Key}"
               HasUnevenRows="True" >
+        <ListView.Behaviors>
+            <behaviors:EventToCommandBehavior EventName="ItemTapped"
+                                              Command="{Binding ShowTimeslot}"
+                                              EventArgsParameterPath="Item"/>
+        </ListView.Behaviors>
         <ListView.GroupHeaderTemplate>
             <DataTemplate>
                 <ViewCell>

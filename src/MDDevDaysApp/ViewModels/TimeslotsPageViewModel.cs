@@ -4,9 +4,12 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using MDDevDaysApp.DomainModel;
 using Prism;
+using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Navigation;
 
 namespace MDDevDaysApp.ViewModels
 {
@@ -14,21 +17,24 @@ namespace MDDevDaysApp.ViewModels
     {
         private readonly ITimeslots _timeslots;
         private readonly ISpeakers _speakers;
+        private readonly INavigationService _navigationService;
         private bool _isActive;
 
-        public TimeslotsPageViewModel(ITimeslots timeslots, ISpeakers speakers)
+        public TimeslotsPageViewModel(ITimeslots timeslots, ISpeakers speakers, INavigationService navigationService)
         {
             _timeslots = timeslots;
             _speakers = speakers;
+            _navigationService = navigationService;
             Title = "Programm";
             Timeslots = new ObservableCollection<Grouping<string, Timeslot>>();
+            ShowTimeslot = new DelegateCommand<Timeslot>(ShowTimeslotExecute);
 
             PropertyChanged += OnPropertyChanged;
         }
 
-        public ObservableCollection<Grouping<string, Timeslot>> Timeslots { get; }
-
         public string Title { get; }
+        public ObservableCollection<Grouping<string, Timeslot>> Timeslots { get; }
+        public ICommand ShowTimeslot { get; set; }
 
         public bool IsActive
         {
@@ -72,6 +78,11 @@ namespace MDDevDaysApp.ViewModels
                     timeslot.Speakers.Add(await _speakers.GetByAsync(speakerId));
                 }
             }
+        }
+
+        private void ShowTimeslotExecute(Timeslot timeslot)
+        {
+            _navigationService.NavigateAsync("TimeslotPage", new NavigationParameters {{"timeslot", timeslot}}, false);
         }
     }
 }
