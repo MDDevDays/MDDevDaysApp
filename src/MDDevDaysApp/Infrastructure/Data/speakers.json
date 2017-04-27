@@ -42,13 +42,6 @@
     "Bio": "Constantin Klein arbeitet bei der Freudenberg IT GmbH & Co. KG. Dort beschäftigt er sich mit der Entwicklung von Lösungen auf Basis der Microsoft Produkte und Technologie Plattformen. Sein besonderes Interesse gilt dabei der Gewinnung, Verarbeitung und Nutzung von Daten und Informationen.\n\nEr ist MCSD, MCITP Database Developer und MCPD Web + Enterprise Application Developer. Seit 2010 wurde er jährlich von Microsoft zum Most Valuable Professional (MVP) für die Microsoft Data Platform ernannt.\n\nEr engagiert sich zusätzlich im Vorstand des Just Community e.V. und des PASS Deutschland e.V.. Er leitet die .NET User Group Frankfurt."
   },
   {
-    "Id": "b6c02676-c4c3-4882-99ff-59671d4692ef",
-    "FirstName": "Daniel",
-    "LastName": "Fisher",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/DanielFisher.png",
-    "Bio": "Anfang der Neunziger Computer geschraubt und Netzwerke konfiguriert. Der Drang nach Automatisierung führte an Batching und Scripting vorbei.\n\nAuf der anderen Seite des Grabens angekommen ist seitdem das HTTP-Protokoll ständiger Begleiter. Die Reise begann mit JavaScript, führte über Perl, Php, ASP mit Visual Basic 5 und JScript bis hin zu C++ zu Java. Ende der Neunziger .NET, zwischendurch mal Python, und jetzt wieder JavaScript.\n\nEr entwickelt, schult, trainiert, coached und spricht.\nSeine Themen: HTML5 & Web, Data Access & Performance, Scalable & Testable Designs, Distributed Systems & Services, Security & Trust."
-  },
-  {
     "Id": "1fefb688-5d2f-4978-9ed5-9bf7ed24fed1",
     "FirstName": "David",
     "LastName": "Delabassee",

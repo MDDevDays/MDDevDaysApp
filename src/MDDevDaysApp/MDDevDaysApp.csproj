@@ -169,7 +169,6 @@
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\AndreKraemer.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\BerndGronostay.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ConstantinKlein.png" />
-    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\DanielFisher.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\DavidDelabassee.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\DonWibier.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\FalkoLoebner.png" />
