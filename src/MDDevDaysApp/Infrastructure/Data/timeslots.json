@@ -400,10 +400,10 @@
     "Id": "c4d7bc65-4d6c-49bc-b4b1-8054090d474c",
     "Start": "2017-05-11T13:30:00",
     "End": "2017-05-11T14:30:00",
-    "Title": "CQRS my 42",
-    "Description": "Wer sich mit Architektur-Fragen beschäftigt muss Antworten auf nicht-funktionale Anforderungen finden. Testbarkeit, Debugfähigkeit, Verfügbarkeit, Nachvollziehbarkeit, und Performance sind nur einige davon. Nach vielen Jahren und Anwendungen mit N-Tier, Service-orientierung, Domain Driven Design und Co lautet die Antwort für mich immer häufiger Command-Query-Responsibility-Segregation. In dieser Session erzähle ich warum.",
+    "Title": "CQRS auf Dope",
+    "Description": "In einer typischen CQRS Umgebung mit EventSourcing sieht auf den ersten Blick alles irgendwie verwirrend aus. Blickt man nicht auf die Domain, dann steckt überall Infrastruktur drin. Je nach Konfiguration stehen da zwei Datenbankserver, drei Web Server und mehrere Messaging Systeme. All das möchte durch fleißige Kohlenschipper ordentlich auf Druck gehalten werden. Die Kessel müssen dampfen und das Schwungrad muss sich stetig drehen.\nDa ist sie wieder die nervende Infrastruktur. Wie wäre es schön, wenn wir die sie einfach links liegen lassen könnten?\nKönnen wir mit serverless computing. Ich werde in diesem Vortrag zeigen, wie man die beiden top notch Technologien ganz einfach verbindet und so das Entwicklerleben dramatisch vereinfacht.",
     "Room": "Konrad Zuse",
-    "SpeakerIds": [ "b6c02676-c4c3-4882-99ff-59671d4692ef" ]
+    "SpeakerIds": [ "12d8748c-b912-4221-8d3c-56d363ae6c41" ]
   },
   {
     "Id": "910b09a7-ae00-4f0f-803e-f434fbc7cc49",
