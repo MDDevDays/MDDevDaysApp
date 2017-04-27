@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
@@ -8,14 +9,54 @@
              Title="{Binding Title}">
     <Grid Margin="15">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0" FontSize="Large" TextColor="{StaticResource MainTextColor}" Text="{Binding Timeslot.Title}" />
-        <Label Grid.Row="1" TextColor="{StaticResource MainTextColor}" Text="{Binding Timeslot.SpeakerNames}" />
+        <ListView Grid.Row="1"
+                  ItemsSource="{Binding Timeslot.Speakers}"
+                  RowHeight="45"
+                  x:Name="SpeakersListView"
+                  SeparatorVisibility="None"
+                  ItemTapped="SpeakersListView_OnItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition>
+                                    <ColumnDefinition.Width>
+                                        <OnPlatform x:TypeArguments="GridLength" WinPhone="37">
+                                            <On Platform="iOS, Android" Value="40" />
+                                        </OnPlatform>
+                                    </ColumnDefinition.Width>
+                                </ColumnDefinition>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition>
+                                    <RowDefinition.Height>
+                                        <OnPlatform x:TypeArguments="GridLength" WinPhone="44">
+                                            <On Platform="iOS, Android" Value="40" />
+                                        </OnPlatform>
+                                    </RowDefinition.Height>
+                                </RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Column="0"
+                                   VerticalOptions="Center"
+                                   Source="{Binding ImageUri, Converter={StaticResource LocalImagePathConverter}}" />
+                            <Label Grid.Column="1" Style="{DynamicResource MdDevDaysListItemTextStyle}"
+                                   VerticalOptions="Center"
+                                   Text="{Binding FullName}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
@@ -23,9 +64,11 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Column="0" Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="{Binding Timeslot.TimeDisplayLong}" />
-            <StackLayout Grid.Column="1" HorizontalOptions="End" Orientation="Horizontal" IsVisible="{Binding Timeslot.IsRoomDefined}">
-                <Label Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="Raum: "></Label>
+            <Label Grid.Column="0" Style="{DynamicResource MdDevDaysListItemDetailTextStyle}"
+                   Text="{Binding Timeslot.TimeDisplayLong}" />
+            <StackLayout Grid.Column="1" HorizontalOptions="End" Orientation="Horizontal"
+                         IsVisible="{Binding Timeslot.IsRoomDefined}">
+                <Label Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="Raum: " />
                 <Label Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="{Binding Timeslot.Room}" />
             </StackLayout>
         </Grid>
