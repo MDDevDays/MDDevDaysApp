@@ -1,25 +1,30 @@
-﻿using Prism.Mvvm;
+﻿using System.Windows.Input;
+using Prism.Mvvm;
 using MDDevDaysApp.DomainModel;
+using Prism.Commands;
 using Prism.Navigation;
 
 namespace MDDevDaysApp.ViewModels
 {
     public class TimeslotPageViewModel : BindableBase, INavigationAware
     {
+        private readonly INavigationService _navigationService;
         private Timeslot _speaker;
 
-        public TimeslotPageViewModel()
+        public TimeslotPageViewModel(INavigationService navigationService)
         {
+            _navigationService = navigationService;
             Title = "Session Details";
+            ShowSpeaker = new DelegateCommand<Speaker>(ShowSpeakerExecute);
         }
 
+        public string Title { get; }
+        public ICommand ShowSpeaker { get; }
         public Timeslot Timeslot
         {
             get { return _speaker; }
             set { SetProperty(ref _speaker, value); }
         }
-
-        public string Title { get; }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
@@ -33,6 +38,11 @@ namespace MDDevDaysApp.ViewModels
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
+        }
+
+        private void ShowSpeakerExecute(Speaker speaker)
+        {
+            _navigationService.NavigateAsync("SpeakerPage", new NavigationParameters { { "speaker", speaker } }, false);
         }
     }
 }
