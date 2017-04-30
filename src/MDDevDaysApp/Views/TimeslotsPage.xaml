@@ -77,7 +77,7 @@
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
 
-                        <Label Grid.Row="0" Style="{DynamicResource MdDevDaysListItemTextStyleBold}" Text="{Binding Title}" />
+                        <Label Grid.Row="0" Style="{DynamicResource MdDevDaysListItemTitleStyle}" Text="{Binding Title}" />
                         <Label Grid.Row="1" Style="{DynamicResource MdDevDaysListItemTextStyle}" Text="{Binding SpeakerNames}" IsVisible="{Binding HasSpeakers}" />
 
                         <Grid Grid.Row="2">

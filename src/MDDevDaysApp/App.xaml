@@ -17,15 +17,15 @@
                 <On Platform="Android, iOS" Value="16" />
             </OnPlatform>
             <OnPlatform x:TypeArguments="x:Double" WinPhone="13" x:Key="MdDevDaysListItemDetailTextStyleSize">
-              <On Platform="Android" Value="13" />
-              <On Platform="iOS" Value="10" />
+                <On Platform="Android" Value="13" />
+                <On Platform="iOS" Value="10" />
             </OnPlatform>
 
             <Style x:Key="MdDevDaysListItemTextStyle" TargetType="Label" BaseResourceKey="ListItemTextStyle">
                 <Setter Property="FontSize" Value="{DynamicResource MdDevDaysListItemTextStyleSize}" />
                 <Setter Property="TextColor" Value="{DynamicResource MainTextColor}" />
             </Style>
-            <Style x:Key="MdDevDaysListItemTextStyleBold" TargetType="Label" BaseResourceKey="MdDevDaysListItemTextStyle">
+            <Style x:Key="MdDevDaysListItemTitleStyle" TargetType="Label" BaseResourceKey="MdDevDaysListItemTextStyle">
                 <Setter Property="FontAttributes" Value="Bold" />
             </Style>
             <Style x:Key="MdDevDaysListItemDetailTextStyle" TargetType="Label" BaseResourceKey="ListItemDetailTextStyle">

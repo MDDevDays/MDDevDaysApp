@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
@@ -31,27 +32,30 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Image Grid.Row="0" Grid.Column="0" Margin="8" Source="{Binding Speaker.ImageUri, Converter={StaticResource LocalImagePathConverter}}" />
-        <Label Grid.Row="0" Grid.Column="1" Margin="8" FontSize="Large" TextColor="{StaticResource MainTextColor}" Text="{Binding Speaker.FullName}" />
+        <Image Grid.Row="0" Grid.Column="0" Margin="8"
+               Source="{Binding Speaker.ImageUri, Converter={StaticResource LocalImagePathConverter}}" />
+        <Label Grid.Row="0" Grid.Column="1" Margin="8" FontSize="Large" TextColor="{StaticResource MainTextColor}"
+               Text="{Binding Speaker.FullName}" />
 
-        <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical"
+                    VerticalOptions="FillAndExpand">
             <StackLayout Orientation="Vertical">
                 <Label Text="{Binding Speaker.Bio}" />
-                <Label Margin="0,8,0,8" FontAttributes="Bold" Text="Sessions" />
+                <Label Margin="0,8,0,8" Text="Sessions" />
                 <ListView ItemsSource="{Binding Timeslots}"
-                          RowHeight="23"
-                          x:Name="TimeslotsListView" 
+                          RowHeight="32"
+                          x:Name="TimeslotsListView"
                           SeparatorVisibility="None"
                           ItemTapped="TimeslotsListView_OnItemTapped">
                     <ListView.Behaviors>
                         <behaviors:EventToCommandBehavior EventName="ItemTapped"
                                                           Command="{Binding ShowTimeslot}"
-                                                          EventArgsParameterPath="Item"/>
+                                                          EventArgsParameterPath="Item" />
                     </ListView.Behaviors>
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <Label Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="{Binding Title}" />
+                                <Label Style="{DynamicResource MdDevDaysListItemTextStyle}" Text="{Binding Title}" />
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
