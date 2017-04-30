@@ -26,11 +26,11 @@ namespace MDDevDaysApp
 
         protected override void OnStart()
         {
-            MobileCenter.Start(
-                "ios=db0d11d6-b519-413e-8d16-a35d483bbbcd;android=24b1330b-8cb9-412a-9f28-7b296891a680", 
-                typeof(Analytics), 
-                typeof(Crashes), 
-                typeof(Distribute));
+            //MobileCenter.Start(
+            //    "ios=db0d11d6-b519-413e-8d16-a35d483bbbcd;android=24b1330b-8cb9-412a-9f28-7b296891a680", 
+            //    typeof(Analytics), 
+            //    typeof(Crashes), 
+            //    typeof(Distribute));
             Distribute.Enabled = true;
         }
 
