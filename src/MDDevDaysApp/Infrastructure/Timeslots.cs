@@ -30,7 +30,7 @@ namespace MDDevDaysApp.Infrastructure
             return _timeslots.Where(ts => ts.SpeakerIds.Contains(speaker.Id)).AsEnumerable();
         }
 
-        private async Task EnsureTimeslotsAreLoaded()
+        public async Task EnsureTimeslotsAreLoaded()
         {
             if (_timeslots != null)
                 return;

@@ -1,4 +1,5 @@
-﻿using MDDevDaysApp.DomainModel;
+﻿using System.Threading.Tasks;
+using MDDevDaysApp.DomainModel;
 using MDDevDaysApp.Infrastructure;
 using MDDevDaysApp.Views;
 using Microsoft.Azure.Mobile;
@@ -24,7 +25,7 @@ namespace MDDevDaysApp
             NavigationService.NavigateAsync("MainNavigationPage/MainTabbedPage");
         }
 
-        protected override void OnStart()
+        protected override async void OnStart()
         {
             MobileCenter.Start(
                 "ios=db0d11d6-b519-413e-8d16-a35d483bbbcd;android=24b1330b-8cb9-412a-9f28-7b296891a680", 
@@ -32,6 +33,8 @@ namespace MDDevDaysApp
                 typeof(Crashes), 
                 typeof(Distribute));
             Distribute.Enabled = true;
+
+            await Container.Resolve<ITimeslots>().EnsureTimeslotsAreLoaded();
         }
 
         protected override void RegisterTypes()
