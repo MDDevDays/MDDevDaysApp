@@ -58,7 +58,6 @@ namespace MDDevDaysApp.ViewModels
                 return;
 
             var allTimeslots = (await _timeslots.AllAsync()).ToList();
-            await SetSpeakersInTimeSlots(allTimeslots);
             var groupedTimeslots = from timeslot in allTimeslots
                 orderby timeslot.Start
                 group timeslot by timeslot.TimeDisplayShort
@@ -67,17 +66,6 @@ namespace MDDevDaysApp.ViewModels
 
             foreach (var grouping in groupedTimeslots)
                 Timeslots.Add(grouping);
-        }
-
-        private async Task SetSpeakersInTimeSlots(IEnumerable<Timeslot> allTimeslots)
-        {
-            foreach (var timeslot in allTimeslots)
-            {
-                foreach (var speakerId in timeslot.SpeakerIds)
-                {
-                    timeslot.Speakers.Add(await _speakers.GetByAsync(speakerId));
-                }
-            }
         }
 
         private void ShowTimeslotExecute(Timeslot timeslot)

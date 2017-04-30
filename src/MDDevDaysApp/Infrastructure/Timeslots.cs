@@ -9,11 +9,27 @@ namespace MDDevDaysApp.Infrastructure
 {
     public class Timeslots : ITimeslots
     {
+        private readonly ISpeakers _speakers;
         private IEnumerable<Timeslot> _timeslots;
+
+        public Timeslots(ISpeakers speakers)
+        {
+            _speakers = speakers;
+        }
 
         public async Task<IEnumerable<Timeslot>> AllAsync()
         {
-            return _timeslots ?? (_timeslots = await ReadTimeslotsFromJSONAsync());
+            await EnsureTimeslotsAreLoaded();
+            return _timeslots;
+        }
+
+        private async Task EnsureTimeslotsAreLoaded()
+        {
+            if (_timeslots != null)
+                return;
+
+            _timeslots = await ReadTimeslotsFromJSONAsync();
+            await FillSpeakersInTimeslots();
         }
 
         private async Task<IEnumerable<Timeslot>> ReadTimeslotsFromJSONAsync()
@@ -26,6 +42,13 @@ namespace MDDevDaysApp.Infrastructure
                 var json = await reader.ReadToEndAsync();
                 return JsonConvert.DeserializeObject<List<Timeslot>>(json);
             }
+        }
+
+        private async Task FillSpeakersInTimeslots()
+        {
+            foreach (var timeslot in _timeslots)
+            foreach (var speakerId in timeslot.SpeakerIds)
+                timeslot.Speakers.Add(await _speakers.GetByAsync(speakerId));
         }
     }
 }
