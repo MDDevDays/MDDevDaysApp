@@ -5,10 +5,12 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="MDDevDaysApp.Views.InfoPage"
+             BackgroundColor="{DynamicResource WindowBackground}"
              Title="{Binding Title}">
     <ContentPage.Icon>
-        <OnPlatform x:TypeArguments="FileImageSource"
-                    iOS="Info.png" />
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="Info.png" />
+        </OnPlatform>
     </ContentPage.Icon>
 
 

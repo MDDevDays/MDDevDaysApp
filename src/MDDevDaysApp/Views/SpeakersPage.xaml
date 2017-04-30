@@ -6,24 +6,67 @@
              xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="MDDevDaysApp.Views.SpeakersPage"
+             BackgroundColor="{DynamicResource WindowBackground}"
              Title="{Binding Title}">
     <ContentPage.Icon>
-        <OnPlatform x:TypeArguments="FileImageSource"
-                    iOS="Speaker.png" />
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="Speaker.png" />
+        </OnPlatform>
     </ContentPage.Icon>
 
-    <ListView ItemsSource="{Binding SpeakersGroups}"
+    <ListView ItemsSource="{Binding Speakers}"
               IsGroupingEnabled="True"
-              GroupShortNameBinding="{Binding Title}"
-              GroupDisplayBinding="{Binding Title}">
-        <ListView.RowHeight>
-            <OnPlatform x:TypeArguments="x:Int32" iOS="80" Android="80" WinPhone="88" />
-        </ListView.RowHeight>
+              GroupDisplayBinding="{Binding Key}"
+              HasUnevenRows="True"
+              ItemTapped="ListView_OnItemTapped">
         <ListView.Behaviors>
             <behaviors:EventToCommandBehavior EventName="ItemTapped"
                                               Command="{Binding ShowSpeaker}"
                                               EventArgsParameterPath="Item"/>
         </ListView.Behaviors>
+        <ListView.GroupHeaderTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout VerticalOptions="Center">
+                        <StackLayout.BackgroundColor>
+                            <OnPlatform x:TypeArguments="Color" WinPhone="#F5F5F5">
+                                <On Platform="Android" Value="#F5F5F5" />
+                            </OnPlatform>
+                        </StackLayout.BackgroundColor>
+                        <StackLayout.Padding>
+                            <OnPlatform x:TypeArguments="Thickness" WinPhone="16,8">
+                                <On Platform="Android" Value="16,8" />
+                                <On Platform="iOS" Value="16,0" />
+                            </OnPlatform>
+                        </StackLayout.Padding>
+                        <Label Text="{Binding Key}" 
+                               VerticalOptions="Center" 
+                               VerticalTextAlignment="Center">
+                            <Label.FontAttributes>
+                                <OnPlatform x:TypeArguments="FontAttributes">
+                                    <On Platform="iOS" Value="Bold" />
+                                </OnPlatform>
+                            </Label.FontAttributes>
+                            <Label.FontSize>
+                                <OnPlatform x:TypeArguments="x:Double" WinPhone="16">
+                                    <On Platform="Android" Value="18" />
+                                    <On Platform="iOS" Value="16" />
+                                </OnPlatform>
+                            </Label.FontSize>
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="Android" Value="sans-serif-light" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                            <Label.TextColor>
+                                <OnPlatform x:TypeArguments="Color" WinPhone="Black">
+                                </OnPlatform>
+                            </Label.TextColor>
+                        </Label>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.GroupHeaderTemplate>
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
@@ -31,14 +74,25 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition>
                                 <ColumnDefinition.Width>
-                                    <OnPlatform x:TypeArguments="GridLength" iOS="80" Android="80" WinPhone="74" />
+                                    <OnPlatform x:TypeArguments="GridLength" WinPhone="74">
+                                        <On Platform="iOS, Android" Value="80" />
+                                    </OnPlatform>
                                 </ColumnDefinition.Width>
                             </ColumnDefinition>
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition>
+                                <RowDefinition.Height>
+                                    <OnPlatform x:TypeArguments="GridLength" WinPhone="88">
+                                        <On Platform="iOS, Android" Value="80" />
+                                    </OnPlatform>
+                                </RowDefinition.Height>
+                            </RowDefinition>
+                        </Grid.RowDefinitions>
 
                         <Image Grid.Column="0" Source="{Binding ImageUri, Converter={StaticResource LocalImagePathConverter}}" />
-                        <Label Grid.Column="1" TextColor="{StaticResource MainTextColor}" Text="{Binding FullName}" />
+                        <Label Grid.Column="1" Style="{DynamicResource MdDevDaysListItemTextStyle}" Text="{Binding FullName}" />
                     </Grid>
                 </ViewCell>
             </DataTemplate>

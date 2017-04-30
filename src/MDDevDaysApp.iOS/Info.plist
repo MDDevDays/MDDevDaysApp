@@ -5,7 +5,6 @@
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
-		<integer>2</integer>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
@@ -23,34 +22,18 @@
 	<key>MinimumOSVersion</key>
 	<string>10.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>MDDevDaysApp</string>
+	<string>MDDevDays</string>
 	<key>CFBundleIdentifier</key>
 	<string>de.MrAppWare.MDDevDaysApp</string>
-	<key>CFBundleIconFiles</key>
-	<array>
-		<string>Icon-60@2x</string>
-		<string>Icon-60@3x</string>
-		<string>Icon-76</string>
-		<string>Icon-76@2x</string>
-		<string>Default</string>
-		<string>Default@2x</string>
-		<string>Default-568h@2x</string>
-		<string>Default-Portrait</string>
-		<string>Default-Portrait@2x</string>
-		<string>Icon-Small-40</string>
-		<string>Icon-Small-40@2x</string>
-		<string>Icon-Small-40@3x</string>
-		<string>Icon-Small</string>
-		<string>Icon-Small@2x</string>
-		<string>Icon-Small@3x</string>
-	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>CFBundleName</key>
-	<string>MDDevDaysApp</string>
+	<string>MDDevDays</string>
 	<key>CFBundleVersion</key>
 	<string>0</string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>
 </plist>

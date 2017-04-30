@@ -1,0 +1,552 @@
+﻿[
+  {
+    "Id": "24321e9c-b2d8-4f89-9fae-7b4595fccd58",
+    "Start": "2017-05-10T08:00:00",
+    "End": "2017-05-10T09:00:00",
+    "Title": "Registrierung"
+  },
+
+  {
+    "Id": "37c73866-346d-4274-a6be-ed5e6c36d572",
+    "Start": "2017-05-10T09:00:00",
+    "End": "2017-05-10T09:20:00",
+    "Title": "Begrüßung",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "9b83895d-e34f-4926-9777-b68185f7e190" ]
+  },
+
+  {
+    "Id": "d957013a-880f-4bd7-9294-8c7571c63f75",
+    "Start": "2017-05-10T09:20:00",
+    "End": "2017-05-10T09:40:00",
+    "Title": "Keynote",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "43a93765-e18f-49d0-a011-6fbdddce04bd" ]
+  },
+
+  {
+    "Id": "cce3515d-e812-4371-b807-85e26c663986",
+    "Start": "2017-05-10T10:00:00",
+    "End": "2017-05-10T11:00:00",
+    "Title": "Spiel mir nicht das Lied von „House of Cards“!",
+    "Description": "Viele kennen die Serie „House of Cards“ und lieben sie! Doch oft verkennen wir, wie häufig das „House of Cards“ Game in Organisationen gespielt wird und damit den Erfolg gefährdet.\n\nBeim „House of Cards“ Game geht es darum, wie Entscheidungen im Hintergrund getroffen und Netzwerke benutzt werden, um persönliche Ziele zu erreichen. Und es geht darum, wie das Erreichen dieser persönlichen Ziele sich oft kontraproduktiv auf die Team- oder Unternehmensziele auswirkt. Es geht auch darum, wie sich solche versteckten Allianzen und Absprachen negativ auf die Teamkultur und die Atmosphäre auswirken. Und es geht darum, warum in modernen IT-Projekten keine Zeit mehr ist, um sich mit solchen Spielen abgeben zu müssen.\n\nEin striktes Streben nach Offenheit, Transparenz und Vertrauen kann dem „House of Cards“ Game den Kampf ansagen. Doch wie wird Offenheit und Vertrauen geschaffen? Was muss getan werden, um dies zu erreichen? Welche Rolle spielt Kommunikation dabei? Was können wir von den Jedis aus Star Wars dabei lernen? Warum sind Leader in diesem Prozess so wichtig? Und welche Bedeutung hat das Thema Selbstreflexion hierbei?\n\nDieser Talk ist für alle, die Erfolg im Team haben wollen, besonders aber für alle Leader unter euch! Dieser Talk ist auch ein Appell an alle, sich regelmäßig Gedanken zu machen, welche Ziele gerade verfolgt werden!",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "5cd170d4-0608-4e9b-8bb3-72194fdf1cec" ]
+  },
+  {
+    "Id": "9d8c4421-58ac-4f34-8e0a-0d2baebb9c2c",
+    "Start": "2017-05-10T10:00:00",
+    "End": "2017-05-10T10:00:00",
+    "Title": "Leichtgewichtige Architektur für’s Web – ASP.NET schlank & schnell",
+    "Description": "Es ist unübersichtlich, ja fast chaotisch: ASP.NET Webservices, WCF, WCF Rest Services, ASP.NET MVC, ASP.NET Web API und SignalR und nun auch noch ASP.NET Core.\nWer sich mit Architektur beschäftigt, muss auch Antworten auf nicht-funktionale Anforderungen haben. Dazu gehören Testbarkeit, Debugfähigkeit, Nachvollziehbarkeit und Performance und einige mehr.\nNach vielen Jahren und Anwendungen lautet die Antwort für mich immer häufiger „back to the roots (of ASP.NET)“. Weniger Komplexität sorgt für weniger Fehler und damit für mehr Qualität.\nMichael Willers zeigt in seiner Session die praktische Umsetzung. Direkt live aus dem Projektalltag!",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "43a93765-e18f-49d0-a011-6fbdddce04bd" ]
+  },
+  {
+    "Id": "38ebab7c-6ce7-42cd-bad9-a29beef4dbe8",
+    "Start": "2017-05-10T10:00:00",
+    "End": "2017-05-10T11:00:00",
+    "Title": "Was Java 9 bringt",
+    "Description": "Aktuell ist die nächste Java-Version im (derzeit gültigen) Zeitplan, und im Juli soll sie endlich zur Verfügung stehen. Project Jigsaw war das Enhancement Proposal, welches wiederholt für Aufschiebung sorgte. Der Erscheinungstermin kurz nach den Magdeburger Developer Days gibt nun die Möglichkeit, vor General Availability die wichtigsten Neuerungen zu besprechen und deren Möglichkeiten aufzuzeigen.",
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "c56c0e8d-9d98-48ef-856a-d616c12251b4" ]
+  },
+  {
+    "Id": "a15b2ca2-82f9-4a3e-86e7-fafb9a8df91d",
+    "Start": "2017-05-10T10:00:00",
+    "End": "2017-05-10T11:00:00",
+    "Title": "Einführung in React",
+    "Description": "React ist eine beliebte JavaScript-Library, mit der sich dynamische Benutzeroberflächen entwickeln lassen. Diese werden aus unabhängigen Komponenten zusammengesetzt, die jeweils ihren eigenen Zustand kapseln. Ändert sich irgendwo der Zustand der Anwendung, aktualisiert React nur diejenigen Teile der UI, die von der Änderung betroffen sind. Dieses Verfahren ist effizient und erleichtert das Debugging durch vorhersehbare Updates.\nIn React-Anwendungen wird die gesamte UI per JavaScript implementiert. Mithilfe der JSX-Syntax können auf deklarative Art und Weise HTML-Elemente erstellt und in Komponenten organisiert werden. Die Flux-Architektur sowie das Prinzip des einseitig gerichteten Datenflusses geben dabei vor, wie diese Komponenten miteinander kommunizieren.\nDiese Session gibt eine Einführung in die UI-Entwicklung mit React, ES2017, Babel und Webpack.",
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "cf1cccfe-c801-4f10-88c3-5b140055141d" ]
+  },
+
+  {
+    "Id": "bbfdcd70-e9ee-428c-b3bf-882dceb25023",
+    "Start": "2017-05-10T11:15:00",
+    "End": "2017-05-10T12:15:00",
+    "Title": "„Mehr Hirn im Team, bitte“",
+    "Description": "Empathie galt lange als eine Wunderwaffe. Langsam kommen immer mehr Zweifel an dem Allheilmittel auf und nicht nur an diesem. Von „Human Ressource“-Objekten zurück zu Subjekten, Menschen mit unterschiedlichen Charakteren, Argumente für die Herausbildung einer guten Begegnungskultur im Privaten und Geschäftlichen: Ein Vortrag, in dem aus psychologischer und neurobiologischer Sicht herausgearbeitet wird, wie die Mitglieder eines Teams die in ihnen angelegten Potentiale endlich entfalten können. Etwas, was der Wettbewerb nicht kopieren kann. \n\nGleichzeitig macht der Vortrag mit den Augen eines Profilers etwas mehr immun gegen die Fallen und Gefahren der „Psychoknoten“ im Hirn, der Energie-Vampire, der emotionalen Erpresser, der Neurotiker und Psychopathen – alles was einem das Leben selbst und das anderer schwer macht. Wie man sein Gehirn optimal nutzt zeigt Lösungsmöglichkeiten dafür, ebenso, wie Heranwachsende und Erwachsene in einer begeisterungslos gewordenen Gesellschaft Offenheit, Gestaltungslust und Entdeckerfreude wiederfinden können.",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "9cc515e5-1aa9-43dd-9c24-3ec942346523" ]
+  },
+  {
+    "Id": "485b4bfa-8756-41a2-839b-2744e8a71d33",
+    "Start": "2017-05-10T11:15:00",
+    "End": "2017-05-10T12:15:00",
+    "Title": "ASP.NET Identity in service-orientierten Anwendungen",
+    "Description": "In dieser Session wird anhand einer Live-Demo gezeigt, wie Web-Anwendungen auch dann über sichere Standards authentifiziert werden können, wenn keine Verbindung zwischen Web-Anwendung und Datenbank besteht. Vor allem benutzerdefinierte Ablagen von User-Informationen und die Kommunikation über REST stehen hier im Fokus. Es stehen vor allem die diversen Eingriffsmöglichkeiten bei der Entwicklung im Fokus und es wird gezeigt, wie durch sauberes Solution-Design auch das Unit-Testing ermöglicht wird.",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "8927f85b-ce41-4c34-a022-030b77da57b5" ]
+  },
+  {
+    "Id": "4f7f57a8-b258-4d24-a5c0-480596788314",
+    "Start": "2017-05-10T11:15:00",
+    "End": "2017-05-10T12:15:00",
+    "Title": "Die ganze Power von Machine Learning nutzen – mit Cognitive Services",
+    "Description": "Die Microsoft Cognitive Services erlauben es Apps zu bauen, die auf mächtigen Algorithmen basieren und das mit wenigen Zeilen Code. Dabei sind sie nicht nur unter Windows, sondern auf allen Plattformen wie iOS, Android und im Web im vollen Umfang nutzbar.\n\nIn diesem Vortrag wird ein Überblick über die Cognitive Services gegeben und Demos von aktuellen Szenarios werden gezeigt. Des Weiteren wird die Implementation einer Applikation genauer analysiert.",
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "6223c0f7-f83e-4699-bc1b-e305d84f4c8b" ]
+  },
+  {
+    "Id": "79d834e7-5cef-4c6a-9bfc-e4d392479f6e",
+    "Start": "2017-05-10T11:15:00",
+    "End": "2017-05-10T12:15:00",
+    "Title": "Java 8 EE",
+    "Description": "Quite a few things have changed since the original Java EE 8 proposal. This session will describe in details what Java EE 8 will be.\n\nWe will cover in details the new capabilities that are slated for inclusion in the Java EE platform, e.g.\n\nJAX-RS 2.1’s new Reactive client API\nBean Validation 2.0 improvements\nServlet 4.0 HTTP/2 support\nCDI 2.0 Asynchronous events\nThe addition of a new JSON Binding API, i.e. JSON-B 1.0\nA new cross-platform security context\nEtc.\n\nJava EE 8 will be finalized in a few months so come to this session to understand what’s coming.",
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "1fefb688-5d2f-4978-9ed5-9bf7ed24fed1" ]
+  },
+
+  {
+    "Id": "344b29c6-cd1e-459d-bdf0-9cad7e9ab661",
+    "Start": "2017-05-10T12:15:00",
+    "End": "2017-05-10T13:15:00",
+    "Title": "Mittagspause"
+  },
+
+  {
+    "Id": "106f9383-af0a-46d7-a328-44fa3437bf20",
+    "Start": "2017-05-10T13:15:00",
+    "End": "2017-05-10T13:45:00",
+    "Title": "IT-Wissensvermittlung in Schule – Ausbildung – Berufseinstieg",
+    "Description": "Ein Wortwechsel mit denen, die Bildung verantworten.",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "4a43b927-abb8-41a5-ab85-a102f62a7839", "27f81dc3-4eed-4d71-9492-1504b308651a", "67275031-015c-4fa5-8366-1d231b7718fc" ]
+  },
+
+  {
+    "Id": "c89c779b-4bec-4549-a154-ee0a6ada8c07",
+    "Start": "2017-05-10T14:00:00",
+    "End": "2017-05-10T15:00:00",
+    "Title": "Threat Modeling – Sichere Architektur von (Micro)Services",
+    "Description": "Software ist kein Selbstzweck. Sie ist dazu da, fachliche Probleme zu lösen. Microservices sind der neue Hype in der Softwareindustrie, um dieses Versprechen (wieder einmal) einzulösen. Allerdings ist das alles nicht neu. Denn auch Microservices basieren auf den fundamentalen Prinzipien der Serviceorientierung aus den frühen 2000er Jahren.\nAber viel wichtiger noch: Sind Ihre Services und Anwendungen sicher? Zugegeben, diese Frage verursacht Unbehagen. Ignorieren geht aber angesichts der jüngsten Entwicklungen rund um das Thema Sicherheit auch nicht. Was also tun? Oder wurden Sie sogar jüngst selbst Opfer eines Angriffs? \n\nWie können mögliche Bedrohungen rechtzeitig erkannt werden?\nWo bieten Ihre Applikationen Angriffspunkte?\nOder besser noch: Wie können Sicherheitsprobleme frühzeitig während der Design-Phase erkannt werden?\nThreat Modeling kann Ihnen helfen, die passenden Antworten parat zu haben, um im Falle eines Angriffs gezielt und erfolgreich reagieren zu können.\n\nMichael Willers zeigt, dass Serviceorientierung und Sicherheit keineswegs staubtrockene Angelegenheiten sind und sogar höchst spannend bis amüsant sein können.\nSie sind bereit für eine Expedition abseits der üblichen Pfade? Herzlich willkommen!",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "43a93765-e18f-49d0-a011-6fbdddce04bd" ]
+  },
+  {
+    "Id": "e3d0337f-89de-4710-94b9-f7279a111b82",
+    "Start": "2017-05-10T14:00:00",
+    "End": "2017-05-10T15:00:00",
+    "Title": "Funktionales C# praktisch demonstriert",
+    "Description": "Funktionale Programmierung ist seit Jahren ein Trendthema und auch C# scheint mit jeder Version mehr funktionale Einflüsse zu assimilieren.\n\nIn dieser Session möchte ich euch ganz praktisch zeigen, wie sich eine einfache Parser-Kombinator Bibliothek in C# schreiben lässt. Dabei werden wir ganz nebenbei viele funktionale Techniken kennenlernen und etwas über den OO-Tellerrand hinaus blicken.",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "c82945e5-d257-4595-a653-24ead5404748" ]
+  },
+  {
+    "Id": "3ae9d631-e080-439a-a87e-57545616b5da",
+    "Start": "2017-05-10T14:00:00",
+    "End": "2017-05-10T15:00:00",
+    "Title": "HTTP/2 – how HTTP/2 comes to Java",
+    "Description": "It’s hard to overstate how much has changed in the world since HTTP 1.1 went final … 18 years ago! There were no smartphones, Google was a small-unknown startup, Java Swing was less than a year old and most of you were still at school… you get the idea! Yet for all that change, HTTP remains at version 1! \n\nHTTP/2 has been finalized in May 2015 so it’s time to look in more details what HTTP/2 is bringing!\n\nThis session will introduce you to HTTP/2 and its new capabilities (Server Push, Binary Multiplexing, Flow Control, HPACK, etc.). We will then look at the plan to replace the old HttpURLConnection API with a new HTTP client API in Java SE. We will also talk about HTTP/2 on the server-side.",
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "1fefb688-5d2f-4978-9ed5-9bf7ed24fed1" ]
+  },
+  {
+    "Id": "16c009da-07ae-4e27-b1df-e523144d6dd8",
+    "Start": "2017-05-10T14:00:00",
+    "End": "2017-05-10T15:00:00",
+    "Title": "Speed up your SQL Coding Skills with SQL Prompt",
+    "Description": "In his demo packed session Microsoft Data Platform MVP Frank Geisler will show how to use SQL Prompt for speeding up SQL Server Development. Besides all the nice features that help you to organize and code your SQL Server Application he will also show you how you can formalize your Development process by using Template driven Development.",
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "f79e5c89-818c-4bfe-a672-3152780a3569" ]
+  },
+
+  {
+    "Id": "57eb1ec6-5540-4ff1-a22f-bc1bc02bc13c",
+    "Start": "2017-05-10T15:15:00",
+    "End": "2017-05-10T16:15:00",
+    "Title": "C# 7 – Was gibt es Neues?",
+    "Description": "Die neue Version von C# bringt eine Menge interessanter Sprachfeatures. Local Functions, Pattern Matching, Tuples und viele kleinere Verbesserungen, die uns das Leben leichter machen werden. In dieser Session stellt Rainer Stropek die C# 7 Neuerungen vor. Wie üblich bei Rainer gibt es keine Slides sondern nur Codebeispiele, mit denen wir uns die Sprachneuerungen im Detail ansehen.",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "71193286-9e41-46da-80c5-cf3c0ecd5a7d" ]
+  },
+  {
+    "Id": "757d1347-bad3-4712-872c-7ab89b218fb8",
+    "Start": "2017-05-10T15:15:00",
+    "End": "2017-05-10T16:15:00",
+    "Title": "IoT in der Praxis: Elektroautos, Ladesäulen und Azure",
+    "Description": "Das Münchner Startup-Unternehmen eeMobility GmbH bietet intelligente Ladelösung für elektromobile Firmenwagen an und ermöglicht Kunden attraktive Gesamtlösungen, Tarife und Services aus einer Hand. Hierzu hat bridgingIT eine neue, intelligente Software für gesteuertes Laden entwickelt. Der Fahrer eines Elektrofahrzeugs hat nun, egal ob zu Hause oder unterwegs, nur noch einen Ansprechpartner, der neben der passenden Infrastruktur auch den Ökostrom und die Abrechnung aus einer Hand liefert. Das Thema „Abrechnung“ verliert dadurch deutlich an Komplexität und eine nahtlose Integration in bestehende Abrechnungs- und Fuhrparkprozesse wird ermöglicht. Das Praxisbeispiel zeigt wie auf Basis der hochskalierbaren und leistungsstarken Cloud-Plattform Microsoft Azure einerseits die Ladessysteme angebunden werden können und gleichzeitig Drittsystem, wie z.B. ein CRM-System auf Basis von Microsoft Dynamics CRM, mit einem Kundenportal gekoppelt werden können. Zusätzlich sind die Anwendungen auch via App abrufbar ist.",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "533d0054-2e97-49a3-9c68-afafba6e88ef" ]
+  },
+  {
+    "Id": "e63ffb3f-3aad-49bf-8e5d-abe36ad18fcb",
+    "Start": "2017-05-10T15:15:00",
+    "End": "2017-05-10T16:15:00",
+    "Title": "Vorstellung der Dev-Test Labs auf Azure",
+    "Description": "Mit den Azure DevTestLabs lassen sich in kürzester Zeit komplexe Testumgebungen in Azure anlegen. Wie kann ich die DevTestLabs nutzen und welche Möglichkeiten habe ich? Wie lege ich die DevTestLabs mittels Azure Resource Manager Templates (ARM) an? Und wie behalte ich Kontrolle über meine Kosten?\nAnhand einiger Demos wird gezeigt, wie man die DevTestLabs für sich optimal nutzen kann.",
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "012b9edd-d139-47b9-a5ac-428692a364c7" ]
+  },
+  {
+    "Id": "db6bb772-7710-4f11-8567-c6a7dad31532",
+    "Start": "2017-05-10T15:15:00",
+    "End": "2017-05-10T16:15:00",
+    "Title": "High-Frequency-Trading – Herausforderung bei der Umsetzung in C++",
+    "Description": "Anhand unseres Produktes iQbonds werden unterschiedliche Performance-Herausforderungen aufgezeigt und Lösungsvorschläge diskutiert:\n\nThread-Pool – mal ein ganz anderer Ansatz\nWarum Threads steuern (Priorität und Prozessoren einschränken)?\nNUMA-Node-Problematik\nDeadlock-Detection\nPerformance durch geeignete Datenstrukturen\nTypische Bottlenecks",
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "86a583ee-96dd-4b8d-bcfa-717a5089d158" ]
+  },
+
+  {
+    "Id": "5b242e00-852c-40ef-ac8c-832bfce241fd",
+    "Start": "2017-05-10T16:15:00",
+    "End": "2017-05-10T17:00:00",
+    "Title": "Kaffeepause"
+  },
+
+  {
+    "Id": "2b0e4120-47c6-422b-a982-96057650d4de",
+    "Start": "2017-05-10T17:00:00",
+    "End": "2017-05-10T18:00:00",
+    "Title": "Mit DevOps und Business Agility die Herausforderungen der digitalen Transformation meistern",
+    "Description": "Der digitale Wandel bietet für Unternehmen Chancen und Risiken zugleich. In diesem Vortrag geben Neno Loje und Thomas Schissler einen Überblick, wie sich Unternehmen optimal aufstellen können, was es mit ‘DevOps’ und ‘Business Agility’ auf sich hat und warum diese auch für Ihr Unternehmen hochgradig relevant sind. Holen sie sich wichtige Anregungen, wie Sie das Innovationspotenzial Ihrer Softwareentwicklung maximieren können.",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "4cc19590-d88d-43f3-bb05-f6ceb70e7da7", "a566eaf5-6eaf-43e9-910e-7f6baafc8942" ]
+  },
+  {
+    "Id": "0acb56c5-7e33-41a1-8274-a234ddc0732c",
+    "Start": "2017-05-10T17:00:00",
+    "End": "2017-05-10T18:00:00",
+    "Title": "Agile Feedback Kultur",
+    "Description": "Agile Softwareentwicklung bedeutet u.a. nicht nur, flexibel und dynamisch während des Entwicklungsprozesses auf Anforderungsänderungen reagieren zu können, sondern auch die Arbeitsweise selbst stetig zu verbessern. Doch der Umgang mit Feedback unterscheidet sich teils deutlich.\nWährend auf Agenturseite oder in Startups alle Beteiligten nötige Anpassungen flexibel vornehmen können, fällt dies vor allem Konzernen weitaus schwerer – häufig auch mit Auswirkungen auf den “agilen” Dienstleister.\nDieser Vortrag beleuchtet am Beispiel der Scrum Retrospektive unterschiedliche Feedback-Formen aus der Praxis und geht auf deren Vorteile und Risiken ein. Abschließend wird mit der “Lightning Retro” ein alternativer Ansatz vorgestellt.",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "018d9b96-adb1-49c8-af58-26e93d20db58" ]
+  },
+  {
+    "Id": "e2524166-6e6f-4c21-a554-83ec9a8202b8",
+    "Start": "2017-05-10T17:00:00",
+    "End": "2017-05-10T18:00:00",
+    "Title": "Identity- und AccessManagement",
+    "Description": "Immer komplexere IT-Landschaften und Softwareanwendungen, die als funktionale Basis einen User-Account benötigen, erfordern eine Standardisierung in der Verwaltung von Identitäten. Das Identity Management regelt dabei die Verwaltung des eigentlichen, zentralen User-Objektes mit seinen erweiterten Attributen und das Access-Management die zugehörigen Berechtigungen. In dieser Session wird dargestellt, wie man Identity-Management in eine zentrale Softwarekomponente auslagert und dieses in externe Softwareapplikationen mittels OpenID-Connect und oAuth2 integriert. Dabei werden ebenso die fachlichen Möglichkeiten dargestellt, welchen Nutzen diese Herangehensweise für personalisiertes Marketing bietet.",
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "05f13cd9-2def-49f7-b40e-88f337002b97" ]
+  },
+  {
+    "Id": "c5474fd8-9def-48b9-912b-093ddd70f0bd",
+    "Start": "2017-05-10T17:00:00",
+    "End": "2017-05-10T18:00:00",
+    "Title": "Database Life Cycle Management",
+    "Description": "In this session german Data Platfrom MVP Frank Geisler will show how to use the tools from Redgate to implement Database Lifecycle Management. In Application Development it is very usual to use an integrated approach for building and deploying applications. This is a little bit problematic for Database Development because of the data. Frank will not only show how it is done, he will also compare the state based approach with the migration based approach. ",
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "f79e5c89-818c-4bfe-a672-3152780a3569" ]
+  },
+
+  {
+    "Id": "f2bcc98f-7358-4e26-a662-9d1fdd7a1332",
+    "Start": "2017-05-10T18:00:00",
+    "End": "2017-05-10T19:00:00",
+    "Title": "Abendessen",
+    "Room": "Konrad Zuse"
+  },
+  {
+    "Id": "41a7cbcd-0e07-4da6-9538-8d36c21b97dc",
+    "Start": "2017-05-10T18:00:00",
+    "Title": "Holo Lens Demo",
+    "Room": "Bjarne Stroustroup"
+  },
+  {
+    "Id": "c209637d-2c55-4e05-ba7e-88b481060999",
+    "Start": "2017-05-10T18:00:00",
+    "Title": "Game Area",
+    "Room": "Linus Torvalds"
+  },
+
+  {
+    "Id": "8d7f15fe-2d56-49db-8270-c7b65d19b2a1",
+    "Start": "2017-05-10T19:00:00",
+    "End": "2017-05-10T20:30:00",
+    "Title": "Wirtschaftsforum",
+    "Room": "Konrad Zuse"
+  },
+  {
+    "Id": "d3dbd905-ed59-48e0-b8a9-503e6d0f2594",
+    "Start": "2017-05-10T19:00:00",
+    "End": "2017-05-10T20:30:00",
+    "Title": "Live Hacking",
+    "Room": "Alan Turing"
+  },
+
+  {
+    "Id": "7585abc3-5c34-4805-beaa-e15208cdad82",
+    "Start": "2017-05-10T20:30:00",
+    "Title": "Night School: Hacking",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "d85b4992-f915-47b1-987a-a016989ff316" ]
+  },
+  {
+    "Id": "532b29ed-308c-428d-864a-e93c500555cb",
+    "Start": "2017-05-10T20:30:00",
+    "Title": "Night School: Cortana",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "4e651a4a-5031-44aa-978a-93a090a5ffdb" ]
+  },
+
+  {
+    "Id": "7da2b11d-109f-408e-bbd3-a5e096612500",
+    "Start": "2017-05-11T08:00:00",
+    "End": "2017-05-11T09:00:00",
+    "Title": "Registrierung"
+  },
+
+  {
+    "Id": "e6260c4b-2713-467b-99ec-05c19aad99d5",
+    "Start": "2017-05-11T09:00:00",
+    "End": "2017-05-11T09:15:00",
+    "Title": "Begrüßung",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "9b83895d-e34f-4926-9777-b68185f7e190" ]
+  },
+
+  {
+    "Id": "fd9fad80-5575-4dc0-8181-f917ee5ed80e",
+    "Start": "2017-05-11T09:30:00",
+    "End": "2017-05-11T10:30:00",
+    "Title": "Data Platform für die Cloud",
+    "Description": "Daten stehen im Zentrum fast aller Anwendungen und im Cloud-Zeitalter gibt es nicht nur neue Regeln für Software – Stichwort Apps – sondern auch für die benötigten Technologien und Services einer Data Platform, die die Basis für diese modernen Anwendungen sein soll.\nKein Wunder also, dass sich kaum ein anderer Bereich in Microsoft Azure so schnell verändert wie die Cloud Data Platform. Und dabei geht es keinesfalls nur um “SQL Server in the cloud”. Ganz im Gegenteil. Im Bereich “Data & Storage” hat sich DocumentDB als NoSQL-Dokumentendatenbankdienst hinzugesellt.\nNeue Angebote wie Azure Data Lake haben das Licht der Welt erblickt und speziell der “Analytics” Bereich wartet mit Machine Learning, Stream Analytics, Data Factory und nicht zuletzt Event Hubs mit zahlreichen interessanten neuen Services auf. Gewinnen Sie in dieser Session einen Überblick über die Plattform und lernen Sie mögliche Einsatzszenarien kennen, damit Sie für Ihre nächsten Datenherausforderungen gewappnet sind.",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "4e651a4a-5031-44aa-978a-93a090a5ffdb" ]
+  },
+  {
+    "Id": "79428ddc-cad1-489c-81db-78a247e7afd2",
+    "Start": "2017-05-11T09:30:00",
+    "End": "2017-05-11T10:30:00",
+    "Title": "Neustart für das Web: ASP.NET Core 1.x",
+    "Description": "Microsoft hat sein Web-Framework neu implementiert: Plattformunabhängig, schneller und schlanker. Die Versionszählung beginnt neu bei 1.x, was auch ausdrückt: Man kann nicht einfach von der ASP.NET 4.x/MVC 5.x auf ASP.NET Core 1.x umsteigen, denn dort ist Vieles anders. Wozu ASP.NET 1.x zu gebrauchen ist und was besser und anders ist gegenüber ASP.NET 4.x/MVC 5.x, erklärt „DOTNET-DOKTOR“ Holger Schwichtenberg in diesem Vortrag. Auch die neuen Webtools in Visual Studio 2017 werden behandelt.",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "e08877ce-26bb-4894-b067-0592d2f8c0ac" ]
+  },
+  {
+    "Id": "1fcee891-fadc-4b7d-b873-c60afdf37a13",
+    "Start": "2017-05-11T09:30:00",
+    "End": "2017-05-11T10:30:00",
+    "Title": "Ein Einführung in Cross-Plattform-Entwicklung mit Xamarin",
+    "Description": "Mit der Übernahme der Firma Xamarin hat Microsoft sein Portfolio rund um die Entwicklung von Mobile-Apps um Apples und Googles Plattform erweitert.\nLassen Sie sich zeigen wie Sie bestehendes .NET-Know-How zur Entwicklung von Cross-Plattform-Apps wiederverwenden können und erfahren Sie in diesem Vortrag was Xamarin so besonders macht. Dabei wird sowohl auf Xamarin.Android, Xamarin.iOS als auch Xamarin.Forms anhand einer kleinen Demo-Applikation eingegangen.",
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "ee60a04a-2d5c-4261-b5ea-b4e766ce212d" ]
+  },
+  {
+    "Id": "56ddd6f4-bc63-45cf-ae61-b2d860b2e2f7",
+    "Start": "2017-05-11T09:30:00",
+    "End": "2017-05-11T10:30:00",
+    "Title": "Kuck mal, Node.js! Einstieg für .NET Entwickler",
+    "Description": "Das Jahr 2009 war die Geburtsstunde von Node.js. Dass hierbei JavaScript ebenfalls Serverseitig verwendet werden kann, ist nur ein Teilaspekt für den hohen Erfolg. Viel relevanter ist die extrem hohe Performance, Skalierbarkeit und Produktivität. Nicht ohne Grund wird ASP.NET komplett neu erfunden und basiert auf den gleichen Ideen wie Node.js. Namenhafte Firmen wie Microsoft selbst, Google, PayPal, New York Times, GitHub uvw., setzen bereits auf das leistungsstarke Node.js. Der Vortrag zeigt durch eine Reise der Node.js Architektur, woher die Vorteile kommen. Durch einen Vergleich von ähnlichen Funktionen, wird zudem der ideale Einstieg für .NET Entwickler geboten.",
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "d85b4992-f915-47b1-987a-a016989ff316" ]
+  },
+
+  {
+    "Id": "5c340f54-5ae6-4d77-81ca-316ff283517c",
+    "Start": "2017-05-11T10:45:00",
+    "End": "2017-05-11T11:45:00",
+    "Title": "API First mit Swagger & Co",
+    "Description": "Durch Microservices hat die Bedeutung von Web APIs dramatisch zugenommen. Egal ob intern verwendet oder an Kunden gerichtet, Web APIs findet man heutzutage in fast jedem IT-Unternehmen. Natürlich werden dadurch die Themen Spezifikation und Dokumentation wichtiger. Genau dabei hilft Swagger. In der Session stellt Rainer Stropek das API Beschreibungsformat vor und zeigt Anwendungsfälle aus der Praxis (z.B. API First, Dokumentation, Codegenerierung, Verwendung in Azure).",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "71193286-9e41-46da-80c5-cf3c0ecd5a7d" ]
+  },
+  {
+    "Id": "92b0d564-16b4-48fe-93a5-bcdf112d4498",
+    "Start": "2017-05-11T10:45:00",
+    "End": "2017-05-11T11:45:00",
+    "Title": "Intelligente Bots – das Microsoft Bot Framework & Cognitive Services",
+    "Description": "In der letzten Zeit gewinnen Conversational UIs und Bots immer mehr an Beliebtheit und Bedeutung. Microsoft begegnet diesem Trend mit dem Bot Framework. Mit dem Microsoft Bot Framework lassen sich eigene Bots implementieren und in der Microsoft Cloud betreiben. Benutzer können mit diesen Bots kommunizieren, um spezifische Aufgaben zu erfüllen. Die Kommunikation kann über die verschiedensten Kanäle erfolgen, z.B. via Email, Facebook Messenger, Slack Chat, Skype Chat oder sogar über Skype Calls. Eine unterbrochene Konversation kann später fortgeführt werden, sogar auf einem anderen Kanal. Der Bot erinnert sich, was zuletzt geschah, und es kann direkt an die letzte Konversation angeknüpft werden. Wirklich intelligent werden Bots aber erst, wenn man sie mit den Cognitive Services von Microsoft verbindet. Mit LUIS, dem Language Understanding Intelligent Service, lernt der Bot menschliche Sprachen zu verstehen, mit der SpracherkennungsAPI verschafft man ihm sogar Gehör. Die Computer Vision-API befähigt den Bot zu sehen, und mithilfe der Emotionen-API menschliche Gefühle zu verstehen. Daraus ergeben sich ganz neue Möglichkeiten und Anwendungsfälle. So kann z.B. körperlich beeinträchtigten Menschen ein alternativer Zugang zu einem Softwaresystem und ein barrierefreies Benutzererlebnis verschafft werden. Interaktionen mit einer Anwendung werden persönlicher und steigern damit die Benutzerpartizipation. In dieser Session wird live ein intelligenter Bot implementiert, der Gebrauch von den verschiedenen APIs macht. Ziel ist es, Anwendungsfälle und das Potential intelligenter Bots, anhand eines praktischen Beispiels aufzuzeigen.",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "cf0824ec-5673-4121-abb5-0c6fcc68308d" ]
+  },
+  {
+    "Id": "0edffd6a-9de8-4e30-90af-468b7df4768a",
+    "Start": "2017-05-11T10:45:00",
+    "End": "2017-05-11T11:45:00",
+    "Title": "Angular ist kein Web-Framework",
+    "Description": "… Angular ist eine Plattform! Die konsequente DOM-Abstraktion im neuen Angular ermöglicht es Angular auch für die Entwicklung von Desktop-Applikationen, nativen Mobil-Apps oder sogar für die Programmierung von Microcontrollern zu nutzen.\nIn diesem Vortrag wird von einer in TypeScript entwickelten Angular-Webanwendung eine native Mobil-App und eine Internet-of-Things-Applikation abgeleitet, welche ebenfalls in Angular implementiert sind. Es wird ferner gezeigt wie man Code zwischen diesen Implementierungen teilen kann und wie man seine Architektur gestalten sollte, damit ein solches Code-Sharing möglich ist.\nDurch die Vielzahl an Technologien wird es eine unterhaltsame und eher „geekige“ Session. Der spielerische Charakter der Session eignet sich aber hervorragend, um die Philosophie hinter Angular in der Tiefe zu verstehen und Best Practices für die Architektur von Angular-Anwendungen kennenzulernen.",
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "87ee9161-d3e1-421c-9880-a57034cb5c93" ]
+  },
+  {
+    "Id": "823bc414-0351-40f5-841a-9c75df68a50c",
+    "Start": "2017-05-11T10:45:00",
+    "End": "2017-05-11T11:45:00",
+    "Title": "Paul ist PO! Und Nun?",
+    "Description": "Oh Mann! Was hat Paul sich da nur eingebrockt. Eigentlich hatte er doch nur eine Idee für ein neues Produkt. Aber als er seinem Chef im Fahrstuhl davon erzählt hat, war dieser sofort von der Idee angetan. Paul soll nun der PO, also der Product Owner, für das Projekt werden, aber er hat so etwas noch nie gemacht.\nWas muss Paul denn jetzt eigentlich machen? Und wie kann er dafür sorgen, dass das Produkt tatsächlich erfolgreich wird?\nIn diesem Vortrag begleiten wir Paul durch sein erstes Projekt als Product Owner. Wir beleuchten, was die Rolle des Product Owners tatsächlich für Aufgaben beinhaltet und welche Fähigkeiten ein Product Owner mitbringen sollte. Es werden verschiedene Praktiken vorgestellt, die es dem Product Owner ermöglichen seiner Rolle gerecht zu werden und es wird darauf eingegangen, was besser zu vermeiden ist.",
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "31a772b6-5537-49a7-bb2f-0dcad494840d" ]
+  },
+
+  {
+    "Id": "aa693f3e-a6d6-465e-bda2-9e6f5fc27356",
+    "Start": "2017-05-11T11:45:00",
+    "End": "2017-05-11T12:45:00",
+    "Title": "Mittagspause"
+  },
+  {
+    "Id": "4a28bfaf-734d-4fdf-b8e9-dc3b5b0b24a9",
+    "Start": "2017-05-11T12:20:00",
+    "End": "2017-05-11T13:20:00",
+    "Title": "Coding Dojo for Kids",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "71193286-9e41-46da-80c5-cf3c0ecd5a7d" ]
+  },
+  {
+    "Id": "ad614e3b-62b4-4b94-9768-37a71ebae37c",
+    "Start": "2017-05-11T12:45:00",
+    "End": "2017-05-11T13:15:00",
+    "Title": "Nachhaltigkeit in der IT",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "74c01351-e3ed-41dc-8880-5ef41a3c20fb" ]
+  },
+
+  {
+    "Id": "c4d7bc65-4d6c-49bc-b4b1-8054090d474c",
+    "Start": "2017-05-11T13:30:00",
+    "End": "2017-05-11T14:30:00",
+    "Title": "CQRS auf Dope",
+    "Description": "In einer typischen CQRS Umgebung mit EventSourcing sieht auf den ersten Blick alles irgendwie verwirrend aus. Blickt man nicht auf die Domain, dann steckt überall Infrastruktur drin. Je nach Konfiguration stehen da zwei Datenbankserver, drei Web Server und mehrere Messaging Systeme. All das möchte durch fleißige Kohlenschipper ordentlich auf Druck gehalten werden. Die Kessel müssen dampfen und das Schwungrad muss sich stetig drehen.\nDa ist sie wieder die nervende Infrastruktur. Wie wäre es schön, wenn wir die sie einfach links liegen lassen könnten?\nKönnen wir mit serverless computing. Ich werde in diesem Vortrag zeigen, wie man die beiden top notch Technologien ganz einfach verbindet und so das Entwicklerleben dramatisch vereinfacht.",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "12d8748c-b912-4221-8d3c-56d363ae6c41" ]
+  },
+  {
+    "Id": "910b09a7-ae00-4f0f-803e-f434fbc7cc49",
+    "Start": "2017-05-11T13:30:00",
+    "End": "2017-05-11T14:30:00",
+    "Title": "Neustart für den Datenzugriff: Entity Framework Core 1.x",
+    "Description": "Microsoft hat seinen Objekt-Relationaler Mapper neu implementiert: Plattformunabhängig, schneller und schlanker. Die Versionszählung beginnt neu bei 1.x, was auch ausdrückt: Man kann nicht einfach von der Entity Framework 6.x auf Entity Framework Core 1.x umsteigen, denn dort ist Vieles anders. Wozu Entity Framework Core 1.x zu gebrauchen ist und was besser und anders ist gegenüber Entity Framework 6.x, erklärt „DOTNET-DOKTOR“ Holger Schwichtenberg in diesem Vortrag.",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "e08877ce-26bb-4894-b067-0592d2f8c0ac" ]
+  },
+  {
+    "Id": "78a05675-319e-413f-a9e6-feeaea22f817",
+    "Start": "2017-05-11T13:30:00",
+    "End": "2017-05-11T14:30:00",
+    "Title": "Skalierbarkeit und Parallelisierung in Java-Herausforderungen und Tücken einer Banken-Handelssoftware",
+    "Description": "Ausgehend von einem kurzen Einblick in Banken-IT für den Handelsraum beleuchten wir, welche Anforderungen an komplexe Handelssysteme bestehen, wie diese umgesetzt werden und welche Herausforderungen sich ergeben, wenn großes Datenvolumen, geringe Latenz und hohe Parallelität in einer Java-Umgebung zusammentreffen.",
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "884c09d8-794f-4204-8af8-84c73c4f30cf" ]
+  },
+  {
+    "Id": "0e70e1c3-b67e-4e95-9861-e39d4d318f5d",
+    "Start": "2017-05-11T13:30:00",
+    "End": "2017-05-11T14:30:00",
+    "Title": "TypeScript für Fortgeschrittene",
+    "Description": "TypeScript, das typisierte Superset von JavaScript, ist nun schon über 4 Jahre alt und vor kurzem ist die Version 2.0 erschienen. Die Bekanntgabe, dass auch Angular 2.0 auf TypeScript setzt, hat TypeScript endgültig zum Durchbruch verholfen und viele von euch konnten erste Erfahrungen mit TypeScript sammeln. In dieser Session zeigt Tobias Meier, der TypeScript sei der ersten öffentlichen Alpha-Version produktiv in Kundenprojekten einsetzt, anhand zahlreicher Praxisbeispiele die neuesten bzw. weniger bekannten Möglichkeiten von TypeScript, z.B.: – Asynchrone Programmierung wie in C# – „Null und undefined “ beherrschen – Bring your own IDE: Projektsetup zum parallelen Arbeiten in verschiedenen Entwicklungsumgebungen – Einblick in die verschiedenen Module-System – Importieren von Ressource-Dateien (Texte, Bilder) über Import-Statements …",
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "533d0054-2e97-49a3-9c68-afafba6e88ef" ]
+  },
+
+  {
+    "Id": "8be3cbcd-d000-4484-9aee-0837ec7b0629",
+    "Start": "2017-05-11T14:45:00",
+    "End": "2017-05-11T15:45:00",
+    "Title": "Up in the air – Serverless Computing mit Azure Functions",
+    "Description": "Verteilte Systeme und Applikationen. Viele Entwickler reden davon, einige bauen es schon. Solche Systeme haben ihre Daseinsberechtigung, besonders da, wo es auf Skalierung und Performance ankommt. Jedoch egal wie gut verteilt wird, alle Systeme haben eine Schwachstelle – genau eine, die Infrastruktur. Wohingegen jeder Software Monolith so entwickelt ist, dass er die Beziehung zu einer einzelnen Infrastruktur wie Logging, Datenbank aber auch UI herstellt, sind verteilte System ganz anderen Anforderungen unterworfen. Welchen Sinn macht eine horizontal skalierbare Applikation, wenn sich alle Nodes eine einzige Datenhaltung, im schlimmsten Fall sogar eine relationale Datenbank, teilen müssen. Dann haben wir ein System entwickelt, das super auf Requests warten kann, aber auch nicht mehr – eine „Requestwartemaschine“. Wollen wir echte Skalierbarkeit erreichen brauchen wir eine Veränderung in der Verwendung von Infrastruktur. Serverless Computing geht seit wenigen Jahren einen revolutionären Schritt weiter. Es ermöglicht die Entkopplung von Applikationslogik bzw. -funktion und Infrastruktur. Stellen wir uns die Sache in etwa so vor, dass es uns egal sein kann, welche Datenhaltung in unserem System steckt, sie ist einfach da. Ja, keine Angst, wir bleiben trotzdem Herr der Daten und auch der dazugehörigen Systeme, wir brauchen sie nur nicht mehr explizit in unseren Source Code aufnehmen. Überraschend, nicht wahr? So schön das am Anfang klingen mag, so hat Serverless Computing auch seine Schattenseiten oder vielmehr Grenzen. Nicht jede Applikation lässt sich hiermit entwickeln. Jedoch werden eine ganze Reihe einfacher ständig wiederholender Aufgaben furchtbar schnell realisiert.",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "12d8748c-b912-4221-8d3c-56d363ae6c41" ]
+  },
+  {
+    "Id": "070b2a37-c52f-41b9-9fae-960eecf6d1b3",
+    "Start": "2017-05-11T14:45:00",
+    "End": "2017-05-11T15:45:00",
+    "Title": "Mein IT-Dienstleister spricht nur Latein",
+    "Description": "Stetige Vernetzung und früher nicht vorstellbare Möglichkeiten zur Datenanalyse eröffnen aktuell in der gesamten Automatisierungstechnik viele neue Produkte, Möglichkeiten zu Prozessverbesserung und vollkommen neue Geschäftsmodelle. Diese Trends werden häufig unter den Schlagworten Industrie 4.0 oder Internet-of-Things zusammengefasst.\nGemeinsam ist in allen Fällen, dass durch den Einsatz intelligenter IT neue, bessere oder flexiblere Funktionen geschaffen werden können. Bis auf wenige Großunternehmen mit komplett eigener Konzern-IT bedeutet das für die meisten mittelständischen Unternehmen, dass eine enge Zusammenarbeit mit einem externen IT-Dienstleister notwendig ist, um die gewünschten Resultate zielorientiert erreichen zu können. Die Wahl des richtigen Dienstleisters alleine ist schon schwierig, die effiziente und agil anpassbare Steuerung des Dienstleisters ist aber noch viel schwieriger. Dies liegt zu einem großen Teil an unterschiedlichen Sprach(interpretation)en und auch Denkmustern. Erschwerend kommt speziell im Kontext Industrie 4.0 hinzu, dass in der Regel vollkommen neue Innovationen und Geschäftsmodelle entwickelt werden soll. Deshalb ist es entscheidend, dass Dienstleister und Auftraggeber/Anwender äußerst flexibel und abgestimmt agieren. In diesem Vortrag greifen wir diese Thematik auf und berichten aus Sicht eines Dienstleisters wie ein Dienstleister am besten gesteuert werden kann. Dabei gehen wir genauso auf unterschiedliche Prozesse, Denkmodelle, Mitarbeitertypen und Mentalitäten wie auch konkreten Sprachgebrauch, Spezifikationen und Umsetzungen ein. Eine Reflektion wechselseitige Reflektion der eigenen und jeweils anderen Gedankenwelt, trägt nachhaltig zum besseren Verständnis bei. Als Konsequenz ergibt sich eine wesentliche Steigerung der Effizienz der Zusammenarbeit zwischen IT-Dienstleister und auftraggebendem Unternehmen.",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "8ac02167-fe49-4dcd-a5a1-37766e7d345d" ]
+  },
+  {
+    "Id": "ea0f648a-132a-4a22-b26c-71b57b2a8007",
+    "Start": "2017-05-11T14:45:00",
+    "End": "2017-05-11T15:45:00",
+    "Title": "Entwickeln für die Cloud – Ein Beispielprojekt auf der Google Cloud Platform",
+    "Description": "Was bedeutet es eigentlich, eine Cloud-Anwendung zu entwickeln? Alle reden davon, aber wie funktioniert es? Diese und weitere Fragen werden geklärt, wenn in dieser Session Schritt für Schritt eine einfache Java-Anwendung auf der Google Cloud Platform entsteht. Dabei werden auch die Vor- und Nachteile der GCP besprochen. Der Code wird im Anschluss an die Session als Open Source Projekt veröffentlicht.\nDie Anwendung enthält ein Frontend und einen geschützten Administrationsbereich. Es werden u.a. Servlets, JSPs, Unit-Tests sowie Entitäten und Controller für den Google Cloud Datastore entwickelt.\nWer schon immer ein Projekt in der Cloud starten wollte und noch nicht wusste, womit er anfangen soll, ist hier genau richtig.",
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "4f0cec28-0cfa-4f4f-a7eb-1595d2703517" ]
+  },
+  {
+    "Id": "3ed89f60-aa57-4e9f-81c5-9de93e12e1c7",
+    "Start": "2017-05-11T14:45:00",
+    "End": "2017-05-11T15:45:00",
+    "Title": "Viele Microservices – ein verbindendes Datenaustauschmodell",
+    "Description": "In der Welt der Microservices besteht unternehmensinterne IT aus vielen, tendenziell kleinen und unabhängigen Komponenten. Im Zusammenspiel mit agilen Entwicklungsprozessen ist das Ziel, schnell und flexibel auf Kundenwünsche reagieren zu können und dabei langfristig wartbare IT-Komponenten zu behalten. Durch ihre separate Deploybarkeit erlauben Microservices eine sehr passgenaue Skalierung der IT-Infrastruktur.\nAllerdings wirft auch das Licht der Microservices Schatten. Die Komplexität großer heterogener IT-Landschaften verschwindet nicht durch die Verwendung kleinerer Komponenten. Fachliche Abhängigkeiten zwischen den Komponenten bleiben bestehen. Sie werden mit Microservices allerdings sichtbarer und im Grunde nur auf eine neue Ebene, die der Schnittstellen zwischen den einzelnen Microservices und damit auch vom Coding in Richtung Release, geschoben.\nJe mehr Microservices in einer IT-Landschaft zusammenkommen, desto dringlicher wird das Problem, eine einheitliche übergreifende Semantik von den systemischen Schnittstellen bis auf Code-Ebene zu bewahren. Ein verbindendes Datenaustauschmodell bietet dazu die Möglichkeit.\n\nIm Vortrag wird das Konzept eines verbindenden Datenaustauschmodells zur Abbildung von Schnittstellenkomplexität beschrieben. Es wird gezeigt, wie ein solches Modell aufgesetzt und gepflegt werden kann.\nAm JAVA-Beispiel wird exemplarisch veranschaulicht, wie eine nahtlose Integration des Modells in die Entwicklung von Microservices integriert werden kann. Interessante Aspekte wie bspw. Akzeptanz und Versionierung werden kritisch betrachtet.",
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "ed185663-078f-4111-8a36-a4947af9c35d" ]
+  },
+  {
+    "Id": "a0fde3fb-6c39-4239-9a00-0fbb6e94332f",
+    "Start": "2017-05-11T15:45:00",
+    "End": "2017-05-11T16:30:00",
+    "Title": "Kaffeepause"
+  },
+
+  {
+    "Id": "3cbe3a6f-d2e7-4393-83d3-d8c48bc4c60c",
+    "Start": "2017-05-11T16:30:00",
+    "End": "2017-05-11T17:30:00",
+    "Title": "Domain Driven Design",
+    "Description": "Lernen, Sprache und Empathie sind die wichtigsten Konzepte für erfolgreiches Domain Driven Design:\nEin gutes Softwaremodell erlaubt dem Entwicklungsteam neue Anforderungen umzusetzen und durch neue Erkenntnisse die Effektivität und Wettbewerbsfähigkeit des Unternehmens zu steigern. Gute Code Qualität und elegante Architekturen sind dabei ein Nebenprodukt, aber der echte Wert von Domain Driven Design liegt in einem besseren Verständnis der Domäne, das zu einer pragmatischen und flexiblen Softwarearchitektur führt.\nMarco Heimeshoff leitet Sie in diesem Talk vorbei an den Fallen und Tücken um DDD und zeigt Ihnen, wie Sie das volle Potential dieser Methode ausschöpfen.",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "c1bc414b-ce31-49ab-818a-525cf14e56a8" ]
+  },
+  {
+    "Id": "93074d9e-61c2-4f57-9c34-6f48deb8d9fa",
+    "Start": "2017-05-11T16:30:00",
+    "End": "2017-05-11T17:30:00",
+    "Title": "Cross-Plattform-App-Entwicklung mit Visual Studio 2017: Xamarin und Cordova",
+    "Description": "Visual Studio bietet ab der Version 2015 eine umfangreiche Unterstützung für die Entwicklung hybrider Apps auf der Basis von Apache Cordova. Außerdem ist es nach der Übernahme der Xamarin einfacher und kostengünstiger als je zuvor, ein neues Xamarin-Projekt aus Visual Studio zu starten. Dieser Vortrag zeigt Ihnen, wie die Entwicklung von Cross-Plattform-Apps für Android und iOS unter Visual Studio sowohl mit Xamarin als auch mit Cordova funktioniert und welche Neuerungen Entwickler in der Version 2017 erwarten dürfen.",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "5779068e-eef5-4d8b-9020-2fee08b37650" ]
+  },
+  {
+    "Id": "2679fc20-f112-4bc4-8974-4858553971b7",
+    "Start": "2017-05-11T16:30:00",
+    "End": "2017-05-11T17:30:00",
+    "Title": "Automatisieren von Alltagsaufgaben: Tuning von Visual Studio",
+    "Description": "Ist in der Java-Community schon lange eine komplexe Tool-Chain für die Lösungsumgebung notwendig, war die Visual-Studio-Welt bisher vergleichbar einfach: Mehr als Visual Studio, NuGet, Web Essentials, Resharper und TFS war nicht notwendig. Inzwischen können auch wir Visual-Studio-Nutzer mit weiteren Tools unsere Produktivität bei der Entwicklung nochmals erhöhen. Tobias Meier zeigt in seinem Vortrag, wie wir mit npm, GULP und Co. Routinetasks bei der Entwicklung erledigen können: Komplexe Toolchains: HTML-Datei wird beim Speichern automatisch nach TypeScript konvertiert, anschließend der TypeScript-Compiler gestartet, ….; Sass-Dateien bei Dateiänderungen nach CSS konvertieren, für verschiedene Browser optimieren und URLs für Zielplattformen optimieren; statische Codeprüfung der TypeScript-Dateien mit TSLint; Bundling und Minification.",
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "533d0054-2e97-49a3-9c68-afafba6e88ef" ]
+  },
+  {
+    "Id": "e1bfd564-eeef-44c3-9515-704b77019be5",
+    "Start": "2017-05-11T16:30:00",
+    "End": "2017-05-11T17:30:00",
+    "Title": "Ping Me! A practical showdown of SignalR",
+    "Description": "In HTTP-land, everything is supposed to be initiated from the client: the client requests, the server responds. But what if you wanted some other kind of communication, one that’s not limited by this protocol? One of the very cool additions to the ASP.NET web stack is SignalR, which allows real-time communication between your web apps and your client apps, even outside the browser.\nThis practical session will guide you through a number of real-world coding examples on different platforms for web and desktop. You will also see how to add SignalR on an existing project, and you will get to know what needs to be done when your app needs to scale out.",
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "3b87d148-be9a-4b15-9a14-fb5025895b29" ]
+  },
+
+  {
+    "Id": "05bf8b92-ff1f-488f-a62f-c7bbb96208dd",
+    "Start": "2017-05-11T17:45:00",
+    "End": "2017-05-11T18:45:00",
+    "Title": "ASP.NET Core und Docker",
+    "Description": "ASP.NET Core steht in den Startlöchern! Die Session zeigt, wie eine einfache Webanwendung erstellt und in den Betrieb überführt werden kann. Die wesentliche Neuerungen, nämlich der Betrieb über etwas anderes, als IIS wird anhand einer Integration in einen Docker-Container mit nginx als Webserver gezeigt. Neben der reinen Technologie werden auch Tools zur effektiven Arbeit eine Rolle spielen. Die Visual Studio Integration von Docker sowie die notwendigen Erweiterungen auf der DevBox werden gezeigt.",
+    "Room": "Konrad Zuse",
+    "SpeakerIds": [ "8927f85b-ce41-4c34-a022-030b77da57b5" ]
+  },
+  {
+    "Id": "6c26e57d-c34e-441c-acec-318c32b47fa0",
+    "Start": "2017-05-11T17:45:00",
+    "End": "2017-05-11T18:45:00",
+    "Title": "Big Data – Demystified – Showcase Stauerkennung",
+    "Description": "Thema ist eine Real Time Analyse von Floating Car Data auf einer Big Data Umgebung inklusive einer Visualisierung mit diversen Tools. Verwendet werden hierfür Simulationsdaten einer mittelgroßen Stadt. Diese Daten werden auf einem Big Data Cluster gestreamt und mit unterschiedlichen Modellen analysiert.\nIn spielerischer Art und Weist zeigt der Showcase, wie ein Data Scientist unterschiedliche Modelle anwenden kann, um am Ende eine effektive Stauerkennung zu ermöglichen. Unterstützt wird der Showcase durch eine Visualisierung mit R-Shiny um zu zeigen, welche Wirkung unterschiedliche Clusteringverfahren erzielen.\nDer Showcase verknüpft sehr schön die eigenen Erfahrungen mit Stau und ermöglicht den spielerischen Umgang mit Daten, indem man Parameter variiert und die Ergebnisse auf der Landkarte sofort sehen kann, dadurch wird die Komplexität der Aufgabe versteckt. Gleichzeitig wird aber auch aufgezeigt, welche Möglichkeiten im professionellen Umgang mit Daten stecken.",
+    "Room": "Alan Turing",
+    "SpeakerIds": [ "cb993566-f629-4cde-b352-1cceaf9dc7cb" ]
+  },
+  {
+    "Id": "c18239e9-6018-4ec2-86af-5458de52f27f",
+    "Start": "2017-05-11T17:45:00",
+    "End": "2017-05-11T18:45:00",
+    "Title": "„Wir sind agil“",
+    "Description": "Viele Firmen, Organisationen und Projekte wollen gerne an den Vorteilen der „agilen Entwicklung“ partizipieren. Sie wollen schnell und effektiv Software bereitstellen, oder Produkte „testen“. Doch nur wie?\nMittlerweile gibt es sehr viele Möglichkeiten, Methoden und Regeln! In dieser Session zeige ich, dass die „agile Entwicklung“ keine Raketenwissenschaft ist.",
+    "Room": "Bjarne Stroustroup",
+    "SpeakerIds": [ "f2087fb9-3448-4c41-ab00-6732e6c66606" ]
+  },
+  {
+    "Id": "8889548e-b8a8-45fc-93c4-36d9f7bee507",
+    "Start": "2017-05-11T17:45:00",
+    "End": "2017-05-11T18:45:00",
+    "Title": "Fuck Up! Was läuft hier denn falsch?",
+    "Description": "Wir alle kennen die Situation: Ein bestimmter Kollege, ein bestimmter Auftraggeber, ein bestimmtes Projekt oder auch eine bestimmte Technologie… Allein die Erwähnung des Namens reicht aus und es legt sich einem eine imaginäre Hand um den Magen und quetscht ihn zusammen. Okay, bei manch einem mag es der Hals oder ein anderes Körperteil sein, aber die Situation bleibt die Gleiche. Am liebsten würden wir es dem Vogel Strauß gleichtun und den Kopf in den Sand stecken und warten bis alles vorüber ist. Nur ist das selten eine Option und wenn, dann mit Sicherheit keine Gute. Wie also gehen wir damit um?\nIn dieser (Un)Session möchte ich mit Euch über derartige Dinge sprechen. Eine generell anzuwendende generalisierte Lösung wird es dabei nicht geben.\nAber ich habe im Laufe der Jahre einiges an Erfahrungen gesammelt und war gezwungen mich immer wieder mit dem Fuck Up Problem auseinanderzusetzen. Dabei werde ich nicht die gesamte Session über reden, sondern versuche mit Euch in den Dialog zu kommen und auch Eure Erfahrungen im Umgang mit solchen Situationen dabei zu hören. Ein zweites Mikrofon ist also ein must have.",
+    "Room": "Linus Torvalds",
+    "SpeakerIds": [ "9b83895d-e34f-4926-9777-b68185f7e190" ]
+  }
+]

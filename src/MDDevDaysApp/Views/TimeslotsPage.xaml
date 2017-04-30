@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="MDDevDaysApp.Views.TimeslotsPage"
+             BackgroundColor="{DynamicResource WindowBackground}"
+             Title="{Binding Title}">
+    <ContentPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="Program.png" />
+        </OnPlatform>
+    </ContentPage.Icon>
+
+    <ListView ItemsSource="{Binding Timeslots}"
+              IsGroupingEnabled="True"
+              GroupDisplayBinding="{Binding Key}"
+              HasUnevenRows="True"
+              ItemTapped="ListView_OnItemTapped">
+        <ListView.Behaviors>
+            <behaviors:EventToCommandBehavior EventName="ItemTapped"
+                                              Command="{Binding ShowTimeslot}"
+                                              EventArgsParameterPath="Item"/>
+        </ListView.Behaviors>
+        <ListView.GroupHeaderTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout VerticalOptions="Center">
+                        <StackLayout.BackgroundColor>
+                            <OnPlatform x:TypeArguments="Color" WinPhone="#F5F5F5">
+                                <On Platform="Android" Value="#F5F5F5" />
+                            </OnPlatform>
+                        </StackLayout.BackgroundColor>
+                        <StackLayout.Padding>
+                            <OnPlatform x:TypeArguments="Thickness" WinPhone="16,8">
+                                <On Platform="Android" Value="16,8" />
+                                <On Platform="iOS" Value="16,0" />
+                            </OnPlatform>
+                        </StackLayout.Padding>
+                        <Label Text="{Binding Key}" 
+                               VerticalOptions="Center" 
+                               VerticalTextAlignment="Center">
+                            <Label.FontAttributes>
+                                <OnPlatform x:TypeArguments="FontAttributes">
+                                    <On Platform="iOS" Value="Bold" />
+                                </OnPlatform>
+                            </Label.FontAttributes>
+                            <Label.FontSize>
+                                <OnPlatform x:TypeArguments="x:Double" WinPhone="16">
+                                    <On Platform="Android" Value="18" />
+                                    <On Platform="iOS" Value="16" />
+                                </OnPlatform>
+                            </Label.FontSize>
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="Android" Value="sans-serif-light" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                            <Label.TextColor>
+                                <OnPlatform x:TypeArguments="Color" WinPhone="Black" />
+                            </Label.TextColor>
+                        </Label>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.GroupHeaderTemplate>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="8">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Style="{DynamicResource MdDevDaysListItemTitleStyle}" Text="{Binding Title}" />
+                        <Label Grid.Row="1" Style="{DynamicResource MdDevDaysListItemTextStyle}" Text="{Binding SpeakerNames}" IsVisible="{Binding HasSpeakers}" />
+
+                        <Grid Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0" Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="{Binding TimeDisplayLong}" />
+                            <StackLayout Grid.Column="1" HorizontalOptions="End" Orientation="Horizontal" IsVisible="{Binding IsRoomDefined}">
+                                <Label Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="Raum: "></Label>
+                                <Label Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="{Binding Room}" />
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
