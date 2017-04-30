@@ -28,17 +28,18 @@ namespace MDDevDaysApp.Droid
 		{
 			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_dialog_actioned_on_disabled_toast = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_dialog_actioned_on_disabled_toast;
 			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_download_progress_number_format = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_download_progress_number_format;
-			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_download_successful_notification_message = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_download_successful_notification_message;
-			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_download_successful_notification_title = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_download_successful_notification_title;
 			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_downloading_mandatory_update = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_downloading_mandatory_update;
 			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_install = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_install;
+			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_install_ready_message = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_install_ready_message;
+			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_install_ready_title = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_install_ready_title;
 			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_unknown_sources_dialog_message = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_unknown_sources_dialog_message;
 			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_unknown_sources_dialog_settings = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_unknown_sources_dialog_settings;
 			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_update_dialog_download = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_update_dialog_download;
-			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_update_dialog_ignore = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_update_dialog_ignore;
-			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_update_dialog_message = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_update_dialog_message;
+			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_update_dialog_message_mandatory = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_update_dialog_message_mandatory;
+			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_update_dialog_message_optional = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_update_dialog_message_optional;
 			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_update_dialog_postpone = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_update_dialog_postpone;
 			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_update_dialog_title = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_update_dialog_title;
+			global::Microsoft.Azure.Mobile.Distribute.Resource.String.mobile_center_distribute_update_dialog_view_release_notes = global::MDDevDaysApp.Droid.Resource.String.mobile_center_distribute_update_dialog_view_release_notes;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::MDDevDaysApp.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -3035,16 +3036,16 @@ namespace MDDevDaysApp.Droid
 			public const int mobile_center_distribute_download_progress_number_format = 2131230759;
 			
 			// aapt resource value: 0x7f080028
-			public const int mobile_center_distribute_download_successful_notification_message = 2131230760;
+			public const int mobile_center_distribute_downloading_mandatory_update = 2131230760;
 			
 			// aapt resource value: 0x7f080029
-			public const int mobile_center_distribute_download_successful_notification_title = 2131230761;
+			public const int mobile_center_distribute_install = 2131230761;
 			
 			// aapt resource value: 0x7f08002a
-			public const int mobile_center_distribute_downloading_mandatory_update = 2131230762;
+			public const int mobile_center_distribute_install_ready_message = 2131230762;
 			
 			// aapt resource value: 0x7f08002b
-			public const int mobile_center_distribute_install = 2131230763;
+			public const int mobile_center_distribute_install_ready_title = 2131230763;
 			
 			// aapt resource value: 0x7f08002c
 			public const int mobile_center_distribute_unknown_sources_dialog_message = 2131230764;
@@ -3056,16 +3057,19 @@ namespace MDDevDaysApp.Droid
 			public const int mobile_center_distribute_update_dialog_download = 2131230766;
 			
 			// aapt resource value: 0x7f08002f
-			public const int mobile_center_distribute_update_dialog_ignore = 2131230767;
+			public const int mobile_center_distribute_update_dialog_message_mandatory = 2131230767;
 			
 			// aapt resource value: 0x7f080030
-			public const int mobile_center_distribute_update_dialog_message = 2131230768;
+			public const int mobile_center_distribute_update_dialog_message_optional = 2131230768;
 			
 			// aapt resource value: 0x7f080031
 			public const int mobile_center_distribute_update_dialog_postpone = 2131230769;
 			
 			// aapt resource value: 0x7f080032
 			public const int mobile_center_distribute_update_dialog_title = 2131230770;
+			
+			// aapt resource value: 0x7f080033
+			public const int mobile_center_distribute_update_dialog_view_release_notes = 2131230771;
 			
 			// aapt resource value: 0x7f080000
 			public const int mr_button_content_description = 2131230720;
