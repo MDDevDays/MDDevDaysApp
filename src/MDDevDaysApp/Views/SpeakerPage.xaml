@@ -34,7 +34,23 @@
         <Label Grid.Row="0" Grid.Column="1" Margin="8" FontSize="Large" TextColor="{StaticResource MainTextColor}" Text="{Binding Speaker.FullName}" />
 
         <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  Orientation="Vertical" VerticalOptions="FillAndExpand">
-            <Label Text="{Binding Speaker.Bio}" />
+            <StackLayout Orientation="Vertical">
+                <Label Text="{Binding Speaker.Bio}" />
+                <Label Margin="0,8,0,8" FontAttributes="Bold" Text="Sessions" />
+                <ListView ItemsSource="{Binding Timeslots}"
+                          RowHeight="19"
+                          x:Name="TimeslotsListView" 
+                          SeparatorVisibility="None"
+                          ItemTapped="TimeslotsListView_OnItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Label Style="{DynamicResource MdDevDaysListItemDetailTextStyle}" Text="{Binding Title}" />
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </ScrollView>
     </Grid>
 </ContentPage>

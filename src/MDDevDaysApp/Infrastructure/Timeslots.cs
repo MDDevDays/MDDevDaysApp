@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using MDDevDaysApp.DomainModel;
@@ -21,6 +22,12 @@ namespace MDDevDaysApp.Infrastructure
         {
             await EnsureTimeslotsAreLoaded();
             return _timeslots;
+        }
+
+        public async Task<IEnumerable<Timeslot>> AllBySpeakerAsync(Speaker speaker)
+        {
+            await EnsureTimeslotsAreLoaded();
+            return _timeslots.Where(ts => ts.SpeakerIds.Contains(speaker.Id)).AsEnumerable();
         }
 
         private async Task EnsureTimeslotsAreLoaded()
