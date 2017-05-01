@@ -14,7 +14,7 @@ namespace MDDevDaysApp.ViewModels
         public TimeslotPageViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
-            Title = "Session Details";
+            Title = "Session";
             ShowSpeaker = new DelegateCommand<Speaker>(ShowSpeakerExecute);
         }
 
