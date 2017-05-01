@@ -50,7 +50,7 @@ namespace MDDevDaysApp.ViewModels
         {
             try
             {
-                Device.OpenUri(new Uri("twitter://search?query=%23MDevDays"));
+                Device.OpenUri(new Uri("twitter://search?query=%23MDDevDays"));
             }
             catch (Exception)
             {
