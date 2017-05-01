@@ -20,6 +20,10 @@
                 <On Platform="Android" Value="13" />
                 <On Platform="iOS" Value="10" />
             </OnPlatform>
+            <OnPlatform x:TypeArguments="x:Double" WinPhone="10" x:Key="AppInfoTextStyleSize">
+                <On Platform="Android" Value="10" />
+                <On Platform="iOS" Value="8" />
+            </OnPlatform>
 
             <Style x:Key="MdDevDaysListItemTextStyle" TargetType="Label" BaseResourceKey="ListItemTextStyle">
                 <Setter Property="FontSize" Value="{DynamicResource MdDevDaysListItemTextStyleSize}" />
@@ -31,6 +35,15 @@
             <Style x:Key="MdDevDaysListItemDetailTextStyle" TargetType="Label" BaseResourceKey="ListItemDetailTextStyle">
                 <Setter Property="FontSize" Value="{DynamicResource MdDevDaysListItemDetailTextStyleSize}" />
                 <Setter Property="TextColor" Value="{DynamicResource MainTextColorLight}" />
+            </Style>
+            <Style x:Key="HyperLinkTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource MainColor}" />
+            </Style>
+            <Style x:Key="AppInfoTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="{DynamicResource AppInfoTextStyleSize}" />
+            </Style>
+            <Style x:Key="AppInfoHyperLinkTextStyle" TargetType="Label" BaseResourceKey="AppInfoTextStyle">
+                <Setter Property="TextColor" Value="{StaticResource MainColor}" />
             </Style>
 
             <converters:LocalImagePathConverter x:Key="LocalImagePathConverter" />

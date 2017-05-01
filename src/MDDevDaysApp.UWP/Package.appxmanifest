@@ -1,5 +1,5 @@
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="28403AndreasRichter.MagdeburgerDeveloperDays" Publisher="CN=A69C0B3C-207A-465F-861A-A25179B60E74" Version="0.3.0.0" />
+  <Identity Name="28403AndreasRichter.MagdeburgerDeveloperDays" Publisher="CN=A69C0B3C-207A-465F-861A-A25179B60E74" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="5414133e-e606-4173-887a-106fa301981e" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Magdeburger Developer Days</DisplayName>
