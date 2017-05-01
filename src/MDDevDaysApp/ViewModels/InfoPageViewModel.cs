@@ -19,6 +19,7 @@ namespace MDDevDaysApp.ViewModels
             LocationPlanSource = ImageSource.FromResource("MDDevDaysApp.Images.Lageplan.png", assembly);
             OpenTwitterStream = new DelegateCommand(OpenTwitterStreamExecute);
             OpenTwitterHashtag = new DelegateCommand(OpenTwitterHashtagExecute);
+            OpenUrl = new DelegateCommand<string>(OpenUrlExecute);
         }
 
         public string Title { get; }
@@ -26,6 +27,12 @@ namespace MDDevDaysApp.ViewModels
         public ImageSource LocationPlanSource { get; }
         public ICommand OpenTwitterHashtag { get; set; }
         public ICommand OpenTwitterStream { get; set; }
+        public ICommand OpenUrl { get; set; }
+
+        private void OpenUrlExecute(string url)
+        {
+            Device.OpenUri(new Uri(url));
+        }
 
         private void OpenTwitterStreamExecute()
         {
