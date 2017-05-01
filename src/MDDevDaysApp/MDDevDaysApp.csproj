@@ -224,6 +224,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Images\Lageplan.png" />
     <Content Include="Images\Logo400x400.png" />
     <Content Include="Images\Logo400x400_AussenTransparent.png" />
   </ItemGroup>
