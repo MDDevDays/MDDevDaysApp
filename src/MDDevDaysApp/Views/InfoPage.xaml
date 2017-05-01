@@ -23,9 +23,6 @@
             </StackLayout.Margin>
 
             <Image Source="{Binding BannerSource}" />
-            <Label Text="{Binding ConferenceName}" HorizontalTextAlignment="Center" />
-            <Label Text="{Binding ConferenceDate}" HorizontalTextAlignment="Center" />
-            <Label Text="{Binding ConferenceLocation}" HorizontalTextAlignment="Center" />
             <Image VerticalOptions="Center" Source="{Binding LocationPlanSource}" />
         </StackLayout>
     </ScrollView>
