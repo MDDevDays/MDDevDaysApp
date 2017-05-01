@@ -23,6 +23,8 @@
             </StackLayout.Margin>
 
             <Image Source="{Binding BannerSource}" />
+            
+            <Label Margin="0,5,0,5" Text="Raumplan" HorizontalTextAlignment="Center" />
             <Image VerticalOptions="Center" Source="{Binding LocationPlanSource}" />
 
             <Grid Margin="0,10,0,0">
@@ -42,6 +44,21 @@
                     </Label.GestureRecognizers>
                 </Label>
             </Grid>
+            
+            <StackLayout Margin="0,10,0,0" Orientation="Horizontal" HorizontalOptions="End">
+                <Label Style="{DynamicResource AppInfoTextStyle}" Text="Entwickelt von:" />
+                <Label Style="{DynamicResource AppInfoHyperLinkTextStyle}" Text="Andreas Richter">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenUrl}" CommandParameter="https://anrichter.net" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Style="{DynamicResource AppInfoTextStyle}" Text="&amp;" />
+                <Label Style="{DynamicResource AppInfoHyperLinkTextStyle}" Text="Michael Richter">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenUrl}" CommandParameter="http://mrappware.de/" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
         </StackLayout>
     </ScrollView>
 </ContentPage>
