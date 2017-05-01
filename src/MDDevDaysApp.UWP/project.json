@@ -4,7 +4,6 @@
     "Microsoft.Azure.Mobile": "0.9.2",
     "Microsoft.Azure.Mobile.Analytics": "0.9.2",
     "Microsoft.Azure.Mobile.Crashes": "0.9.2",
-    "Microsoft.Azure.Mobile.Distribute": "0.9.2",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "Newtonsoft.Json": "10.0.2",
     "Prism.Core": "6.3.0",
