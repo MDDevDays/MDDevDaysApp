@@ -32,6 +32,9 @@
                 <Setter Property="FontSize" Value="{DynamicResource MdDevDaysListItemDetailTextStyleSize}" />
                 <Setter Property="TextColor" Value="{DynamicResource MainTextColorLight}" />
             </Style>
+            <Style x:Key="HyperLinkTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource MainColor}" />
+            </Style>
 
             <converters:LocalImagePathConverter x:Key="LocalImagePathConverter" />
         </ResourceDictionary>
