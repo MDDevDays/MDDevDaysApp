@@ -271,7 +271,8 @@
   {
     "Id": "7585abc3-5c34-4805-beaa-e15208cdad82",
     "Start": "2017-05-10T20:30:00",
-    "Title": "Night School: Hacking",
+    "Title": "Night School: Let’s get cracking! Wir schreiben einen Key-Generator…",
+    "Description": "Bei dieser Abendveranstaltung lernen Sie, wie einfach eine Software mittels Reverse Engineering Techniken geknackt wird. Nach einer kleinen Einführung wird ein Übungsprogramm (Crack me) Schritt für Schritt analysiert und ein eigener Key-Generator geschrieben. Dabei gilt ganz klar Ethical Hacking! Wir möchten mit diesem Wissen niemanden schaden, sondern selbst lernen, wie wir unsere Software selbst gegen Hacker wappnen können.",
     "Room": "Konrad Zuse",
     "SpeakerIds": [ "d85b4992-f915-47b1-987a-a016989ff316" ]
   },
