@@ -190,7 +190,6 @@
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RainerStropek.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RalfHelbing.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ReginaldRink.png" />
-    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RobinSedlaczek.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\SabineWojcieszak.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\SebastianSeidel.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ThomasSchissler.png" />
