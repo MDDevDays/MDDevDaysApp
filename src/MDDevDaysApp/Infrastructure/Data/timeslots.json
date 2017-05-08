@@ -350,10 +350,10 @@
     "Id": "92b0d564-16b4-48fe-93a5-bcdf112d4498",
     "Start": "2017-05-11T10:45:00",
     "End": "2017-05-11T11:45:00",
-    "Title": "Intelligente Bots – das Microsoft Bot Framework & Cognitive Services",
-    "Description": "In der letzten Zeit gewinnen Conversational UIs und Bots immer mehr an Beliebtheit und Bedeutung. Microsoft begegnet diesem Trend mit dem Bot Framework. Mit dem Microsoft Bot Framework lassen sich eigene Bots implementieren und in der Microsoft Cloud betreiben. Benutzer können mit diesen Bots kommunizieren, um spezifische Aufgaben zu erfüllen. Die Kommunikation kann über die verschiedensten Kanäle erfolgen, z.B. via Email, Facebook Messenger, Slack Chat, Skype Chat oder sogar über Skype Calls. Eine unterbrochene Konversation kann später fortgeführt werden, sogar auf einem anderen Kanal. Der Bot erinnert sich, was zuletzt geschah, und es kann direkt an die letzte Konversation angeknüpft werden. Wirklich intelligent werden Bots aber erst, wenn man sie mit den Cognitive Services von Microsoft verbindet. Mit LUIS, dem Language Understanding Intelligent Service, lernt der Bot menschliche Sprachen zu verstehen, mit der SpracherkennungsAPI verschafft man ihm sogar Gehör. Die Computer Vision-API befähigt den Bot zu sehen, und mithilfe der Emotionen-API menschliche Gefühle zu verstehen. Daraus ergeben sich ganz neue Möglichkeiten und Anwendungsfälle. So kann z.B. körperlich beeinträchtigten Menschen ein alternativer Zugang zu einem Softwaresystem und ein barrierefreies Benutzererlebnis verschafft werden. Interaktionen mit einer Anwendung werden persönlicher und steigern damit die Benutzerpartizipation. In dieser Session wird live ein intelligenter Bot implementiert, der Gebrauch von den verschiedenen APIs macht. Ziel ist es, Anwendungsfälle und das Potential intelligenter Bots, anhand eines praktischen Beispiels aufzuzeigen.",
+    "Title": "Aber schnell! Top Performance Tipps für Web-Apps",
+    "Description": "HTML5 ist langsam, oder? Nein, in der Tat zeigt sich die grundlegende Geschwindigkeit von Cross-Plattform-HTML5-Anwendungen heutzutage in einem sehr positiven Licht. Es gibt aber doch ein paar Fallstricke, in denen sich der Entwickler schnell verfängt, wenn er nicht auf ein paar Punkte achtet. Der Vortrag geht zuerst auf die Vorgehensweise der Performancemessung ein. Anschließend werden die top Performancetipps gezeigt, um nochmal einen ordentlichen Schub an Power herausholen zu können. Lasst uns Gas geben!",
     "Room": "Alan Turing",
-    "SpeakerIds": [ "cf0824ec-5673-4121-abb5-0c6fcc68308d" ]
+    "SpeakerIds": [ "d85b4992-f915-47b1-987a-a016989ff316" ]
   },
   {
     "Id": "0edffd6a-9de8-4e30-90af-468b7df4768a",
