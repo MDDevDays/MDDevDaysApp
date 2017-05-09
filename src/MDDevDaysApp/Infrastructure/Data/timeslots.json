@@ -359,10 +359,10 @@
     "Id": "0edffd6a-9de8-4e30-90af-468b7df4768a",
     "Start": "2017-05-11T10:45:00",
     "End": "2017-05-11T11:45:00",
-    "Title": "Angular ist kein Web-Framework",
-    "Description": "… Angular ist eine Plattform! Die konsequente DOM-Abstraktion im neuen Angular ermöglicht es Angular auch für die Entwicklung von Desktop-Applikationen, nativen Mobil-Apps oder sogar für die Programmierung von Microcontrollern zu nutzen.\nIn diesem Vortrag wird von einer in TypeScript entwickelten Angular-Webanwendung eine native Mobil-App und eine Internet-of-Things-Applikation abgeleitet, welche ebenfalls in Angular implementiert sind. Es wird ferner gezeigt wie man Code zwischen diesen Implementierungen teilen kann und wie man seine Architektur gestalten sollte, damit ein solches Code-Sharing möglich ist.\nDurch die Vielzahl an Technologien wird es eine unterhaltsame und eher „geekige“ Session. Der spielerische Charakter der Session eignet sich aber hervorragend, um die Philosophie hinter Angular in der Tiefe zu verstehen und Best Practices für die Architektur von Angular-Anwendungen kennenzulernen.",
+    "Title": "SQL Server 2016 für Entwickler",
+    "Description": "SQL Server 2016 ist da und hat etliche Neuerungen in allen Bereichen im Gepäck. Doch vieles davon begeistert zwar den DBA oder den BI-ler, aber welche spannenden Features sind denn für den Entwickler dabei? Ich habe eine subjektive Auswahl getroffen und möchte dieser Frage mit Euch gemeinsam in meiner Session auf den Grund gehen.",
     "Room": "Bjarne Stroustroup",
-    "SpeakerIds": [ "87ee9161-d3e1-421c-9880-a57034cb5c93" ]
+    "SpeakerIds": [ "4e651a4a-5031-44aa-978a-93a090a5ffdb" ]
   },
   {
     "Id": "823bc414-0351-40f5-841a-9c75df68a50c",
