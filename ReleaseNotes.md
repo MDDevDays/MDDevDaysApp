@@ -1,11 +1,11 @@
 # Release Notes
 
+## 1.1
+
+* Change: Programm überarbeitet
+
 ## 1.0
 
-Initiale Version
-
-### Neue Features
-
-* Veranstaltungsinformationen inklusive Raumplan
-* Programm mit allen Sessions
-* Sprecherliste
+* Neu: Veranstaltungsinformationen inklusive Raumplan
+* Neu: Programm mit allen Sessions
+* Neu: Sprecherliste

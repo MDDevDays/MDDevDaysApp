@@ -177,7 +177,6 @@
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\HolgerSchwichtenberg.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JanFellien.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JuliaJauss.png" />
-    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JulianSteiner.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\KlemensGutmann.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MarcoHeimeshoff.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MarcoTullner.png" />
@@ -190,7 +189,6 @@
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RainerStropek.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RalfHelbing.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ReginaldRink.png" />
-    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\RobinSedlaczek.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\SabineWojcieszak.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\SebastianSeidel.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\ThomasSchissler.png" />
