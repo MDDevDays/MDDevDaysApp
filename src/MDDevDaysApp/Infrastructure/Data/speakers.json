@@ -121,13 +121,6 @@
     "Bio": "Julia Jauß startete nach Ihrem Studium der Bioinformatik (2015) bei Microsoft zunächst als Consultant.\n\nIhrem Interesse für Cloud geschuldet, zog es sie jedoch schnell in die DX, wo sie seitdem Technical Evangelist für Microsoft Azure ist.\n\nSeitdem war sie Sprecherin auf diversen Konferenzen und Meetups, häufiger ist sie jedoch auf Kundenprojekten unterwegs, insbesondere mit den Themen „Azure für Big Data“, IoT sowie Infrastruktur-Szenarien."
   },
   {
-    "Id": "87ee9161-d3e1-421c-9880-a57034cb5c93",
-    "FirstName": "Julian",
-    "LastName": "Steiner",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/JulianSteiner.png",
-    "Bio": "Julian Steiner is a full-stack software developer by trade.\n\nBeing a technological generalist, he has a solid academic background and has successfully delivered projects in a range of technologies.\n\nHe is currently helping Progress/Telerik customers finding the best solutions, while spreading the good word on technologies that spark his interest.\n\nHe has picked up mobile development recently and he has been using AngularJS in production ever since IE7 was still officially supported and 1.0 was still a Release Candidate.\n\nJulian is based out of Cologne, Germany."
-  },
-  {
     "Id": "cb993566-f629-4cde-b352-1cceaf9dc7cb",
     "FirstName": "Kareem",
     "LastName": "Amin",
@@ -225,13 +218,6 @@
     "LastName": "Schlosser",
     "ImageUri": "Infrastructure/Data/Images/Speakers/ReinerSchlosser.png",
     "Bio": "Reiner Schlosser ist Geschäftsführer der 2014 in Magdeburg gegründeten CraftingIT GmbH (www.crafting-it.de). Die craftingIT fokussiert sich auf Service, Support und Software-Entwicklung und ist als 100%ige Tochter des unabhängiges IT-Beratungsunternehmen BridgingIT GmbH (www.bridging-it.de) Teil der Full-Service-Strategie der Unternehmensfamilie.\n\nVor Aufbau und Gründung der craftingIT war Reiner Schlosser 2008 Teil der Gründungsmannschaft der bridgingIT und hat dort unter anderem Teams für .net-, Java-Entwicklung, und SAP aufgebaut und verantwortet. Nach seinem Informatik-Studium hat er seit 1990 als „Macher und Manager“ in zahlreichen Entwicklungsprojekten in den verschiedensten Rollen mitgearbeitet.  Sein fachlicher Fokus liegt in der Nahtstelle zwischen Geschäftsprozess und IT und beim Übergang vom Entwicklungsprojekt zum Application Management und Managed Service."
-  },
-  {
-    "Id": "cf0824ec-5673-4121-abb5-0c6fcc68308d",
-    "FirstName": "Robin",
-    "LastName": "Sedlaczek",
-    "ImageUri": "Infrastructure/Data/Images/Speakers/RobinSedlaczek.png",
-    "Bio": "Robin Sedlaczek hat mehr als fünfzehn Jahre Erfahrung als professioneller Softwareentwickler.\n\nSeit 7 Jahren tätig bei der Fairmas GmbH in Berlin, hat er das auf Finanzplanungstools spezialisierte Unternehmen mit aufgebaut. Als CTO ist er dort zuständig für den gesamten Entwicklungsbereich, beschäftigt sich mit der Produktentwicklung, Softwarearchitektur und -spezifikation, Technologieevaluierung, Prozess- und Teammanagement mit Ausrichtung auf die Microsoft .NET Plattform.\n\nIn seiner Freizeit organisiert er die .NET User Group Berlin-Brandenburg und vermittelt sein Wissen auf Konferenzen, in User Groups, Onlinekursen und Fachartikeln und seinem Blog."
   },
   {
     "Id": "5cd170d4-0608-4e9b-8bb3-72194fdf1cec",
