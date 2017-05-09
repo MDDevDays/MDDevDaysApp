@@ -177,7 +177,6 @@
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\HolgerSchwichtenberg.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JanFellien.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JuliaJauss.png" />
-    <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\JulianSteiner.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\KlemensGutmann.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MarcoHeimeshoff.png" />
     <EmbeddedResource Include="Infrastructure\Data\Images\Speakers\MarcoTullner.png" />
