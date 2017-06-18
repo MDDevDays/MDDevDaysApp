@@ -2,7 +2,6 @@
 #tool "nuget:?package=GitVersion.CommandLine"
 
 // Addins
-#addin "Cake.HockeyApp"
 #addin "Cake.Plist"
 #addin "Cake.Xamarin"
 #addin "MagicChunks"
@@ -12,7 +11,6 @@ var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
 var buildDir = MakeAbsolute(Directory("./build"));
-var secretsDir = MakeAbsolute(Directory("./secrets"));
 
 // Tasks
 Task("Default")
@@ -134,6 +132,12 @@ Task("Droid-CI-Package")
 Task("Droid-Store-Package")
     .IsDependentOn("Droid-Clean")
     .Does(() => {
+        var keystore = EnvironmentVariable("KEYSTORE");
+        if (keystore == null)
+        {
+            throw new Exception("You have to set the KEYSTORE environment variable");
+        }
+
         var keystorePassword = EnvironmentVariable("KEYSTORE_PASSWORD");
         if (keystorePassword == null)
         {
@@ -156,10 +160,10 @@ Task("Droid-Store-Package")
             configurator.SetConfiguration(configuration)
                 .SetVerbosity(Verbosity.Minimal)
                 .WithProperty("AndroidKeyStore", "true")
-                .WithProperty("AndroidSigningKeyStore", secretsDir.Combine("MDDevDays.keystore").FullPath)
+                .WithProperty("AndroidSigningKeyStore", keystore)
                 .WithProperty("AndroidSigningStorePass", keystorePassword)
-                .WithProperty("AndroidSigningKeyAlias", EnvironmentVariable("KEY_ALIAS"))
-                .WithProperty("AndroidSigningKeyPass", EnvironmentVariable("KEY_PASSWORD"))
+                .WithProperty("AndroidSigningKeyAlias", keyAlias)
+                .WithProperty("AndroidSigningKeyPass", keyPassword)
                 .WithProperty("OutputPath", buildDir.Combine("Droid").Combine("bin").FullPath);
         });
     });
@@ -196,28 +200,6 @@ Task("UWP-Store-Package")
                 .WithProperty("UapAppxPackageBuildMode", "StoreUpload")
                 .WithProperty("AppxSymbolPackageEnabled", "true");
         });
-    });
-
-Task("UWP-UploadToHockeyApp")
-    .IsDependentOn("UWP-Store-Package")
-    .Does(() => {
-        var appxBundle = GetFiles("./build/UWP/Package/*/*.appxbundle").First();
-        var appxSym = GetFiles("./build/UWP/Package/*/*.appxsym").First();
-        var versionName = XmlPeek(@"./src/MDDevDaysApp.UWP/Package.appxmanifest", 
-                                   "Package:Package/Package:Identity/@Version",
-                                   new XmlPeekSettings{
-                                       Namespaces = new Dictionary<string, string>{{"Package", "http://schemas.microsoft.com/appx/manifest/foundation/windows10" }}
-                                 });
-        var versionParts = versionName.Split('.');
-
-        UploadToHockeyApp(appxBundle, new HockeyAppUploadSettings {
-            AppId = "7538aec68c2c478aaf6aba693a96ab68",
-            Version = versionName,
-            ShortVersion = $"{versionParts[0]}.{versionParts[1]}",
-            Notes = "New Continuous Integration Build",
-            Notify = NotifyOption.AllTesters,
-            Status = DownloadStatus.Allowed
-        }, appxSym);
     });
 
 // Run the target
