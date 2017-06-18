@@ -12,7 +12,6 @@ var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
 var buildDir = MakeAbsolute(Directory("./build"));
-var secretsDir = MakeAbsolute(Directory("./secrets"));
 
 // Tasks
 Task("Default")
@@ -134,6 +133,12 @@ Task("Droid-CI-Package")
 Task("Droid-Store-Package")
     .IsDependentOn("Droid-Clean")
     .Does(() => {
+        var keystore = EnvironmentVariable("KEYSTORE");
+        if (keystore == null)
+        {
+            throw new Exception("You have to set the KEYSTORE environment variable");
+        }
+
         var keystorePassword = EnvironmentVariable("KEYSTORE_PASSWORD");
         if (keystorePassword == null)
         {
@@ -156,10 +161,10 @@ Task("Droid-Store-Package")
             configurator.SetConfiguration(configuration)
                 .SetVerbosity(Verbosity.Minimal)
                 .WithProperty("AndroidKeyStore", "true")
-                .WithProperty("AndroidSigningKeyStore", secretsDir.Combine("MDDevDays.keystore").FullPath)
+                .WithProperty("AndroidSigningKeyStore", keystore)
                 .WithProperty("AndroidSigningStorePass", keystorePassword)
-                .WithProperty("AndroidSigningKeyAlias", EnvironmentVariable("KEY_ALIAS"))
-                .WithProperty("AndroidSigningKeyPass", EnvironmentVariable("KEY_PASSWORD"))
+                .WithProperty("AndroidSigningKeyAlias", keyAlias)
+                .WithProperty("AndroidSigningKeyPass", keyPassword)
                 .WithProperty("OutputPath", buildDir.Combine("Droid").Combine("bin").FullPath);
         });
     });
