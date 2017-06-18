@@ -2,7 +2,6 @@
 #tool "nuget:?package=GitVersion.CommandLine"
 
 // Addins
-#addin "Cake.HockeyApp"
 #addin "Cake.Plist"
 #addin "Cake.Xamarin"
 #addin "MagicChunks"
@@ -201,28 +200,6 @@ Task("UWP-Store-Package")
                 .WithProperty("UapAppxPackageBuildMode", "StoreUpload")
                 .WithProperty("AppxSymbolPackageEnabled", "true");
         });
-    });
-
-Task("UWP-UploadToHockeyApp")
-    .IsDependentOn("UWP-Store-Package")
-    .Does(() => {
-        var appxBundle = GetFiles("./build/UWP/Package/*/*.appxbundle").First();
-        var appxSym = GetFiles("./build/UWP/Package/*/*.appxsym").First();
-        var versionName = XmlPeek(@"./src/MDDevDaysApp.UWP/Package.appxmanifest", 
-                                   "Package:Package/Package:Identity/@Version",
-                                   new XmlPeekSettings{
-                                       Namespaces = new Dictionary<string, string>{{"Package", "http://schemas.microsoft.com/appx/manifest/foundation/windows10" }}
-                                 });
-        var versionParts = versionName.Split('.');
-
-        UploadToHockeyApp(appxBundle, new HockeyAppUploadSettings {
-            AppId = "7538aec68c2c478aaf6aba693a96ab68",
-            Version = versionName,
-            ShortVersion = $"{versionParts[0]}.{versionParts[1]}",
-            Notes = "New Continuous Integration Build",
-            Notify = NotifyOption.AllTesters,
-            Status = DownloadStatus.Allowed
-        }, appxSym);
     });
 
 // Run the target
